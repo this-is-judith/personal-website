@@ -1,13 +1,17 @@
+a {
+    text-decoration: none;
+}
+
 .header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--header-color);
 }
 
-.nav {
+.header-bar {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
     justify-content: space-between;
@@ -16,13 +20,15 @@
 }
 
 .personal-logo {
-    color: var(--title-color);
+    color: var(--header-text-color);
     font-weight: var(--font-medium);
+    margin-left: 2rem;
 }
 
-.nav-list {
+.content-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: var()
+    column-gap: 3.5rem;
+    list-style-type: none;
+    margin-right: 3.5rem;
+    color: var(--header-text-color);
 }

@@ -5,35 +5,35 @@ const Header = () =>
 {
     return (
         <header className="header">
-            <nav  className="nav container">
+            <nav  className="header-bar">
                 <a href="" className="personal-logo">
                     Judith
                 </a>
 
                 <div>
-                    <ul className="nav-list">
+                    <ul className="content-list">
                         <li className="nav-item">
-                            Home
+                            HOME
                         </li>
 
                         <li className="nav-item">
-                            About
+                            ABOUT
                         </li>
 
                         <li className="nav-item">
-                            Experience
+                            EXPERIENCE
                         </li>
 
                         <li className="nav-item">
-                            Projects
+                            PROJECTS
                         </li>
 
                         <li className="nav-item">
-                            Blog
+                            BLOG
                         </li>
 
                         <li className="nav-item">
-                            Resources
+                            RESOURCES
                         </li>
                     </ul> 
                 </div>
