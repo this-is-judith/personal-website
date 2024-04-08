@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.personal-logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var()
+}
