@@ -3,7 +3,15 @@ import "./header.css";
 
 const Header = () =>
 {
-    return <h1>This is the header</h1>;
+    return (
+        <header className="header">
+            <nav className="navigation">
+                <a href="" rel="noopener noreferrer" className="personal_logo">
+                    Judith
+                </a>
+            </nav>
+        </header>
+    )
 }
 
 export default Header;
