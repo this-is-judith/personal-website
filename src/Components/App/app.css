@@ -11,6 +11,10 @@
 	--header-color: #2a3167;
     --header-text-color: #f3f5f5;
 
+    /*========= Font and typography ==========*/
+    --header-font: "Poppins", sans-serif;
+
+
     /*========= Font weight ==========*/
     --font-normal: 400;
     --font-medium: 500;

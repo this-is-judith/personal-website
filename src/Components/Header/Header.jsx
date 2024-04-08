@@ -13,27 +13,27 @@ const Header = () =>
                 <div>
                     <ul className="content-list">
                         <li className="nav-item">
-                            HOME
+                            Home
                         </li>
 
                         <li className="nav-item">
-                            ABOUT
+                            About
                         </li>
 
                         <li className="nav-item">
-                            EXPERIENCE
+                            Experience
                         </li>
 
                         <li className="nav-item">
-                            PROJECTS
+                            Projects
                         </li>
 
                         <li className="nav-item">
-                            BLOG
+                            Blog
                         </li>
 
                         <li className="nav-item">
-                            RESOURCES
+                            Resources
                         </li>
                     </ul> 
                 </div>
