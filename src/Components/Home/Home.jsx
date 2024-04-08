@@ -1,7 +1,14 @@
 import React from "react";
 
+import HomeMain from "./Home-Main/Home-Main";
+
+
 function Home() {
-  return <h1>Welcome to the Home Page!</h1>;
+  return(
+    <>
+
+    </>
+  )
 }
 
 export default Home;
