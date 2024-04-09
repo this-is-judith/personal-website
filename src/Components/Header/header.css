@@ -20,9 +20,7 @@ a:hover {
   top: 1rem;
   z-index: var(--z-fixed);
   margin-left: 2.5%;
-  border-style: solid;
-  border-color: #636363;
-  border-width: 0.05rem;
+  border: 0.05rem solid #636363;
 }
 
 .header-bar {
@@ -40,9 +38,9 @@ a:hover {
   font-weight: var(--font-semi-bold);
   margin-left: 1rem;
   font-family: var(--header-font);
-  border-right-style: solid;
-  border-right-color: var(--header-text-color);
-  padding-right: 1rem;
+  border-right: 0.08rem solid #636363;
+  padding-right: 5rem;
+  height: 240%;
 }
 
 .header-content-list {
