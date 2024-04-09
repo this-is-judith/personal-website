@@ -1,6 +1,23 @@
 .main {
-    padding: 10%;
+    padding: var(--top-pading);
 }
+
+.homeMain,
+.homeAbout,
+.homeExperience,
+.homeProjects,
+.homeBlog,
+.homeResources {
+    border-style: solid;
+    border-color: black;
+    margin-top: 5rem;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    height: var(--section-height);
+    text-align: center;
+}
+
+
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -8,7 +25,11 @@
 
 /*=============== CSS VARIABLES ===============*/
 :root {
+    --top-pading: 4rem;
     --header-height: 3rem;
+    --section-height: 35rem;
+    --left-margin: -2rem;
+    --right-margin: -2rem;
 
 
     /*========== Colors ==========*/
