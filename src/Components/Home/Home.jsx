@@ -1,19 +1,29 @@
 import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Header from "../Header/Header";
 import HomeMain from "./HomeMain/HomeMain";
-// import HomeAbout from "./HomeAbout";
-// import HomeAbout from "./HomeAbout/HomeAbout";
-// import HomeExperience from "./HomeExperience";
-// import HomeProjects from "./HomeProjects/HomeProjects";
-// import HomeBlog from "./HomeBlog/HomeBlog";
-// import HomeResources from "./HomeResources/HomeResources";
+// import About from "../About/About";
+// import Experience from "../Experience/Experience";
+// import Projects from "../Projects/Projects";
+// import Blog from "../Blog/Blog";
+// import Resources from "../Resources/Resources";
+// import Footer from "../Footer/Footer";
 
-const Home = () => {
-  return(
-    <>
-      <HomeMain />
-    </>
-  );
+import "./home.css";
+
+function Home()
+{
+    return (
+        <>
+           <Header/>
+
+           <main className="main">
+                <HomeMain/>
+           </main>
+        </>
+    );
 }
 
 export default Home;
+
