@@ -1,9 +1,15 @@
 import React from "react";
+import image from "../../../Assets/Photos/granite-highlight-black.png";
+import "./homeMain.css";
 
 const Header = () => {
   return (
     <>
-      <div>This is home main</div>
+      <div className="homeMain-container">
+        <div className="mainSection left">some text 1</div>
+
+        <div className="mainSection right">{/* <img src={image} /> */}</div>
+      </div>
     </>
   );
 };

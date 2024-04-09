@@ -7,6 +7,7 @@ a:active {
 
 a:hover {
   color: #d92862;
+  text-decoration: underline;
 }
 
 .header-container {
@@ -18,7 +19,7 @@ a:hover {
   position: fixed;
   top: 1rem;
   z-index: var(--z-fixed);
-  margin-left: 1.7%;
+  margin-left: 2.5%;
   border-style: solid;
   border-color: #636363;
   border-width: 0.05rem;

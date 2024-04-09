@@ -1,10 +1,7 @@
+/*=============== HOME PAGE ===============*/
 .main {
-  padding: var(--top-pading);
-  background: white;
+  background: red;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 3rem;
 }
 
 .homeMain,
@@ -13,11 +10,15 @@
 .homeProjects,
 .homeBlog,
 .homeResources {
-  border-style: solid;
-  border-color: black;
-  margin-top: 5rem;
   height: var(--section-height);
   text-align: center;
+  border-style: solid;
+  border-color: black;
+}
+
+.homeMain {
+  height: var(--homeMain-height);
+  background-color: #ffffff;
 }
 
 /*=============== GOOGLE FONTS ===============*/
@@ -25,7 +26,8 @@
 
 /*=============== CSS VARIABLES ===============*/
 :root {
-  --header-height: 3rem;
+  /*========== Section Heights ==========*/
+  --homeMain-height: 45rem;
   --section-height: 35rem;
 
   /*========== Colors ==========*/

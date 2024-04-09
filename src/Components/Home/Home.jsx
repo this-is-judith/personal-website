@@ -14,36 +14,38 @@ import "./home.css";
 
 function Home() {
   {
-    document.body.style.backgroundColor = "white";
+    document.body.style.margin = 0;
   }
 
   return (
     <>
-      <div class="head">
-        <Header />
-      </div>
-      <main className="main">
-        <div className="homeMain">
-          <HomeMain />
+      <div class="homePage">
+        <div class="head">
+          <Header />
         </div>
-        <div className="homeAbout">
-          <HomeAbout />
+        <main className="main">
+          <div className="homeMain">
+            <HomeMain />
+          </div>
+          <div className="homeAbout">
+            <HomeAbout />
+          </div>
+          <div className="homeExperience">
+            <HomeExperience />
+          </div>
+          <div className="homeProjects">
+            <HomeProjects />
+          </div>
+          <div className="homeBlog">
+            <HomeBlog />
+          </div>
+          <div className="homeResources">
+            <HomeResources />
+          </div>
+        </main>
+        <div className="footer">
+          <Footer />
         </div>
-        <div className="homeExperience">
-          <HomeExperience />
-        </div>
-        <div className="homeProjects">
-          <HomeProjects />
-        </div>
-        <div className="homeBlog">
-          <HomeBlog />
-        </div>
-        <div className="homeResources">
-          <HomeResources />
-        </div>
-      </main>
-      <div className="footer">
-        <Footer />
       </div>
     </>
   );
