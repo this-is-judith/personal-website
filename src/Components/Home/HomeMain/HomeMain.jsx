@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../../../Assets/Photos/granite-highlight-black.png";
 import "./homeMain.css";
+import Circles from "./Circles";
 
 const Header = () => {
   return (
@@ -8,7 +8,10 @@ const Header = () => {
       <div className="homeMain-container">
         <div className="mainSection left"></div>
 
-        <div className="mainSection right">{/* <img src={image} /> */}</div>
+        <div className="mainSection right">
+          <Circles />
+          {/* <SmallCircle /> */}
+        </div>
       </div>
     </>
   );
