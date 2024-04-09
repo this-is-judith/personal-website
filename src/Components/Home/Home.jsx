@@ -8,7 +8,7 @@ import HomeExperience from "./HomeExperience/HomeExperience";
 import HomeProjects from "./HomeProjects/HomeProjects";
 import HomeBlog from "./HomeBlog/HomeBlog";
 import HomeResources from "./HomeResources/HomeResources";
-// import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 import "./home.css";
 
@@ -26,6 +26,8 @@ function Home()
         <div className ="homeBlog"><HomeBlog/></div>
         <div className ="homeResources"><HomeResources/></div>
       </main>
+
+      <div className ="footer"><Footer/></div>
     </>
   );
 }

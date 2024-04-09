@@ -1,7 +1,18 @@
-import React from 'react';
+import React from "react";
+import "./footer.css";
 
-function Footer() {
-  return <h1>Welcome to the Experience Page!</h1>;
-}
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="section1">Section 1</div>
+
+        <div className="section2">Section 2</div>
+
+        <div className="section3">Section 3</div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
