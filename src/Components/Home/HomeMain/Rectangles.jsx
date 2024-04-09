@@ -10,7 +10,7 @@ function Rectangles() {
         ry="5"
         width="360"
         height="50"
-        fill="blacK"
+        fill="black"
       />
 
       <rect x="200" y="620" rx="5" ry="5" width="360" height="70" fill="grey" />
