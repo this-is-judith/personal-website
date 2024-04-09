@@ -1,0 +1,10 @@
+.about {
+  display: flex;
+}
+
+.section {
+  border-style: solid;
+  border-color: black;
+  flex: 1;
+  padding: 14.5rem;
+}

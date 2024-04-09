@@ -1,9 +1,18 @@
 import React from "react";
+import "./homeAbout.css";
 
-function HomeAbout() {
+const HomeAbout = () => {
   return (
-    <h1>This is home about</h1>
+    <div class="about">
+      <section class="left section">
+        <h1>This is home about 1</h1>
+      </section>
+
+      <section class="right section">
+        <h1>This is home about 2</h1>
+      </section>
+    </div>
   );
-}
+};
 
 export default HomeAbout;

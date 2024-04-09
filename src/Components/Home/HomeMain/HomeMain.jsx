@@ -1,11 +1,7 @@
 import React from "react";
 
-function HomeMain() {
-  return (
-    <div class="home">
-      <h1>This is home main</h1>
-    </div>
-  );
-}
+const Header = () => {
+  return <div>This is home main</div>;
+};
 
-export default HomeMain;
+export default Header;

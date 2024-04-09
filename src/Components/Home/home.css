@@ -1,9 +1,10 @@
 .main {
   padding: var(--top-pading);
-  background-color: var(--home-color);
+  background: white;
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 3rem;
 }
 
 .homeMain,
@@ -24,25 +25,24 @@
 
 /*=============== CSS VARIABLES ===============*/
 :root {
-  --top-pading: 4rem;
   --header-height: 3rem;
   --section-height: 35rem;
-  --left-margin: -2rem;
-  --right-margin: -2rem;
 
   /*========== Colors ==========*/
-  --header-color: #2a3167;
-  --header-text-color: #f3f5f5;
-  --footer-color: #b02836;
-  --footer-text-color: #f3f5f5;
-  --home-color: #f3f5f5;
+  --background-color: #ffffff;
+  --header-color: #ded9d9;
+  --header-text-color: #000000;
+  --footer-color: #ded9d9;
+  --footer-text-color: #000000;
+  --body-text-color: #000000;
 
   /*========= Font and typography ==========*/
   --header-font: "Poppins", sans-serif;
   --footer-font: "Arial", sans-serif;
+  --body-font: "Poppins", sans-serif;
 
   /*========= Font weight ==========*/
-  --font-normal: 400;
+  --font-normal: 450;
   --font-medium: 500;
   --font-semi-bold: 600;
 
