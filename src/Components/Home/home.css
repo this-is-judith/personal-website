@@ -3,7 +3,6 @@
   background: white;
 }
 
-.homeExperience,
 .homeProjects,
 .homeBlog,
 .homeResources {
@@ -14,7 +13,8 @@
 }
 
 .homeMain,
-.homeAbout {
+.homeAbout,
+.homeExperience {
   height: var(--homeMain-height);
 }
 

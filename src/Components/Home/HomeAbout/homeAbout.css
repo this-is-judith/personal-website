@@ -16,20 +16,14 @@
   display: flex;
 }
 
-.aboutLeftTop,
-.aboutLeftMiddle,
-.aboutLeftBottom {
-  flex: 1;
-  border-style: solid;
-  border-color: black;
-}
-
 .aboutLeftTop {
   flex: 1;
+  text-align: center;
 }
 
 .aboutLeftMiddle {
   flex: 2;
+  text-align: center;
 }
 
 .aboutLeftBottom {
@@ -46,10 +40,4 @@
 .aboutRightMiddle,
 .aboutRightBottom {
   flex: 1;
-}
-
-.resumeIcon {
-  position: relative;
-  bottom: 5.25rem;
-  left: 20.5rem;
 }

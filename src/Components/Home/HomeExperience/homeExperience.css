@@ -1,0 +1,58 @@
+.homeExperience-container {
+  display: flex;
+}
+
+.experienceSection {
+  padding-top: 6.5rem;
+  display: flex;
+  height: var(--homeAbout-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceLeft {
+  flex: 1;
+  background-color: #faf4f4;
+  display: flex;
+}
+
+.experienceRight {
+  flex: 1.2;
+  background-color: #dbdcdb;
+}
+
+.experienceLeftTop {
+  flex: 1;
+  text-align: center;
+}
+
+.experienceLeftMiddle {
+  flex: 2;
+  text-align: center;
+}
+
+.experienceLeftBottom {
+  flex: 1;
+}
+
+.experienceRightTop {
+  flex: 1;
+  text-align: center;
+}
+
+.experienceRightMiddle {
+  flex: 2.5;
+  text-align: center;
+}
+
+.experienceRightBottom {
+  flex: 2;
+  text-align: center;
+}
+
+.experienceRightTop,
+.experienceRightMiddle,
+.experienceRightBottom {
+  border-style: solid;
+  border-color: black;
+}

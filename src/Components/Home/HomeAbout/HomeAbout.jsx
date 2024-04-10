@@ -1,8 +1,9 @@
 import React from "react";
-import "./homeAbout.css";
+
 import RightRectangle from "./RightRectangle";
 import LeftRectangles from "./LeftRectangles";
-import { IoDocumentText } from "react-icons/io5";
+
+import "./homeAbout.css";
 
 const HomeAbout = () => {
   return (
@@ -18,7 +19,6 @@ const HomeAbout = () => {
         </div>
 
         <div className="aboutLeftBottom">
-          <IoDocumentText size={30} className="resumeIcon" />
           <LeftRectangles />
         </div>
       </section>
