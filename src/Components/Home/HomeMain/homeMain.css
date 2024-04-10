@@ -1,17 +1,39 @@
 .homeMain-container {
   display: flex;
-  width: 100%;
 }
 
 .mainSection {
   flex: 1;
   height: var(--homeMain-height);
+  display: flex;
+  flex-direction: column;
 }
 
 .left {
   background-color: #faf4f4;
 }
 
+.leftSection {
+  flex: 1;
+}
+
 .right {
   background-color: #dbdcdb;
+}
+
+.playCircle {
+  position: relative;
+  bottom: 12.5rem;
+  left: 26.25rem;
+}
+
+.top {
+  position: relative;
+  top: 12rem;
+  left: 10rem;
+}
+
+.bottom {
+  border-top-style: solid;
+  border-top-color: black;
 }
