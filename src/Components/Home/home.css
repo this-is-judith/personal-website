@@ -25,6 +25,7 @@
 :root {
   /*========== Section Heights ==========*/
   --homeMain-height: 45rem;
+  --homeAbout-height: 38.5rem;
   --section-height: 35rem;
 
   /*========== Colors ==========*/

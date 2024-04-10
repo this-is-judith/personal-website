@@ -3,16 +3,47 @@
 }
 
 .aboutSection {
-  flex: 2;
-  height: var(--homeMain-height);
+  padding-top: 6.5rem;
+  display: flex;
+  height: var(--homeAbout-height);
   display: flex;
   flex-direction: column;
 }
 
 .aboutLeft {
+  flex: 1.5;
   background-color: #dbdcdb;
+  display: flex;
+}
+
+.aboutLeftTop,
+.aboutLeftMiddle,
+.aboutLeftBottom {
+  flex: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.aboutLeftTop {
+  flex: 1;
+}
+
+.aboutLeftMiddle {
+  flex: 2;
+}
+
+.aboutLeftBottom {
+  flex: 1;
 }
 
 .aboutRight {
+  flex: 1;
+  display: flex;
   background-color: #faf4f4;
+}
+
+.aboutRightTop,
+.aboutRightMiddle,
+.aboutRightBottom {
+  flex: 1;
 }
