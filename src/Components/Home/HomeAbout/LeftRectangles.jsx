@@ -2,7 +2,7 @@ import React from "react";
 
 function LeftRectangles() {
   return (
-    <svg width="700" height="150">
+    <svg width="600" height="150">
       <rect
         x="145"
         y="20"

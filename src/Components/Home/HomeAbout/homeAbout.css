@@ -6,7 +6,6 @@
   padding-top: 6.5rem;
   display: flex;
   height: var(--homeAbout-height);
-  display: flex;
   flex-direction: column;
 }
 

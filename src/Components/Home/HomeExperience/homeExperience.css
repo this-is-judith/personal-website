@@ -5,20 +5,20 @@
 .experienceSection {
   padding-top: 6.5rem;
   display: flex;
-  height: var(--homeAbout-height);
-  display: flex;
+  height: var(--homeExperience-height);
   flex-direction: column;
 }
 
 .experienceLeft {
-  flex: 1;
+  flex: 1.1;
   background-color: #faf4f4;
   display: flex;
 }
 
 .experienceRight {
-  flex: 1.2;
+  flex: 1;
   background-color: #dbdcdb;
+  display: flex;
 }
 
 .experienceLeftTop {
@@ -40,18 +40,12 @@
   text-align: center;
 }
 
-.experienceRightMiddle {
-  flex: 2.5;
-  text-align: center;
-}
-
 .experienceRightBottom {
-  flex: 2;
+  flex: 4;
   text-align: center;
 }
 
 .experienceRightTop,
-.experienceRightMiddle,
 .experienceRightBottom {
   border-style: solid;
   border-color: black;

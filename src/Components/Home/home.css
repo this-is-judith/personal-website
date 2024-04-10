@@ -15,7 +15,7 @@
 .homeMain,
 .homeAbout,
 .homeExperience {
-  height: var(--homeMain-height);
+  height: var(--homeSection-height);
 }
 
 /*=============== GOOGLE FONTS ===============*/
@@ -24,8 +24,9 @@
 /*=============== CSS VARIABLES ===============*/
 :root {
   /*========== Section Heights ==========*/
-  --homeMain-height: 45rem;
+  --homeSection-height: 45rem;
   --homeAbout-height: 38.5rem;
+  --homeExperience-height: 38.5rem;
   --section-height: 35rem;
 
   /*========== Colors ==========*/

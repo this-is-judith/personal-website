@@ -26,9 +26,7 @@ function HomeExperience() {
           <p>At a Glance</p>
         </div>
 
-        <div className="experienceRightMiddle">Skills</div>
-
-        <div className="experienceRightBottom">Work Experience</div>
+        <div className="experienceRightBottom">Skills</div>
       </div>
     </div>
   );
