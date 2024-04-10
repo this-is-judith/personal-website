@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.left {
+.mainLeft {
   background-color: #faf4f4;
 }
 
@@ -17,23 +17,18 @@
   flex: 1;
 }
 
-.right {
+.mainRight {
   background-color: #dbdcdb;
 }
 
 .playCircle {
   position: relative;
-  bottom: 12.5rem;
-  left: 26.25rem;
+  /* bottom: 12.5rem;
+  left: 26.25rem; */
 }
 
-.top {
+.mainTop {
   position: relative;
   top: 12rem;
   left: 10rem;
-}
-
-.bottom {
-  border-top-style: solid;
-  border-top-color: black;
 }

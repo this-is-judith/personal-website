@@ -3,7 +3,6 @@
   background: white;
 }
 
-.homeAbout,
 .homeExperience,
 .homeProjects,
 .homeBlog,
@@ -14,9 +13,9 @@
   border-color: black;
 }
 
-.homeMain {
+.homeMain,
+.homeAbout {
   height: var(--homeMain-height);
-  background-color: #ffffff;
 }
 
 /*=============== GOOGLE FONTS ===============*/

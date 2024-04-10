@@ -1,10 +1,18 @@
-.about {
+.homeAbout-container {
   display: flex;
 }
 
 .aboutSection {
-  border-style: solid;
-  border-color: black;
   flex: 1;
-  padding: 14.5rem;
+  height: var(--homeMain-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutLeft {
+  background-color: #dbdcdb;
+}
+
+.aboutRight {
+  background-color: #faf4f4;
 }

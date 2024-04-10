@@ -8,26 +8,24 @@ const Header = () => {
   return (
     <>
       <div className="homeMain-container">
-        <div className="mainSection left">
-          <div className="leftSection top">
-            <div className="homeMain-text">
-              <p>Hello! My name is Judith</p>
-              <p>I'm a Computer Engineer interested in both</p>
-              <p>hardware and software.</p>
-            </div>
+        <section className="mainSection mainLeft">
+          <div className="leftSection mainTop">
+            <p>Hello! My name is Judith</p>
+            <p>I'm a Computer Engineer interested in both</p>
+            <p>hardware and software.</p>
           </div>
 
-          <div className="leftSection bottom">
+          <div className="leftSection mainBottom">
             <Rectangles />
           </div>
-        </div>
+        </section>
 
-        <div className="mainSection right">
+        <section className="mainSection mainRight">
           <Circles />
           <div className="playCircle">
             <FaPlayCircle size={30} />
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
