@@ -3,6 +3,7 @@ import "./homeMain.css";
 import Circles from "./Circles";
 import Rectangles from "./Rectangles";
 import { FaPlayCircle } from "react-icons/fa";
+import ScrollDown from "./ScrollDown";
 
 const Header = () => {
   return (
@@ -25,6 +26,7 @@ const Header = () => {
           <div className="playCircle">
             <FaPlayCircle size={30} />
           </div>
+          <ScrollDown />
         </section>
       </div>
     </>
