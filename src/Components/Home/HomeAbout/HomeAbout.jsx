@@ -1,6 +1,8 @@
 import React from "react";
 import "./homeAbout.css";
-import Rectangle from "./Rectangle";
+import RightRectangle from "./RightRectangle";
+import LeftRectangles from "./LeftRectangles";
+import { IoDocumentText } from "react-icons/io5";
 
 const HomeAbout = () => {
   return (
@@ -15,18 +17,21 @@ const HomeAbout = () => {
           I'm a person of many interests and hobbies
         </div>
 
-        <div className="aboutLeftBottom"></div>
+        <div className="aboutLeftBottom">
+          <IoDocumentText size={30} className="resumeIcon" />
+          <LeftRectangles />
+        </div>
       </section>
 
       <section className="aboutSection aboutRight">
         <div className="aboutRightTop">
-          <Rectangle className="faithReactangle" />
+          <RightRectangle className="faithReactangle" />
         </div>
         <div className="aboutRightMiddle">
-          <Rectangle className="educationRectangle" />
+          <RightRectangle className="educationRectangle" />
         </div>
         <div className="aboutRightBottom">
-          <Rectangle className="hobbiesRectangle" />
+          <RightRectangle className="hobbiesRectangle" />
         </div>
       </section>
     </div>

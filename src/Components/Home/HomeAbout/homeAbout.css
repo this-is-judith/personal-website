@@ -47,3 +47,9 @@
 .aboutRightBottom {
   flex: 1;
 }
+
+.resumeIcon {
+  position: relative;
+  bottom: 5.25rem;
+  left: 20.5rem;
+}
