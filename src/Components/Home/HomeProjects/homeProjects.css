@@ -1,0 +1,22 @@
+.homeProjects-container {
+  display: flex;
+}
+
+.projectsSection {
+  padding-top: 6.5rem;
+  display: flex;
+  height: var(--homeExperience-height);
+  flex-direction: column;
+}
+
+.projectsLeft {
+  flex: 1;
+  background-color: #dbdcdb;
+  display: flex;
+}
+
+.projectsRight {
+  flex: 1;
+  background-color: #faf4f4;
+  display: flex;
+}

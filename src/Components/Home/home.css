@@ -3,7 +3,6 @@
   background: white;
 }
 
-.homeProjects,
 .homeBlog,
 .homeResources {
   height: var(--section-height);
@@ -14,7 +13,8 @@
 
 .homeMain,
 .homeAbout,
-.homeExperience {
+.homeExperience,
+.homeProjects {
   height: var(--homeSection-height);
 }
 

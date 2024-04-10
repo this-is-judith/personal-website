@@ -46,13 +46,6 @@
   flex-direction: column;
 }
 
-.experienceRightBottomTop,
-.experienceRightBottomBottom {
-  flex: 1;
-  border-style: solid;
-  border-color: black;
-}
-
 .experienceRightBottomTop {
   flex: 2;
 }

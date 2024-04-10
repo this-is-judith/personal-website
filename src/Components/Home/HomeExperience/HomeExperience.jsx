@@ -8,7 +8,7 @@ import "./homeExperience.css";
 function HomeExperience() {
   return (
     <div className="homeExperience-container">
-      <div className="experienceSection experienceLeft">
+      <section className="experienceSection experienceLeft">
         <div className="experienceLeftTop">
           <p>02.</p>
           <p>My Experience</p>
@@ -21,11 +21,11 @@ function HomeExperience() {
         <div className="experienceLeftBottom">
           <LeftRectangles />
         </div>
-      </div>
+      </section>
 
-      <div className="experienceSection experienceRight">
+      <section className="experienceSection experienceRight">
         <div className="experienceRightTop">
-          <p>Skills at a Glance</p>
+          <p>Skills at a Glance + m. glass icon</p>
         </div>
 
         <div className="experienceRightBottom">
@@ -36,7 +36,7 @@ function HomeExperience() {
             <RightBottomRectangles />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
