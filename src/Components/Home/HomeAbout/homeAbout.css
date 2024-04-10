@@ -3,7 +3,7 @@
 }
 
 .aboutSection {
-  flex: 1;
+  flex: 2;
   height: var(--homeMain-height);
   display: flex;
   flex-direction: column;

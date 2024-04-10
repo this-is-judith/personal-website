@@ -24,7 +24,7 @@
 
 .playCircle {
   position: absolute;
-  bottom: 12rem;
+  bottom: 12.5rem;
   left: 65.75rem;
 }
 
@@ -39,8 +39,9 @@
   display: flex;
   column-gap: 2.5rem;
   justify-content: center;
-  border-style: solid;
-  border-color: black;
+  position: absolute;
+  bottom: 2rem;
+  right: 5rem;
 }
 
 .icon {

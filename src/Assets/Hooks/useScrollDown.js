@@ -1,6 +1,6 @@
 export const useScrollDown = () => {
     const handleScrollDown = () => {
-      window.scrollBy({
+      window.scrollTo({
         top: 720,
         left: 0,
         behavior: 'smooth',
@@ -9,4 +9,3 @@ export const useScrollDown = () => {
   
     return handleScrollDown;
 };
-  

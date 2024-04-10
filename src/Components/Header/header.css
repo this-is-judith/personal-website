@@ -13,7 +13,7 @@ a:hover {
 .header-container {
   width: 92%;
   height: 4%;
-  border-radius: 1.8rem;
+  border-radius: 1.7rem;
   background: var(--header-color);
   padding: 20px;
   position: fixed;

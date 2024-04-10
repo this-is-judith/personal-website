@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 import "./homeMain.css";
 
@@ -31,15 +32,17 @@ const Header = () => {
           <Circles />
 
           <div className="playCircle">
-            <FaPlayCircle size={30} />
+            <FaPlayCircle size={30} color="black" />
           </div>
 
+          <ScrollDown />
+
           <div className="socials">
-            <ScrollDown size={25} />
-            <FaLinkedin size={25} />
-            <FaGithub size={25} />
-            <AiFillInstagram size={25} />
-            <FaFacebook size={25} />
+            <FaLinkedin size={22} />
+            <FaGithub size={22} />
+            <IoMdMail size={22} />
+            <AiFillInstagram size={22} />
+            <FaFacebook size={22} />
           </div>
         </section>
       </div>
