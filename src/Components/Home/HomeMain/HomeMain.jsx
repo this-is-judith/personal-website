@@ -32,7 +32,7 @@ const Header = () => {
           <Circles />
 
           <div className="playCircle">
-            <FaPlayCircle size={30} color="black" />
+            <FaPlayCircle size={30} />
           </div>
 
           <ScrollDown />

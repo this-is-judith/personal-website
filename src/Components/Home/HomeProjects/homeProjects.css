@@ -5,7 +5,7 @@
 .projectsSection {
   padding-top: 6.5rem;
   display: flex;
-  height: var(--homeExperience-height);
+  height: var(--homeProjects-height);
   flex-direction: column;
 }
 

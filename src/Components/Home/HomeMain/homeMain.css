@@ -26,6 +26,7 @@
   position: absolute;
   bottom: 12.5rem;
   left: 65.75rem;
+  color: white;
 }
 
 .mainTop {
@@ -42,4 +43,5 @@
   position: absolute;
   bottom: 2rem;
   right: 5rem;
+  color: black;
 }

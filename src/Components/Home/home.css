@@ -3,7 +3,6 @@
   background: white;
 }
 
-.homeBlog,
 .homeResources {
   height: var(--section-height);
   text-align: center;
@@ -14,7 +13,8 @@
 .homeMain,
 .homeAbout,
 .homeExperience,
-.homeProjects {
+.homeProjects,
+.homeBlog {
   height: var(--homeSection-height);
 }
 
@@ -27,6 +27,7 @@
   --homeSection-height: 45rem;
   --homeAbout-height: 38.5rem;
   --homeExperience-height: 38.5rem;
+  --homeProjects-height: 38.5rem;
   --section-height: 35rem;
 
   /*========== Colors ==========*/
