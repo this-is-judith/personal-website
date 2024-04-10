@@ -4,7 +4,7 @@ function LeftRectangles() {
   return (
     <svg width="600" height="150">
       <rect
-        x="145"
+        x="120"
         y="20"
         rx="30"
         ry="30"
@@ -14,7 +14,7 @@ function LeftRectangles() {
       />
 
       <rect
-        x="395"
+        x="375"
         y="20"
         rx="30"
         ry="30"

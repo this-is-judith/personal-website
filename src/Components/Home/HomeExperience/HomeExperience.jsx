@@ -1,6 +1,7 @@
 import React from "react";
 import LeftRectangles from "../HomeAbout/LeftRectangles";
 import RightTopRectangles from "./RightTopRectangles";
+import RightBottomRectangles from "./RightBottomRectangles";
 
 import "./homeExperience.css";
 
@@ -31,7 +32,9 @@ function HomeExperience() {
           <div className="experienceRightBottomTop">
             <RightTopRectangles />
           </div>
-          <div className="experienceRightBottomBottom"></div>
+          <div className="experienceRightBottomBottom">
+            <RightBottomRectangles />
+          </div>
         </div>
       </div>
     </div>
