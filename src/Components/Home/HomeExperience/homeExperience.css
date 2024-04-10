@@ -10,7 +10,7 @@
 }
 
 .experienceLeft {
-  flex: 1.1;
+  flex: 1;
   background-color: #faf4f4;
   display: flex;
 }
@@ -41,12 +41,22 @@
 }
 
 .experienceRightBottom {
-  flex: 4;
-  text-align: center;
+  flex: 7;
+  display: flex;
+  flex-direction: column;
 }
 
-.experienceRightTop,
-.experienceRightBottom {
+.experienceRightBottomTop,
+.experienceRightBottomBottom {
+  flex: 1;
   border-style: solid;
   border-color: black;
+}
+
+.experienceRightBottomTop {
+  flex: 2;
+}
+
+.experienceRightBottomBottom {
+  flex: 1;
 }
