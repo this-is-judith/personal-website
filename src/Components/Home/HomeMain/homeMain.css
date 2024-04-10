@@ -22,9 +22,9 @@
 }
 
 .playCircle {
-  position: relative;
-  /* bottom: 12.5rem;
-  left: 26.25rem; */
+  position: absolute;
+  bottom: 12rem;
+  left: 65.75rem;
 }
 
 .mainTop {
