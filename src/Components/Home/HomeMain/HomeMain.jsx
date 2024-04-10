@@ -1,9 +1,15 @@
 import React from "react";
-import "./homeMain.css";
+
 import Circles from "./Circles";
 import Rectangles from "./Rectangles";
-import { FaPlayCircle } from "react-icons/fa";
 import ScrollDown from "./ScrollDown";
+import { FaPlayCircle } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+
+import "./homeMain.css";
 
 const Header = () => {
   return (
@@ -23,10 +29,18 @@ const Header = () => {
 
         <section className="mainSection mainRight">
           <Circles />
+
           <div className="playCircle">
             <FaPlayCircle size={30} />
           </div>
-          <ScrollDown />
+
+          <div className="socials">
+            <ScrollDown size={25} />
+            <FaLinkedin size={25} />
+            <FaGithub size={25} />
+            <AiFillInstagram size={25} />
+            <FaFacebook size={25} />
+          </div>
         </section>
       </div>
     </>

@@ -19,6 +19,7 @@
 
 .mainRight {
   background-color: #dbdcdb;
+  display: flex;
 }
 
 .playCircle {
@@ -31,4 +32,16 @@
   position: relative;
   top: 12rem;
   left: 10rem;
+}
+
+.socials {
+  flex: 1;
+  display: flex;
+  column-gap: 2.5rem;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+}
+
+.icon {
 }
