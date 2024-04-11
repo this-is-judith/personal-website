@@ -45,3 +45,14 @@
   right: 5rem;
   color: black;
 }
+
+a.social-icon,
+a.social-icon:visited,
+a.social-icon:active {
+  text-decoration: none;
+  color: black;
+}
+
+a.social-icon:hover {
+  color: grey;
+}

@@ -37,15 +37,34 @@ const HomeMain = () => {
         <ScrollDown />
 
         <div className="socials">
-          <FaLinkedin size={22} />
+          <a
+            href="https://www.linkedin.com/in/judithoseitete/"
+            className="social-icon"
+          >
+            <FaLinkedin size={22} />
+          </a>
 
-          <a href="https://github.com/this-is-judith">
+          <a href="https://github.com/this-is-judith" className="social-icon">
             <FaGithub size={22} />
           </a>
 
-          <IoMdMail size={22} />
-          <AiFillInstagram size={22} />
-          <FaFacebook size={22} />
+          <a href="mailto:jao92@cornell.edu" className="social-icon">
+            <IoMdMail size={22} />
+          </a>
+
+          <a
+            href="https://www.instagram.com/thisisjudith._/"
+            className="social-icon"
+          >
+            <AiFillInstagram size={22} />
+          </a>
+
+          <a
+            href="https://www.facebook.com/JudyTheSuperhero/"
+            className="social-icon"
+          >
+            <FaFacebook size={22} />
+          </a>
         </div>
       </section>
     </div>
