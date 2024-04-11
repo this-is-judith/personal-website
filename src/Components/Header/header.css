@@ -38,7 +38,7 @@ a.nav-item:hover {
   margin-left: 1rem;
   font-family: var(--header-font);
   border-right: 0.08rem solid var(--header-text-color);
-  padding-right: 5rem;
+  padding-right: 2.25rem;
   height: 240%;
 }
 
@@ -48,4 +48,12 @@ a.nav-item:hover {
   list-style-type: none;
   margin-right: 2rem;
   font-weight: var(--font-medium);
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  position: relative;
+  top: 0.5rem;
+  left: 0.25rem;
 }

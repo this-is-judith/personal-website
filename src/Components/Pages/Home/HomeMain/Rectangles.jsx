@@ -63,7 +63,7 @@ function Rectangles() {
           x="120"
           y="282.5"
           textAnchor="middle"
-          fill="var(--accent-one)"
+          fill="var(--header-color)"
           fontSize="20"
           fontFamily="var(--header-font)"
           className="rect_2"
