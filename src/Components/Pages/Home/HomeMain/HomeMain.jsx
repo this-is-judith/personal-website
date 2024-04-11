@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { currentSongUrl } from "../../../../Assets/Songs/currentSong";
+import { songOfTheWeek } from "../../../../Assets/Songs/SongOfTheWeek";
 
 import "./homeMain.css";
 
@@ -33,7 +33,8 @@ const HomeMain = () => {
 
         <div className="playCircle">
           <a
-            href={currentSongUrl}
+            href={songOfTheWeek}
+            target="_blank"
             rel="noopener noreferrer"
             className="playCircle-link"
           >
@@ -46,7 +47,7 @@ const HomeMain = () => {
         <div className="socials">
           <a
             href="https://www.linkedin.com/in/judithoseitete/"
-            className="social-icon"
+            className="social-icon popUpAnimation"
             rel="noopener noreferrer"
           >
             <FaLinkedin size={22} />
@@ -54,7 +55,7 @@ const HomeMain = () => {
 
           <a
             href="https://github.com/this-is-judith"
-            className="social-icon"
+            className="social-icon popUpAnimation"
             rel="noopener noreferrer"
           >
             <FaGithub size={22} />
@@ -62,7 +63,7 @@ const HomeMain = () => {
 
           <a
             href="mailto:jao92@cornell.edu"
-            className="social-icon"
+            className="social-icon popUpAnimation"
             rel="noopener noreferrer"
           >
             <IoMdMail size={22} />
@@ -70,7 +71,7 @@ const HomeMain = () => {
 
           <a
             href="https://www.instagram.com/thisisjudith._/"
-            className="social-icon"
+            className="social-icon popUpAnimation"
             rel="noopener noreferrer"
           >
             <AiFillInstagram size={22} />
@@ -78,7 +79,7 @@ const HomeMain = () => {
 
           <a
             href="https://www.facebook.com/JudyTheSuperhero/"
-            className="social-icon"
+            className="social-icon popUpAnimation"
             rel="noopener noreferrer"
           >
             <FaFacebook size={22} />

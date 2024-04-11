@@ -27,9 +27,12 @@
   --homeResources-height: 38.5rem;
 
   /*========== Colors ==========*/
+  --accent-one: #002e50; /* navy blue */
+  --accent-two: #ec4021; /* orange */
+
   --background-color: #ffffff;
   --header-color: #f5f5f5;
-  --header-text-color: #002e50;
+  --header-text-color: var(--accent-one);
   --footer-color: #ded9d9;
   --footer-text-color: #ffffff;
   --body-text-color: #000000;

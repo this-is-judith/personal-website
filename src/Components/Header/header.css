@@ -6,7 +6,7 @@ a.nav-item:active {
 }
 
 a.nav-item:hover {
-  color: #d92862;
+  color: var(--accent-two);
 }
 
 .header-container {

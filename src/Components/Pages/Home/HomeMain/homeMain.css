@@ -65,7 +65,7 @@ a.social-icon:active {
 }
 
 a.social-icon:hover {
-  color: #d92862;
+  color: var(--accent-two);
   transform: scale(1.4);
 }
 

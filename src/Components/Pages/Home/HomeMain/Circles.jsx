@@ -15,14 +15,14 @@ const Circles = () => {
         cx="400"
         cy="480"
         r="100"
-        fill="#ec4021"
+        fill="var(--accent-two)"
         className="popUpAnimation"
       />
       <circle
         cx="280"
         cy="330"
         r="175"
-        fill="var(--header-text-color)"
+        fill="var(--accent-one)"
         className="popUpAnimation"
       />
 
