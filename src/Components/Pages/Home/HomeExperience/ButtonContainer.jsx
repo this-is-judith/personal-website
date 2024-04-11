@@ -37,7 +37,7 @@ const ButtonContainer = () => {
         rel="noopener noreferrer"
         className="button-link"
       >
-        <button style={buttonStyle}>VIEW RESUME</button>
+        <button style={buttonStyle}>CONTACT ME</button>
       </a>
     </div>
   );

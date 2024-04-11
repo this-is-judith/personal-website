@@ -7,7 +7,11 @@ const ScrollingText = () => {
   return (
     <svg width="360" height="70" viewBox="0 0 360 70">
       <path id="text-path-2" d="M0,35 H360" />
-      <text fill="var(--accent-one)" fontSize="20" fontFamily="Arial">
+      <text
+        fill="var(--accent-one)"
+        fontSize="20"
+        fontFamily="var(--header-font)"
+      >
         <textPath href="#text-path-2" startOffset="0%">
           {scriptureOfTheWeek}
           <animate

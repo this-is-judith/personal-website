@@ -31,7 +31,7 @@
 .mainBottom {
   position: relative;
   left: -1rem;
-  top: -0.1rem;
+  top: -0.5rem;
 }
 
 .font__4 {
@@ -50,6 +50,7 @@
 
 .font__3 {
   font: var(--font_3);
+  font-family: var(--header-font);
 }
 
 .font__3.bottom {

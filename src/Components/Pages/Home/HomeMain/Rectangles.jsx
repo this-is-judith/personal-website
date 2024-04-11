@@ -21,7 +21,7 @@ function Rectangles() {
         textAnchor="middle"
         fill="var(--accent-one)"
         fontSize="20"
-        fontFamily="Arial"
+        fontFamily="var(--header-font)"
       >
         SCRIPTURE OF THE WEEK
       </text>
@@ -65,7 +65,7 @@ function Rectangles() {
           textAnchor="middle"
           fill="var(--accent-one)"
           fontSize="20"
-          fontFamily="Arial"
+          fontFamily="var(--header-font)"
           className="rect_2"
         >
           JOHN 3:16
