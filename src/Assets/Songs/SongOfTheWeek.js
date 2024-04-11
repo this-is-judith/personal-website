@@ -1,1 +1,1 @@
-export const songOfTheWeek = "https://www.youtube.com/watch?v=n2N5KkqJv58";
+export const songOfTheWeek = "https://open.spotify.com/album/4C3Uj9FkCS15CM1He2eYMV";
