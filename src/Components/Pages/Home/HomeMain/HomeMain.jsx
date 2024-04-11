@@ -38,7 +38,11 @@ const HomeMain = () => {
 
         <div className="socials">
           <FaLinkedin size={22} />
-          <FaGithub size={22} />
+
+          <a href="https://github.com/this-is-judith">
+            <FaGithub size={22} />
+          </a>
+
           <IoMdMail size={22} />
           <AiFillInstagram size={22} />
           <FaFacebook size={22} />

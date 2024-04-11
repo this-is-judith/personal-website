@@ -10,28 +10,40 @@ const Header = () => {
 
         <div className="header-section-2">
           <ul className="header-content-list">
-            <li className="nav-item">
-              <Link to="/">Home</Link>
+            <li>
+              <Link to="/" className="nav-item">
+                Home
+              </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/about">About</Link>
+            <li>
+              <Link to="/about" className="nav-item">
+                About
+              </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/experience">Experience</Link>
+            <li>
+              <Link to="/experience" className="nav-item">
+                Experience
+              </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/projects">Projects</Link>
+            <li>
+              <Link to="/projects" className="nav-item">
+                Projects
+              </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/blog">Blog</Link>
+            <li>
+              <Link to="/blog" className="nav-item">
+                Blog
+              </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/resources">Resources</Link>
+            <li>
+              <Link to="/resources" className="nav-item">
+                Resources
+              </Link>
             </li>
           </ul>
         </div>
