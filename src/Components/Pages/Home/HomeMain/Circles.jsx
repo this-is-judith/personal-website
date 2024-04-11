@@ -15,11 +15,11 @@ const Circles = () => {
       <circle cx="310" cy="330" r="175" fill="#002e50" />
 
       <image
-        href={profileImage}
-        width="350"
-        height="350"
-        x="135"
-        y="155"
+        href={profileImage} // Use the imported image here
+        width="500"
+        height="500"
+        x="60"
+        y="50"
         clipPath="url(#circleView)"
       />
     </svg>
