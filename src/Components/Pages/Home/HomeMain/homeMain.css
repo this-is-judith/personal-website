@@ -60,12 +60,13 @@ a.social-icon,
 a.social-icon:visited,
 a.social-icon:active {
   text-decoration: none;
-  color: var(--header-text-color);
+  color: var(--accent-one);
   transition: color 0.3s, transform 0.3s;
 }
 
 a.social-icon:hover {
   color: var(--accent-two);
+  animation: none;
   transform: scale(1.4);
 }
 
