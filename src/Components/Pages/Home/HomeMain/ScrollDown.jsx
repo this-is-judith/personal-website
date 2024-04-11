@@ -1,5 +1,5 @@
 import React from "react";
-import { useScrollDown } from "../../../Assets/Hooks/useScrollDown";
+import { useScrollDown } from "../../../../Assets/Hooks/useScrollDown";
 import "./scrollDown.css";
 
 const ScrollDown = () => {

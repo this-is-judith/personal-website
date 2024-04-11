@@ -1,14 +1,14 @@
 import React from "react";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "../Header/Header";
+import Header from "../../Header/Header";
 import HomeMain from "./HomeMain/HomeMain";
 import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeExperience from "./HomeExperience/HomeExperience";
 import HomeProjects from "./HomeProjects/HomeProjects";
 import HomeBlog from "./HomeBlog/HomeBlog";
 import HomeResources from "./HomeResources/HomeResources";
-import Footer from "../Footer/Footer";
+import Footer from "../../Footer/Footer";
 
 import "./home.css";
 
