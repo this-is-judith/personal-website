@@ -10,7 +10,7 @@
 }
 
 .mainLeft {
-  background-color: #f5f5f5;
+  background-color: var(--background-color);
 }
 
 .leftSection {
@@ -18,7 +18,7 @@
 }
 
 .mainRight {
-  background-color: #f5f5f5;
+  background-color: var(--background-color);
   display: flex;
 }
 

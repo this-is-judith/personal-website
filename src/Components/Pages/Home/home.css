@@ -30,7 +30,7 @@
   --accent-one: #002e50; /* navy blue */
   --accent-two: #ec4021; /* orange */
 
-  --background-color: #ffffff;
+  --background-color: #f5f5f5;
   --header-color: #f5f5f5;
   --header-text-color: var(--accent-one);
   --footer-color: #ded9d9;

@@ -11,7 +11,7 @@
 
 .aboutLeft {
   flex: 1.5;
-  background-color: #dbdcdb;
+  background-color: var(--background-color);
   display: flex;
 }
 
@@ -32,7 +32,7 @@
 .aboutRight {
   flex: 1;
   display: flex;
-  background-color: #faf4f4;
+  background-color: var(--background-color);
 }
 
 .aboutRightTop,

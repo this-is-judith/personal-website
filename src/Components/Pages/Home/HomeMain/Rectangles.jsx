@@ -13,7 +13,7 @@ function Rectangles() {
         height="50"
         fill="var(--header-color)"
         stroke="var(--accent-one)"
-        strokeWidth="1.5"
+        strokeWidth="0.8"
       />
       <text
         x="380"
@@ -35,7 +35,7 @@ function Rectangles() {
         height="70"
         fill="var(--header-color)"
         stroke="var(--accent-one)"
-        stroke-width="1.5"
+        stroke-width="0.8"
       />
       <foreignObject x="200" y="275" width="360" height="70">
         <ScrollingText />
@@ -56,7 +56,7 @@ function Rectangles() {
           height="130"
           fill="var(--accent-two)"
           stroke="var(--accent-one)"
-          stroke-width="1.5"
+          stroke-width="0.8"
         />
 
         <text

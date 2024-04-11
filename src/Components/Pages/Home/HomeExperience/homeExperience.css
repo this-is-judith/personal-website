@@ -11,13 +11,13 @@
 
 .experienceLeft {
   flex: 1;
-  background-color: #faf4f4;
+  background-color: var(--background-color);
   display: flex;
 }
 
 .experienceRight {
   flex: 1;
-  background-color: #dbdcdb;
+  background-color: var(--background-color);
   display: flex;
 }
 
