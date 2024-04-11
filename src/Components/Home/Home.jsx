@@ -20,9 +20,10 @@ function Home() {
   return (
     <>
       <div class="homePage">
-        <div class="head">
+        <div class="header">
           <Header />
         </div>
+
         <main className="main">
           <div className="homeMain">
             <HomeMain />
@@ -43,6 +44,7 @@ function Home() {
             <HomeResources />
           </div>
         </main>
+
         <div className="footer">
           <Footer />
         </div>

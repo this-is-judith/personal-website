@@ -1,12 +1,4 @@
 /*=============== HOME PAGE ===============*/
-.main {
-  background: white;
-}
-
-.homeResources {
-  height: var(--homeResources-height);
-}
-
 .homeMain,
 .homeAbout,
 .homeExperience,
@@ -14,6 +6,14 @@
 .homeBlog {
   height: var(--homeSection-height);
 }
+
+.homeResources {
+  height: var(--homeResources-height);
+}
+
+/* .footer {
+  height: var(--footer-height);
+} */
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -27,6 +27,7 @@
   --homeProjects-height: 38.5rem;
   --homeBlog-height: 38.5rem;
   --homeResources-height: 38.5rem;
+  --footer-height: 15rem;
 
   /*========== Colors ==========*/
   --background-color: #ffffff;
