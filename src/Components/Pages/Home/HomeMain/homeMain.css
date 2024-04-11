@@ -24,8 +24,41 @@
 
 .mainTop {
   position: relative;
-  top: 12rem;
-  left: 10rem;
+  top: 9.5rem;
+  left: 9rem;
+}
+
+.mainBottom {
+  position: relative;
+  left: -1rem;
+  top: -0.1rem;
+}
+
+.font__4 {
+  font: var(--font_4);
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  color: var(--accent-two);
+}
+
+.font__0 {
+  font: var(--font_0);
+  margin: -10px;
+  letter-spacing: 1px;
+}
+
+.font__3 {
+  font: var(--font_3);
+}
+
+.font__3.bottom {
+  margin-top: -0.75rem;
+}
+
+.font__0,
+.font__3 {
+  color: var(--accent-one);
 }
 
 .playCircle {

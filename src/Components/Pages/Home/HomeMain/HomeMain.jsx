@@ -18,9 +18,21 @@ const HomeMain = () => {
     <div className="homeMain-container">
       <section className="mainSection mainLeft">
         <div className="leftSection mainTop">
-          <h1>Hello! My name is Judith</h1>
-          <p>I'm a Computer Engineer interested in both</p>
-          <p>hardware and software.</p>
+          <div className="font__4-container">
+            <h4 className="font__4">Hey, I'm</h4>
+          </div>
+
+          <div>
+            <h1 className="font__0">Judith</h1>
+            <h1 className="font__0">Osei-Tete</h1>
+          </div>
+
+          <div>
+            <h3 className="font__3">
+              A Computer Engineer interested in both hardware
+            </h3>
+            <h3 className="font__3 bottom">and software.</h3>
+          </div>
         </div>
 
         <div className="leftSection mainBottom">
@@ -48,6 +60,7 @@ const HomeMain = () => {
           <a
             href="https://www.linkedin.com/in/judithoseitete/"
             className="social-icon popUpAnimation"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin size={22} />
@@ -56,6 +69,7 @@ const HomeMain = () => {
           <a
             href="https://github.com/this-is-judith"
             className="social-icon popUpAnimation"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub size={22} />
@@ -64,6 +78,7 @@ const HomeMain = () => {
           <a
             href="mailto:jao92@cornell.edu"
             className="social-icon popUpAnimation"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <IoMdMail size={22} />
@@ -72,6 +87,7 @@ const HomeMain = () => {
           <a
             href="https://www.instagram.com/thisisjudith._/"
             className="social-icon popUpAnimation"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <AiFillInstagram size={22} />
@@ -80,6 +96,7 @@ const HomeMain = () => {
           <a
             href="https://www.facebook.com/JudyTheSuperhero/"
             className="social-icon popUpAnimation"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebook size={22} />
