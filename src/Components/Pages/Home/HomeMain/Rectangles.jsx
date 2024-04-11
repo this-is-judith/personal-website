@@ -4,9 +4,27 @@ import ScrollingText from "./ScrollingText";
 function Rectangles() {
   return (
     <svg width="600" height="370">
-      <foreignObject x="200" y="210" width="360" height="50">
-        <ScrollingText />
-      </foreignObject>
+      <rect
+        x="200"
+        y="210"
+        rx="5"
+        ry="5"
+        width="360"
+        height="50"
+        fill="var(--header-color)"
+        stroke="var(--accent-one)"
+        strokeWidth="0.8"
+      />
+      <text
+        x="380" // Approximately centered; adjust as needed
+        y="240" // Adjust based on the height of the rectangle and font size
+        textAnchor="middle" // Centers the text horizontally around the x coordinate
+        fill="var(--header-text-color)"
+        fontSize="20" // Adjust as needed
+        fontFamily="Arial" // Your choice of font
+      >
+        Rectangle 1
+      </text>
 
       <rect
         x="200"
@@ -16,19 +34,22 @@ function Rectangles() {
         width="360"
         height="70"
         fill="var(--header-color)"
-        stroke="var(--header-text-color)"
+        stroke="var(--accent-one)"
         stroke-width="0.8"
       />
-      <text
+      {/* <text
         x="380"
-        y="305" // Adjust this based on the rectangle's position and height
+        y="305"
         textAnchor="middle"
-        fill="var(--header-text-color)"
+        fill="var(--accent-one)"
         fontSize="20"
         fontFamily="Arial"
       >
         Rectangle 2
-      </text>
+      </text> */}
+      <foreignObject x="200" y="275" width="360" height="70">
+        <ScrollingText />
+      </foreignObject>
 
       <rect
         x="50"
@@ -38,14 +59,14 @@ function Rectangles() {
         width="140"
         height="130"
         fill="var(--header-color)"
-        stroke="var(--header-text-color)"
+        stroke="var(--accent-one)"
         stroke-width="0.8"
       />
       <text
-        x="120" // Center of the smaller rectangle
-        y="275" // Vertically more or less in the middle of the rectangle
+        x="120"
+        y="275"
         textAnchor="middle"
-        fill="var(--header-text-color)"
+        fill="var(--accent-one)"
         fontSize="20"
         fontFamily="Arial"
       >
