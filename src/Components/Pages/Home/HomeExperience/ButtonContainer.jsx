@@ -1,4 +1,5 @@
 import React from "react";
+import "./buttonContainer.css";
 
 const ButtonContainer = () => {
   const containerStyle = {
@@ -21,8 +22,23 @@ const ButtonContainer = () => {
 
   return (
     <div style={containerStyle}>
-      <button style={buttonStyle}>LEARN MORE</button>
-      <button style={buttonStyle}>VIEW RESUME</button>
+      <a
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button-link"
+      >
+        <button style={buttonStyle}>LEARN MORE</button>
+      </a>
+
+      <a
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button-link"
+      >
+        <button style={buttonStyle}>VIEW RESUME</button>
+      </a>
     </div>
   );
 };
