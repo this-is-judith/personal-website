@@ -17,7 +17,7 @@ const HomeMain = () => {
     <div className="homeMain-container">
       <section className="mainSection mainLeft">
         <div className="leftSection mainTop">
-          <p>Hello! My name is Judith</p>
+          <h1>Hello! My name is Judith</h1>
           <p>I'm a Computer Engineer interested in both</p>
           <p>hardware and software.</p>
         </div>

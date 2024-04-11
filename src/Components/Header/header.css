@@ -19,7 +19,7 @@ a.nav-item:hover {
   top: 1rem;
   z-index: var(--z-fixed);
   margin-left: 2.5%;
-  border: 0.05rem solid #636363;
+  border: 0.05rem solid var(--header-text-color);
 }
 
 .header-bar {
@@ -37,7 +37,7 @@ a.nav-item:hover {
   font-weight: var(--font-semi-bold);
   margin-left: 1rem;
   font-family: var(--header-font);
-  border-right: 0.08rem solid #636363;
+  border-right: 0.08rem solid var(--header-text-color);
   padding-right: 5rem;
   height: 240%;
 }
