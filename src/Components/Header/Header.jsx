@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/Photos/logo.png";
+import { useScrollToTop } from "../../Assets/Hooks/useScrollToTop";
+
 import "./header.css";
 
 const Header = () => {
+  const handleScrollToTop = useScrollToTop();
+
   return (
     <header className="header-container">
       <nav className="header-bar">
         <div className="header-section-1">
-          <Link to="/">
+          <Link to="/" onClick={handleScrollToTop}>
             <img className="logo" src={logo} alt="logo"></img>
           </Link>
         </div>
