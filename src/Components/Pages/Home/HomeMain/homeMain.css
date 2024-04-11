@@ -32,7 +32,18 @@
   position: absolute;
   bottom: 12.5rem;
   left: 63.75rem;
+}
+
+a.playCircle-link,
+a.playCircle-link:visited,
+a.playCircle-link:active {
+  text-decoration: none;
   color: #f5f5f5;
+  transition: color 0.3s;
+}
+
+a.playCircle-link:hover {
+  color: var(--header-text-color);
 }
 
 .socials {
@@ -49,7 +60,7 @@ a.social-icon,
 a.social-icon:visited,
 a.social-icon:active {
   text-decoration: none;
-  color: #002e50;
+  color: var(--header-text-color);
   transition: color 0.3s, transform 0.3s;
 }
 

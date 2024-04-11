@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { currentSongUrl } from "../../../../Assets/Songs/currentSong";
 
 import "./homeMain.css";
 
@@ -31,7 +32,13 @@ const HomeMain = () => {
         <Circles />
 
         <div className="playCircle">
-          <FaPlayCircle size={30} className="popUpAnimation playIcon" />
+          <a
+            href={currentSongUrl}
+            rel="noopener noreferrer"
+            className="playCircle-link"
+          >
+            <FaPlayCircle size={30} className="popUpAnimation playIcon" />
+          </a>
         </div>
 
         <ScrollDown />
@@ -40,21 +47,31 @@ const HomeMain = () => {
           <a
             href="https://www.linkedin.com/in/judithoseitete/"
             className="social-icon"
+            rel="noopener noreferrer"
           >
             <FaLinkedin size={22} />
           </a>
 
-          <a href="https://github.com/this-is-judith" className="social-icon">
+          <a
+            href="https://github.com/this-is-judith"
+            className="social-icon"
+            rel="noopener noreferrer"
+          >
             <FaGithub size={22} />
           </a>
 
-          <a href="mailto:jao92@cornell.edu" className="social-icon">
+          <a
+            href="mailto:jao92@cornell.edu"
+            className="social-icon"
+            rel="noopener noreferrer"
+          >
             <IoMdMail size={22} />
           </a>
 
           <a
             href="https://www.instagram.com/thisisjudith._/"
             className="social-icon"
+            rel="noopener noreferrer"
           >
             <AiFillInstagram size={22} />
           </a>
@@ -62,6 +79,7 @@ const HomeMain = () => {
           <a
             href="https://www.facebook.com/JudyTheSuperhero/"
             className="social-icon"
+            rel="noopener noreferrer"
           >
             <FaFacebook size={22} />
           </a>
