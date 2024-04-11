@@ -1,6 +1,6 @@
 import React from "react";
 
-import profileImage from "../../../../Assets/Photos/profileImage-old.png";
+import profileImage from "../../../../Assets/Photos/profileImage.png";
 
 const Circles = () => {
   return (
