@@ -1,7 +1,6 @@
 import React from "react";
 import LeftRectangles from "../HomeAbout/LeftRectangles";
 import Laptop from "./Laptop";
-import IPhone from "./IPhone";
 
 import "./homeBlog.css";
 
@@ -26,9 +25,6 @@ function HomeBlog() {
       <section className="blogSection blogRight">
         <div className="blogLaptop">
           <Laptop />
-        </div>
-        <div className="blogIPhone">
-          <IPhone />
         </div>
       </section>
     </div>

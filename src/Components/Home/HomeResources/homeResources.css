@@ -1,40 +1,40 @@
-.homeBlog-container {
+.homeResources-container {
   display: flex;
 }
 
-.blogSection {
+.resourcesSection {
   padding-top: 6.5rem;
   display: flex;
-  height: var(--homeBlog-height);
+  height: var(--homeResources-height);
   flex-direction: column;
 }
 
-.blogLeft {
+.resourcesLeft {
   flex: 1;
-  background-color: #faf4f4;
+  background-color: #dbdcdb;
   display: flex;
 }
 
-.blogRight {
+.resourcesRight {
   flex: 1;
-  background-color: #dbdcdb;
+  background-color: #faf4f4;
 }
 
-.blogLeftTop {
+.resourcesLeftTop {
   flex: 1;
   text-align: center;
 }
 
-.blogLeftMiddle {
+.resourcesLeftMiddle {
   flex: 2;
   text-align: center;
 }
 
-.blogLeftBottom {
+.resourcesLeftBottom {
   flex: 1;
 }
 
-.blogLaptop {
+.resourcesIPhone {
   position: relative;
   top: 5rem;
   right: 0rem;

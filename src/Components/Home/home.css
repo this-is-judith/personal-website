@@ -4,10 +4,7 @@
 }
 
 .homeResources {
-  height: var(--section-height);
-  text-align: center;
-  border-style: solid;
-  border-color: black;
+  height: var(--homeResources-height);
 }
 
 .homeMain,
@@ -28,7 +25,8 @@
   --homeAbout-height: 38.5rem;
   --homeExperience-height: 38.5rem;
   --homeProjects-height: 38.5rem;
-  --section-height: 35rem;
+  --homeBlog-height: 38.5rem;
+  --homeResources-height: 38.5rem;
 
   /*========== Colors ==========*/
   --background-color: #ffffff;
