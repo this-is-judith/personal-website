@@ -1,0 +1,29 @@
+.iphone {
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  border-radius: 25px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.iphone-notch {
+  width: 60px;
+  height: 10px;
+  background-color: grey;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.iphone-screen {
+  width: 180px;
+  height: 380px;
+  background-color: rgb(199, 198, 198);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 20px;
+}

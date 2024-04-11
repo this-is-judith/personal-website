@@ -34,34 +34,14 @@
   flex: 1;
 }
 
-.iphone {
-  width: 200px;
-  height: 400px;
-  background-color: #666;
-  border-radius: 25px;
-  box-shadow: 0 0 20px #999;
-  margin: 50px auto;
+.blogLaptop {
   position: relative;
-  transform: perspective(800px) rotateY(20deg);
+  top: -1rem;
+  right: 2rem;
 }
 
-.iphone-notch {
-  width: 60px;
-  height: 10px;
-  background-color: #333;
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-}
-
-.iphone-screen {
-  width: 180px;
-  height: 380px;
-  background-color: #000;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 20px;
+.blogIPhone {
+  position: relative;
+  top: -20rem;
+  right: -8rem;
 }

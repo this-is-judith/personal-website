@@ -1,0 +1,30 @@
+.laptop {
+  perspective: 160px;
+  width: 450px;
+  height: 350px;
+  margin: 50px auto;
+}
+
+.screen {
+  height: 15rem;
+  background-color: #666;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.75rem solid #333;
+}
+
+.keyboard {
+  width: calc(100% - 4px);
+  height: 30px;
+  background-color: #999;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(70deg);
+  transform-origin: top;
+  border: 0.15rem solid #333;
+  border-top: none;
+}
