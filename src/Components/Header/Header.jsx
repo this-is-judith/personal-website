@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
@@ -9,17 +10,29 @@ const Header = () => {
 
         <div className="header-section-2">
           <ul className="header-content-list">
-            <li className="nav-item">Home</li>
+            <li className="nav-item">
+              <Link to="/">Home</Link>
+            </li>
 
-            <li className="nav-item">About</li>
+            <li className="nav-item">
+              <Link to="/about">About</Link>
+            </li>
 
-            <li className="nav-item">Experience</li>
+            <li className="nav-item">
+              <Link to="/experience">Experience</Link>
+            </li>
 
-            <li className="nav-item">Projects</li>
+            <li className="nav-item">
+              <Link to="/projects">Projects</Link>
+            </li>
 
-            <li className="nav-item">Blog</li>
+            <li className="nav-item">
+              <Link to="/blog">Blog</Link>
+            </li>
 
-            <li className="nav-item">Resources</li>
+            <li className="nav-item">
+              <Link to="/resources">Resources</Link>
+            </li>
           </ul>
         </div>
       </nav>
