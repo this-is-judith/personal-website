@@ -27,6 +27,9 @@
 
 .aboutLeftBottom {
   flex: 1;
+  position: relative;
+  top: 2rem;
+  left: 0rem;
 }
 
 .aboutRight {

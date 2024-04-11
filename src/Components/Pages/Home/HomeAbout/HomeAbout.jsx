@@ -2,6 +2,7 @@ import React from "react";
 
 import RightRectangle from "./RightRectangle";
 import LeftRectangles from "./LeftRectangles";
+import ButtonContainer from "../HomeExperience/ButtonContainer";
 
 import "./homeAbout.css";
 
@@ -19,7 +20,7 @@ const HomeAbout = () => {
         </div>
 
         <div className="aboutLeftBottom">
-          <LeftRectangles />
+          <ButtonContainer />
         </div>
       </section>
 
