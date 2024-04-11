@@ -2,7 +2,7 @@ a.nav-item,
 a.nav-item:visited,
 a.nav-item:active {
   text-decoration: none;
-  color: black;
+  color: var(--header-text-color);
 }
 
 a.nav-item:hover {

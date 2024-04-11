@@ -31,7 +31,7 @@ const HomeMain = () => {
         <Circles />
 
         <div className="playCircle">
-          <FaPlayCircle size={30} />
+          <FaPlayCircle size={30} className="popUpAnimation playIcon" />
         </div>
 
         <ScrollDown />
