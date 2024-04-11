@@ -50,7 +50,7 @@ const HomeMain = () => {
             rel="noopener noreferrer"
             className="playCircle-link"
           >
-            <FaPlayCircle size={30} className="popUpAnimation playIcon" />
+            <FaPlayCircle size={30} className="playIcon" />
           </a>
         </div>
 
@@ -59,47 +59,47 @@ const HomeMain = () => {
         <div className="socials">
           <a
             href="https://www.linkedin.com/in/judithoseitete/"
-            className="social-icon popUpAnimation"
+            className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={22} />
+            <FaLinkedin size={24} />
           </a>
 
           <a
             href="https://github.com/this-is-judith"
-            className="social-icon popUpAnimation"
+            className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={22} />
+            <FaGithub size={24} />
           </a>
 
           <a
             href="mailto:jao92@cornell.edu"
-            className="social-icon popUpAnimation"
+            className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoMdMail size={22} />
+            <IoMdMail size={24} />
           </a>
 
           <a
             href="https://www.instagram.com/thisisjudith._/"
-            className="social-icon popUpAnimation"
+            className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillInstagram size={22} />
+            <AiFillInstagram size={24} />
           </a>
 
           <a
             href="https://www.facebook.com/JudyTheSuperhero/"
-            className="social-icon popUpAnimation"
+            className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook size={22} />
+            <FaFacebook size={24} />
           </a>
         </div>
       </section>

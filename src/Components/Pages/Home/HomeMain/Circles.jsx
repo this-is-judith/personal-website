@@ -11,20 +11,8 @@ const Circles = () => {
         </clipPath>
       </defs>
 
-      <circle
-        cx="400"
-        cy="480"
-        r="100"
-        fill="var(--accent-two)"
-        className="popUpAnimation"
-      />
-      <circle
-        cx="280"
-        cy="330"
-        r="175"
-        fill="var(--accent-one)"
-        className="popUpAnimation"
-      />
+      <circle cx="400" cy="480" r="100" fill="var(--accent-two)" />
+      <circle cx="280" cy="330" r="175" fill="var(--accent-one)" />
 
       <image
         href={profileImage}
@@ -33,7 +21,6 @@ const Circles = () => {
         x="30"
         y="50"
         clipPath="url(#circleView)"
-        className="popUpAnimation"
       />
     </svg>
   );

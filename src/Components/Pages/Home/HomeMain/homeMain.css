@@ -102,17 +102,3 @@ a.social-icon:hover {
   animation: none;
   transform: scale(1.4);
 }
-
-@keyframes popUp {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.popUpAnimation {
-  animation: popUp 1s ease-out forwards;
-  transform-origin: center;
-}
