@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Experience() {
-  return <h1>Welcome to the Experience Page!</h1>;
+  return <h1>Coming Soon</h1>;
 }
 
 export default Experience;
