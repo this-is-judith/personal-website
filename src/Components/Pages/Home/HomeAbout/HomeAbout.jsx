@@ -33,7 +33,7 @@ const HomeAbout = () => {
           </div>
 
           <div className="button-2">
-            <Button message="CONTACT ME" />
+            <Button message="CONTACT ME" /> {/* TODO: add url for contact */}
           </div>
         </div>
       </section>

@@ -23,12 +23,10 @@
 
 .experienceLeftTop {
   flex: 1;
-  text-align: center;
 }
 
 .experienceLeftMiddle {
   flex: 2;
-  text-align: center;
 }
 
 .experienceLeftBottom {
@@ -37,7 +35,6 @@
 
 .experienceRightTop {
   flex: 1;
-  text-align: center;
 }
 
 .experienceRightBottom {
@@ -52,4 +49,26 @@
 
 .experienceRightBottomBottom {
   flex: 1;
+}
+
+.numberExperience {
+  font: var(--number-font);
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  color: var(--accent-two);
+}
+
+.myExperience {
+  font-size: 4.5rem;
+  position: relative;
+  left: 14rem;
+  top: -4rem;
+}
+
+.myExperienceAnswer {
+  font-size: 1.25rem;
+  position: relative;
+  left: 14rem;
+  top: -1rem;
 }
