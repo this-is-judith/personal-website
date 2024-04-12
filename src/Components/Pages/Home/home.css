@@ -43,6 +43,7 @@
   --font_4: normal normal bold 3rem roboto-thin, roboto, sans-serif;
   --font_0: normal normal bold 6rem roboto-bold, roboto, sans-serif;
   --font_3: normal normal lighter 1.1rem roboto-bold, roboto, sans-serif;
+  --number-font: normal normal bold 4rem "Poppins", sans-serif;
 
   /*========= Font weight ==========*/
   --font-normal: 450;
