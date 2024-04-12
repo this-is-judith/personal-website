@@ -10,17 +10,17 @@ function HomeResources() {
       <div className="resourcesSection resourcesLeft">
         <div className="resourcesLeftTop">
           <div>
-            <h4 className="font__4 numberBlog">05.</h4>
+            <h4 className="font__4 numberResources ">05.</h4>
           </div>
 
           <div>
-            <h1 className="font__0 myBlog">Helpful</h1>
-            <h1 className="font__0 myBlog">Resources</h1>
+            <h1 className="font__0 myResources ">Helpful</h1>
+            <h1 className="font__0 myResources ">Resources</h1>
           </div>
         </div>
 
         <div className="resourcesLeftMiddle">
-          <h3 className="font__3 myBlogAnswer">
+          <h3 className="font__3 myResourcesAnswer">
             <p>Home to resources and information I</p>
             <p>have collected over the years.</p>
           </h3>

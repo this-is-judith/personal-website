@@ -37,3 +37,25 @@
   top: 5rem;
   right: 0rem;
 }
+
+.numberResources {
+  font: var(--number-font);
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  color: var(--accent-two);
+}
+
+.myResources {
+  font-size: 4.5rem;
+  position: relative;
+  left: 15rem;
+  top: -4rem;
+}
+
+.myResourcesAnswer {
+  font-size: 1.25rem;
+  position: relative;
+  left: 14rem;
+  top: -1rem;
+}
