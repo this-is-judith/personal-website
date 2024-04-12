@@ -3,9 +3,8 @@
   text-align: center;
   width: 10rem;
   height: 3rem;
-  background-color: var(--accent-one);
+  background-color: var(--accent-two);
   color: var(--background-color);
-  border: var(--accent-one);
   border-radius: 25px;
 }
 
