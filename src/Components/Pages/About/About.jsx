@@ -12,7 +12,7 @@ function About() {
   }
 
   return (
-    <h1>Coming Soon</h1>
+    <h1>About Coming Soon</h1>
     // <div className="aboutPage">
     //   {/* <div class="header">
     //     <Header />

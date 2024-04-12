@@ -11,24 +11,22 @@
 
 .projectsLeft {
   flex: 1;
-  background-color: #dbdcdb;
+  background-color: var(--background-color);
   display: flex;
 }
 
 .projectsRight {
   flex: 1;
-  background-color: #faf4f4;
+  background-color: var(--background-color);
   display: flex;
 }
 
 .projectsLeftTop {
   flex: 1;
-  text-align: center;
 }
 
 .projectsLeftMiddle {
   flex: 2;
-  text-align: center;
 }
 
 .projectsLeftBottom {
@@ -37,7 +35,6 @@
 
 .projectsRightTop {
   flex: 1;
-  text-align: center;
 }
 
 .projectsRightBottom {
@@ -50,4 +47,26 @@
 .projectsRightBottomMiddle,
 .projectsRightBottomBottom {
   flex: 1;
+}
+
+.numberProjects {
+  font: var(--number-font);
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  color: var(--accent-two);
+}
+
+.myProjects {
+  font-size: 5rem;
+  position: relative;
+  left: 14rem;
+  top: -4rem;
+}
+
+.myProjectsAnswer {
+  font-size: 1.25rem;
+  position: relative;
+  left: 14rem;
+  top: -1rem;
 }

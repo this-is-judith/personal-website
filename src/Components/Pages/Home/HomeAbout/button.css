@@ -20,9 +20,9 @@ a .button-text {
 }
 
 a:hover .button-container {
-  background-color: var(--accent-two);
+  background-color: var(--accent-one);
 }
 
 a:hover .button-text {
-  color: var(--accent-one);
+  color: var(--accent-two);
 }

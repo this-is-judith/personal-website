@@ -30,7 +30,7 @@ function HomeExperience() {
 
         <div className="experienceLeftBottom">
           <div className="button-1">
-            <Button message="LEARN MORE" url="/about" />
+            <Button message="LEARN MORE" url="/experience" />
           </div>
 
           <div className="button-2">
@@ -46,7 +46,7 @@ function HomeExperience() {
 
         <div className="experienceRightBottom">
           <div className="experienceRightBottomTop">
-            <RightTopRectangles />
+            <RightTopRectangles /> {/* TODO: remove rectangles */}
           </div>
           <div className="experienceRightBottomBottom">
             <RightBottomRectangles />

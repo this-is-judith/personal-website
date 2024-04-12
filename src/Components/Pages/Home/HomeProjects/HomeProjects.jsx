@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../HomeAbout/Button";
 import LeftRectangles from "../HomeAbout/LeftRectangles";
 
 import "./homeProjects.css";
@@ -8,16 +9,32 @@ function HomeProjects() {
     <div className="homeProjects-container">
       <section className="projectsSection projectsLeft">
         <div className="projectsLeftTop">
-          <p>03.</p>
-          <p>My Projects</p>
+          <div>
+            <h4 className="font__4 numberProjects">03.</h4>
+          </div>
+
+          <div>
+            <h1 className="font__0 myProjects">Personal</h1>
+            <h1 className="font__0 myProjects">Projects</h1>
+          </div>
         </div>
 
         <div className="projectsLeftMiddle">
-          I've worked on a couple of things
+          <h3 className="font__3 myProjectsAnswer">
+            <p>I have worked on several projects both</p>
+            <p>individually and as part of a team.</p>
+          </h3>
         </div>
 
         <div className="projectsLeftBottom">
-          <LeftRectangles />
+          <div className="button-1">
+            <Button message="LEARN MORE" url="/projects" />
+          </div>
+
+          <div className="button-2">
+            <Button message="PITCH IDEA" />
+            {/* TODO: add url for suggest project */}
+          </div>
         </div>
       </section>
 
