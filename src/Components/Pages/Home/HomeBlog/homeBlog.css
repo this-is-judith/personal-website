@@ -11,23 +11,21 @@
 
 .blogLeft {
   flex: 1;
-  background-color: #faf4f4;
+  background-color: var(--background-color);
   display: flex;
 }
 
 .blogRight {
   flex: 1;
-  background-color: #dbdcdb;
+  background-color: var(--background-color);
 }
 
 .blogLeftTop {
   flex: 1;
-  text-align: center;
 }
 
 .blogLeftMiddle {
   flex: 2;
-  text-align: center;
 }
 
 .blogLeftBottom {
@@ -38,4 +36,26 @@
   position: relative;
   top: 5rem;
   right: 0rem;
+}
+
+.numberBlog {
+  font: var(--number-font);
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  color: var(--accent-two);
+}
+
+.myBlog {
+  font-size: 4.5rem;
+  position: relative;
+  left: 16rem;
+  top: -4rem;
+}
+
+.myBlogAnswer {
+  font-size: 1.25rem;
+  position: relative;
+  left: 14rem;
+  top: -1rem;
 }

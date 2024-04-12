@@ -1,5 +1,4 @@
 import React from "react";
-import LeftRectangles from "../HomeAbout/LeftRectangles";
 import RightTopRectangles from "./RightTopRectangles";
 import RightBottomRectangles from "./RightBottomRectangles";
 import Button from "../HomeAbout/Button";
