@@ -1,0 +1,29 @@
+.button-container {
+  display: inline-block;
+  text-align: center;
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--accent-one);
+  color: var(--background-color);
+  border: var(--accent-one);
+  border-radius: 25px;
+}
+
+.button-text {
+  font-family: var(--header-font);
+  font-size: 1.1rem;
+  position: relative;
+  top: 0.8rem;
+}
+
+a .button-text {
+  text-decoration: none;
+}
+
+a:hover .button-container {
+  background-color: var(--accent-two);
+}
+
+a:hover .button-text {
+  color: var(--accent-one);
+}

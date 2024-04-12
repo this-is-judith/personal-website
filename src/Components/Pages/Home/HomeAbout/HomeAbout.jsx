@@ -1,7 +1,7 @@
 import React from "react";
 
 import RightRectangle from "./RightRectangle";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 import "./homeAbout.css";
 
@@ -28,12 +28,13 @@ const HomeAbout = () => {
         </div>
 
         <div className="aboutLeftBottom">
-          {/* <ButtonContainer /> */}
-          <Link to="/about">
-            <div className="button-container">
-              <text className="button-text">LEARN MORE</text>
-            </div>
-          </Link>
+          <div className="button-1">
+            <Button message="LEARN MORE" url="/about" />
+          </div>
+
+          <div className="button-2">
+            <Button message="CONTACT ME" />
+          </div>
         </div>
       </section>
 

@@ -61,29 +61,17 @@
   font-size: 1.25rem;
   position: relative;
   left: 12rem;
-  top: -1.5rem;
+  top: -1rem;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  width: 10rem;
-  height: 3rem;
-  background-color: var(--accent-one);
-  color: var(--background-color);
-  border: var(--accent-one);
-  border-radius: 25px;
-}
-
-.button-text {
-  font-family: var(--header-font);
-  font-size: 1.1rem;
+.button-1 {
   position: relative;
-  top: 0.8rem;
+  left: 12rem;
+  top: -4rem;
 }
 
-a.button-text,
-a.button-text:active,
-a.button-text:visited {
-  text-decoration: none;
+.button-2 {
+  position: relative;
+  left: 26rem;
+  top: -7rem;
 }
