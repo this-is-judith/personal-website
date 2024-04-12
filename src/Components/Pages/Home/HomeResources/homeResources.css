@@ -11,23 +11,21 @@
 
 .resourcesLeft {
   flex: 1;
-  background-color: #dbdcdb;
+  background-color: var(--background-color);
   display: flex;
 }
 
 .resourcesRight {
   flex: 1;
-  background-color: #faf4f4;
+  background-color: var(--background-color);
 }
 
 .resourcesLeftTop {
   flex: 1;
-  text-align: center;
 }
 
 .resourcesLeftMiddle {
   flex: 2;
-  text-align: center;
 }
 
 .resourcesLeftBottom {
