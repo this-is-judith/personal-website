@@ -7,6 +7,7 @@
 
 .footerSection {
   flex: 1;
+  color: var(--footer-text-color);
 }
 
 .section1,
