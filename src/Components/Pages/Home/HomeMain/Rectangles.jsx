@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollingText from "./ScrollingText";
+import "./rectangles.css";
 
 function Rectangles() {
   return (
@@ -41,24 +42,22 @@ function Rectangles() {
         <ScrollingText />
       </foreignObject>
 
+      <rect
+        x="50"
+        y="210"
+        rx="5"
+        ry="5"
+        width="140"
+        height="130"
+        fill="var(--accent-two)"
+        stroke="var(--accent-one)"
+        stroke-width="0.8"
+      />
       <a
         href="https://www.bible.com/bible/111/JHN.3.NIV"
         target="_blank"
         rel="noopener noreferrer"
-        className="bibleAppLink"
       >
-        <rect
-          x="50"
-          y="210"
-          rx="5"
-          ry="5"
-          width="140"
-          height="130"
-          fill="var(--accent-two)"
-          stroke="var(--accent-one)"
-          stroke-width="0.8"
-        />
-
         <text
           x="120"
           y="282.5"
@@ -66,7 +65,7 @@ function Rectangles() {
           fill="var(--header-color)"
           fontSize="20"
           fontFamily="var(--header-font)"
-          className="rect_2"
+          className="bible-app-text"
         >
           JOHN 3:16
         </text>
