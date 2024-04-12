@@ -20,7 +20,7 @@ const Header = () => {
         <div className="header-section-2">
           <ul className="header-content-list">
             <li>
-              <Link to="/" className="nav-item">
+              <Link to="/" className="nav-item" onClick={handleScrollToTop}>
                 Home
               </Link>
             </li>

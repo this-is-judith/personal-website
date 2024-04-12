@@ -17,41 +17,43 @@ function Home() {
   }
 
   return (
-    <div class="homePage">
-      <div class="header">
-        <Header />
+    <>
+      <div class="homePage">
+        <div class="header">
+          <Header />
+        </div>
+
+        <main className="main">
+          <div className="homeMain">
+            <HomeMain />
+          </div>
+
+          <div className="homeAbout">
+            <HomeAbout />
+          </div>
+
+          <div className="homeExperience">
+            <HomeExperience />
+          </div>
+
+          <div className="homeProjects">
+            <HomeProjects />
+          </div>
+
+          <div className="homeBlog">
+            <HomeBlog />
+          </div>
+
+          <div className="homeResources">
+            <HomeResources />
+          </div>
+        </main>
+
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
-
-      <main className="main">
-        <div className="homeMain">
-          <HomeMain />
-        </div>
-
-        <div className="homeAbout">
-          <HomeAbout />
-        </div>
-
-        <div className="homeExperience">
-          <HomeExperience />
-        </div>
-
-        <div className="homeProjects">
-          <HomeProjects />
-        </div>
-
-        <div className="homeBlog">
-          <HomeBlog />
-        </div>
-
-        <div className="homeResources">
-          <HomeResources />
-        </div>
-      </main>
-
-      <div className="footer">
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 }
 
