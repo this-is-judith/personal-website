@@ -2,35 +2,35 @@
   display: flex;
 }
 
-.aboutSection {
+.about-section {
   padding-top: 6.5rem;
   display: flex;
   height: var(--homeAbout-height);
   flex-direction: column;
 }
 
-.aboutLeft {
+.about-left {
   flex: 1.5;
   background-color: var(--background-color);
   display: flex;
 }
 
-.aboutLeftTop {
+.about-left-top {
   flex: 1;
 }
 
-.aboutLeftMiddle {
+.about-left-middle {
   flex: 2;
 }
 
-.aboutLeftBottom {
+.about-left-bottom {
   flex: 1;
   position: relative;
   top: 1rem;
   left: 0rem;
 }
 
-.aboutRight {
+.about-right {
   flex: 1;
   display: flex;
   background-color: var(--background-color);

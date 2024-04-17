@@ -9,8 +9,8 @@ import "./homeAbout.css";
 const HomeAbout = () => {
   return (
     <div className="homeAbout-container">
-      <section className="aboutSection aboutLeft">
-        <div className="aboutLeftTop">
+      <section className="about-section about-left">
+        <div className="about-left-top">
           <div>
             <h4 className="font__4 number">01.</h4>
           </div>
@@ -21,14 +21,14 @@ const HomeAbout = () => {
           </div>
         </div>
 
-        <div className="aboutLeftMiddle">
+        <div className="about-left-middle">
           <h3 className="font__3 whoAmIAnswer">
             <p>A child of God, an engineering student, a friend.</p>
             <p>I'm a person of many interests and hobbies.</p>
           </h3>
         </div>
 
-        <div className="aboutLeftBottom">
+        <div className="about-left-bottom">
           <div className="button-1">
             <Button message="LEARN MORE" url="/about" />
           </div>
@@ -39,7 +39,7 @@ const HomeAbout = () => {
         </div>
       </section>
 
-      <section className="aboutSection aboutRight">
+      <section className="about-section about-right">
         <div className="aboutRightTop">
           <RightRectangle className="faithReactangle" />
           <FaCross className="cross" size={"3rem"} />
