@@ -1,0 +1,25 @@
+.second-button-container {
+  display: inline-block;
+  text-align: center;
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--background-color);
+  color: var(--accent-two);
+  border-radius: 25px;
+  border: 0.01rem solid var(--accent-two);
+}
+
+.second-button-text {
+  font-family: var(--header-font);
+  font-size: 1.1rem;
+  position: relative;
+  top: 0.8rem;
+}
+
+a:hover .second-button-container {
+  background-color: var(--accent-two);
+}
+
+a:hover .second-button-text {
+  color: var(--background-color);
+}

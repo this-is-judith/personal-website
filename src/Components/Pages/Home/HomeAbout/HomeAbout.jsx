@@ -37,7 +37,8 @@ const HomeAbout = () => {
           </div>
 
           <div className="button-2">
-            <Button message="CONTACT ME" /> {/* TODO: add url for contact */}
+            {/* <Button message="CONTACT ME" /> TODO: add url for contact */}
+            <Button message="CONTACT ME" />
           </div>
         </div>
       </section>
