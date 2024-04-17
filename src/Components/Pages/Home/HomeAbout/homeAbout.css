@@ -36,9 +36,9 @@
   background-color: var(--background-color);
 }
 
-.aboutRightTop,
-.aboutRightMiddle,
-.aboutRightBottom {
+.about-right-top,
+.about-right-middle,
+.about-right-bottom {
   flex: 1;
 }
 
@@ -50,14 +50,14 @@
   color: var(--accent-two);
 }
 
-.whoAmI {
+.who-am-I {
   font-size: 5.5rem;
   position: relative;
   left: 16rem;
   top: -4rem;
 }
 
-.whoAmIAnswer {
+.who-am-I-answer {
   font-size: 1.25rem;
   position: relative;
   left: 12rem;
@@ -76,7 +76,9 @@
   top: -8rem;
 }
 
-.cross {
+.cross,
+.cap,
+.book {
   position: relative;
   right: 12.4rem;
   top: -8rem;
