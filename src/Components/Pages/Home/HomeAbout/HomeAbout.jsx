@@ -45,14 +45,17 @@ const HomeAbout = () => {
         <div className="about-right-top">
           <RightRectangle className="faith-rectangle" />
           <FaCross className="cross" size={"3rem"} />
+          <h1 className="font__0 faith">FAITH</h1>
         </div>
         <div className="about-right-middle">
           <RightRectangle className="education-rectangle" />
           <FaGraduationCap className="cap" size={"3rem"} />
+          <h1 className="font__0 education">EDUCATION</h1>
         </div>
         <div className="about-right-bottom">
           <RightRectangle className="hobbies-rectangle" />
           <FaBookOpen className="book" size={"3rem"} />
+          <h1 className="font__0 hobbies">HOBBIES</h1>
         </div>
       </section>
     </div>
