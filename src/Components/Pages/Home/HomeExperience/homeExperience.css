@@ -91,29 +91,29 @@
 .skills-container {
   display: flex;
   background-color: var(--background-color-);
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .skill-section {
   flex: 1;
   background-color: var(--background-color-);
   text-align: center;
-}
-
-.skill-left {
-  border-right: 0.125rem solid var(--accent-one);
+  margin: 1rem;
+  border: 0.1rem solid var(--accent-one);
+  border-radius: 1rem;
 }
 
 .skill-section h2 {
+  padding-bottom: 1rem;
   color: var(--accent-one);
-  border-bottom: 0.125rem solid var(--accent-one);
+  border-bottom: 0.1rem dashed var(--accent-one);
 }
 
 .skill-section ul {
   list-style-type: none;
   padding: 0rem;
-  margin-top: -0.8rem;
+  margin-top: -0.4rem;
 }
 
 .skill-section li {
