@@ -49,6 +49,38 @@
   flex-direction: column;
 }
 
+/* Skills at a glance */
+.skills-container {
+  display: flex;
+  background-color: var(--background-color-);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.skill-section {
+  flex: 1;
+  background-color: var(--background-color-);
+  text-align: center;
+  margin: 1rem;
+  border: 0.1rem solid var(--accent-one);
+  border-radius: 1rem;
+}
+
+.skill-section h2 {
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem dashed var(--accent-one);
+}
+
+.skill-section ul {
+  list-style-type: none;
+  padding: 0rem;
+  margin-top: -0.4rem;
+}
+
+.skill-section li {
+  padding: 0.4rem;
+}
+
 /* Text and element styles */
 .number-experience {
   font: var(--number-font);
@@ -93,34 +125,41 @@
   padding-right: 8rem;
 }
 
-/* Skills at a glance */
-.skills-container {
-  display: flex;
-  background-color: var(--background-color-);
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* Magnifying glass animation */
+@keyframes moveEight {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0); /* Start and end at normal scale */
+  }
+  12.5% {
+    transform: scale(2) translate(0, 0); /* Scaled up at the center */
+  }
+  25% {
+    transform: scale(2) translate(-8rem, 6rem); /* Move to the bottom right */
+  }
+  37.5% {
+    transform: scale(2) translate(-10rem, 9rem); /* Move further right, halfway up */
+  }
+  50% {
+    transform: scale(2) translate(-8rem, 13rem); /* Move to top right */
+  }
+  62.5% {
+    transform: scale(2) translate(2rem, 13rem); /* Top center */
+  }
+  75% {
+    transform: scale(2) translate(3rem, 8rem); /* Top left */
+  }
+  87.5% {
+    transform: scale(2) translate(-1rem, 6rem); /* Move further left, halfway down */
+  }
 }
 
-.skill-section {
-  flex: 1;
-  background-color: var(--background-color-);
-  text-align: center;
-  margin: 1rem;
-  border: 0.1rem solid var(--accent-one);
-  border-radius: 1rem;
+.magnifying-glass {
+  transform: scale(1);
+  transition: transform 0.5s ease;
 }
 
-.skill-section h2 {
-  padding-bottom: 1rem;
-  border-bottom: 0.1rem dashed var(--accent-one);
-}
-
-.skill-section ul {
-  list-style-type: none;
-  padding: 0rem;
-  margin-top: -0.4rem;
-}
-
-.skill-section li {
-  padding: 0.4rem;
+.magnifying-glass:hover {
+  fill: var(--accent-two);
+  animation: moveEight 6s ease;
 }
