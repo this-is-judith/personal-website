@@ -7,17 +7,26 @@
 
 .screen {
   height: 15rem;
-  background-color: #333333; /* Default off color */
+  background-color: #333333;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   border: 0.75rem solid var(--accent-one);
-  cursor: pointer; /* Shows the user the screen is clickable */
+  cursor: pointer;
 }
 
 .screen.on {
-  background-color: #e0e0e0; /* Light gray to simulate the screen turning on */
+  background-color: #e0e0e0;
+}
+
+.welcome-message,
+.booting-message {
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .camera {

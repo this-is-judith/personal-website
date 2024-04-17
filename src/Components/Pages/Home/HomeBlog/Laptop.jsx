@@ -1,14 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./laptop.css";
 
 const Laptop = () => {
-  const [isScreenOn, setScreenOn] = useState(false); // State to toggle screen on/off
-  const generateKey = (keyClass = "key") => <div className={keyClass}></div>;
+  const [isScreenOn, setScreenOn] = useState(false);
+  const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
+  const [bootingText, setBootingText] = useState("");
 
-  // Function to toggle screen on/off
+  useEffect(() => {
+    let timer;
+    let bootingTimer;
+
+    if (isScreenOn) {
+      // Start the booting animation
+      let dots = 0;
+      bootingTimer = setInterval(() => {
+        dots = (dots + 1) % 4; // Cycle through 0, 1, 2, 3
+        setBootingText(`Booting${".".repeat(dots)}`);
+      }, 500); // Change dots every 500 ms
+
+      // Set timeout to show welcome message after 3 seconds
+      timer = setTimeout(() => {
+        clearInterval(bootingTimer); // Stop the booting animation
+        setBootingText(""); // Clear booting text
+        setShowWelcomeMessage(true);
+      }, 4000);
+    } else {
+      setShowWelcomeMessage(false);
+      setBootingText("");
+    }
+
+    // Cleanup function to clear timers
+    return () => {
+      clearTimeout(timer);
+      clearInterval(bootingTimer);
+    };
+  }, [isScreenOn]);
+
   const toggleScreen = () => {
     setScreenOn(!isScreenOn);
   };
+
+  const generateKey = (keyClass = "key") => <div className={keyClass}></div>;
 
   return (
     <div className="laptop">
@@ -17,6 +49,12 @@ const Laptop = () => {
         onClick={toggleScreen}
       >
         <div className="camera"></div>
+        {bootingText && <div className="booting-message">{bootingText}</div>}
+        {showWelcomeMessage && (
+          <div className="welcome-message">
+            Welcome! Judith's blog is currently under construction :D
+          </div>
+        )}
       </div>
 
       <div className="keyboard">
