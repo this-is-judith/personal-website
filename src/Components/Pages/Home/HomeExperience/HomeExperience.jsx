@@ -54,23 +54,29 @@ function HomeExperience() {
           </div> */}
 
           <div className="skills-container">
-            <div className="skill-section">
-              <h2>Hardware</h2>
+            <div className="skill-section skill-left font__3">
+              <h2>Software</h2>
               <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C & C++</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>React</li>
+                <li>Flutter & Dart</li>
               </ul>
             </div>
 
-            <div className="skill-section">
-              <h2>Software</h2>
+            <div className="skill-section font__3">
+              <h2>Hardware</h2>
               <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
+                <li>PCB Layout & Design</li>
+                <li>Digital Logic Design</li>
+                <li>Computer Architecture</li>
+                <li>Oscilloscope Probing</li>
+                <li>Power Sequencing</li>
+                <li>Microsoldering</li>
+                <li>ECAD</li>
               </ul>
             </div>
           </div>

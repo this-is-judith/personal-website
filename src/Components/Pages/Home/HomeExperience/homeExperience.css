@@ -1,3 +1,4 @@
+/* Container positioning */
 .homeExperience-container {
   display: flex;
 }
@@ -38,7 +39,7 @@
 }
 
 .experience-right-bottom {
-  flex: 7;
+  flex: 3;
   display: flex;
   flex-direction: column;
 }
@@ -51,6 +52,7 @@
   flex: 1;
 }
 
+/* Text and button positioning */
 .number-experience {
   font: var(--number-font);
   position: relative;
@@ -85,35 +87,35 @@
   top: -5rem;
 }
 
-/* Skills At A Glance */
+/* Skills at a glance */
 .skills-container {
   display: flex;
   background-color: var(--background-color-);
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .skill-section {
   flex: 1;
   background-color: var(--background-color-);
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-left {
+  border-right: 0.125rem solid var(--accent-one);
 }
 
 .skill-section h2 {
-  color: #333;
-  border-bottom: 2px solid #007bff;
+  color: var(--accent-one);
+  border-bottom: 0.125rem solid var(--accent-one);
 }
 
 .skill-section ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0rem;
+  margin-top: -0.8rem;
 }
 
 .skill-section li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.skill-section li:last-child {
-  border-bottom: none;
+  padding: 0.4rem;
 }
