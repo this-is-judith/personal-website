@@ -1,9 +1,9 @@
 import React from "react";
-import RightTopRectangles from "./RightTopRectangles";
-import RightBottomRectangles from "./RightBottomRectangles";
+
 import Button from "../HomeAbout/Button";
 import PDFButton from "./PDFButton";
 import resumePath from "../../../../Assets/Documents/judith-most-recent-resume.pdf";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 import "./homeExperience.css";
 
@@ -42,7 +42,16 @@ function HomeExperience() {
 
       <section className="experience-section experience-right">
         <div className="experience-right-top">
-          <h2 className="at-a-glance">At A Glance</h2>
+          <div className="experience-right-top-left">
+            <h2 className="at-a-glance">At A Glance</h2>
+          </div>
+          <div className="experience-right-top-right">
+            <FaMagnifyingGlass
+              size={40}
+              className="magnifying-glass"
+              fill="var(--accent-one)"
+            />
+          </div>
         </div>
 
         <div className="experience-right-bottom">

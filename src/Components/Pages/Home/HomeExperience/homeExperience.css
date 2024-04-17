@@ -27,13 +27,29 @@
   flex: 2;
 }
 
+.experience-right-top {
+  display: flex;
+}
+
+.experience-right-top-left {
+  flex: 5;
+  text-align: right;
+}
+
+.experience-right-top-right {
+  flex: 1;
+  position: relative;
+  top: 5.5rem;
+  right: 7rem;
+}
+
 .experience-right-bottom {
   flex: 3;
   display: flex;
   flex-direction: column;
 }
 
-/* Text and button styles */
+/* Text and element styles */
 .number-experience {
   font: var(--number-font);
   position: relative;
@@ -70,6 +86,11 @@
 
 .at-a-glance {
   font-size: 2.5rem;
+  font-family: "Poppins";
+  color: var(--accent-one);
+  position: relative;
+  top: 3rem;
+  padding-right: 8rem;
 }
 
 /* Skills at a glance */
