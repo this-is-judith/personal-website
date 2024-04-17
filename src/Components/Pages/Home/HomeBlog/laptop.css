@@ -7,11 +7,28 @@
 
 .screen {
   height: 15rem;
-  background-color: var(--background-color);
+  background-color: #333333; /* Default off color */
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   border: 0.75rem solid var(--accent-one);
+  cursor: pointer; /* Shows the user the screen is clickable */
+}
+
+.screen.on {
+  background-color: #e0e0e0; /* Light gray to simulate the screen turning on */
+}
+
+.camera {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .keyboard {
@@ -39,9 +56,9 @@
 }
 
 .wide-key {
-  flex: 1.5; /* Make these keys 50% wider than normal keys */
+  flex: 1.5;
 }
 
 .extra-wide-key {
-  flex: 6; /* Spacebar significantly wider */
+  flex: 6;
 }
