@@ -2,6 +2,7 @@ import React from "react";
 
 import RightRectangle from "./RightRectangle";
 import Button from "./Button";
+import { FaCross } from "react-icons/fa";
 
 import "./homeAbout.css";
 
@@ -41,6 +42,7 @@ const HomeAbout = () => {
       <section className="aboutSection aboutRight">
         <div className="aboutRightTop">
           <RightRectangle className="faithReactangle" />
+          <FaCross className="cross" size={"3rem"} />
         </div>
         <div className="aboutRightMiddle">
           <RightRectangle className="educationRectangle" />

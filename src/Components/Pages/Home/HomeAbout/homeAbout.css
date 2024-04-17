@@ -66,7 +66,7 @@
 
 .button-1 {
   position: relative;
-  left: 12rem;
+  left: 13rem;
   top: -5rem;
 }
 
@@ -74,4 +74,11 @@
   position: relative;
   left: 26rem;
   top: -8rem;
+}
+
+.cross {
+  position: relative;
+  right: 12.4rem;
+  top: -8rem;
+  color: var(--accent-one);
 }
