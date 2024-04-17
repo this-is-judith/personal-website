@@ -1,6 +1,6 @@
 import React from "react";
 
-function RightRectangle() {
+const RightRectangle = ({ text, x, y, fontSize }) => {
   return (
     <svg width="400" height="200">
       <rect
@@ -14,8 +14,20 @@ function RightRectangle() {
         stroke="var(--accent-one)"
         strokeWidth="0.8"
       />
+      <text
+        x={x}
+        y={y}
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="var(--accent-one)"
+        fontSize={fontSize}
+        fontFamily="Poppins"
+        fontWeight="bold"
+      >
+        {text}
+      </text>
     </svg>
   );
-}
+};
 
 export default RightRectangle;

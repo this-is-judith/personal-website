@@ -41,11 +41,11 @@
 .about-right-bottom {
   flex: 1;
 }
-
+/* 
 .about-right-middle,
 .about-right-bottom {
   margin-top: -2rem;
-}
+} */
 
 .number {
   font: var(--number-font);
@@ -85,7 +85,7 @@
 .cap,
 .book {
   position: relative;
-  right: 12.4rem;
+  right: 12.25rem;
   top: -8rem;
   color: var(--accent-one);
 }
@@ -93,11 +93,11 @@
 .faith,
 .education,
 .hobbies {
-  font-size: 2.5rem;
   position: relative;
 }
 
 .faith {
+  font-size: 2.5rem;
   left: 10.75rem;
   top: -6rem;
 }
@@ -109,7 +109,7 @@
 }
 
 .hobbies {
-  font-size: 2.25rem;
+  font-size: 2.15rem;
   left: 9.5rem;
   top: -6rem;
 }

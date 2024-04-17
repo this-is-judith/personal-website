@@ -43,19 +43,34 @@ const HomeAbout = () => {
 
       <section className="about-section about-right">
         <div className="about-right-top">
-          <RightRectangle className="faith-rectangle" />
+          <RightRectangle
+            className="faith-rectangle"
+            text="FAITH"
+            x="225"
+            y="115"
+            fontSize="2.75rem"
+          />
           <FaCross className="cross" size={"2.75rem"} />
-          <h1 className="font__0 faith">FAITH</h1>
         </div>
         <div className="about-right-middle">
-          <RightRectangle className="education-rectangle" />
+          <RightRectangle
+            className="education-rectangle"
+            text="EDUCATION"
+            x="225"
+            y="115"
+            fontSize="2.5rem"
+          />
           <FaGraduationCap className="cap" size={"3rem"} />
-          <h1 className="font__0 education">EDUCATION</h1>
         </div>
         <div className="about-right-bottom">
-          <RightRectangle className="hobbies-rectangle" />
+          <RightRectangle
+            className="hobbies-rectangle"
+            text="HOBBIES"
+            x="225"
+            y="115"
+            fontSize="2.625rem"
+          />
           <FaBookOpen className="book" size={"3rem"} />
-          <h1 className="font__0 hobbies">HOBBIES</h1>
         </div>
       </section>
     </div>
