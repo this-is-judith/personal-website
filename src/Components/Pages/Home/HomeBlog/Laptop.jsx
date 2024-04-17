@@ -63,10 +63,14 @@ const Laptop = () => {
           <>
             <div className="search-bar">Search</div>
             <div className="topics-container">
-              <div className="topic-box">Faith</div>
-              <div className="topic-box">Tech</div>
-              <div className="topic-box">Money</div>
-              <div className="topic-box">College</div>
+              <div className="topic-row">
+                <div className="topic-box">Faith</div>
+                <div className="topic-box">Tech</div>
+              </div>
+              <div className="topic-row">
+                <div className="topic-box">Money</div>
+                <div className="topic-box">College</div>
+              </div>
             </div>
           </>
         )}
