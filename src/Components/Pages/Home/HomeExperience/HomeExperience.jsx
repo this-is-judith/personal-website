@@ -11,7 +11,7 @@ function HomeExperience() {
   return (
     <div className="homeExperience-container">
       <section className="experience-section experience-left">
-        <div className="experienceLeftTop">
+        <div className="experience-left-top">
           <div>
             <h4 className="font__4 number-experience">02.</h4>
           </div>
@@ -29,7 +29,7 @@ function HomeExperience() {
           </h3>
         </div>
 
-        <div className="experienceLeftBottom">
+        <div className="experience-left-bottom">
           <div className="experience-button-1">
             <Button message="LEARN MORE" url="/experience" />
           </div>
@@ -42,28 +42,21 @@ function HomeExperience() {
 
       <section className="experience-section experience-right">
         <div className="experience-right-top">
-          <p>Skills at a Glance + m. glass icon</p>
+          <h2 className="at-a-glance">At A Glance</h2>
         </div>
 
         <div className="experience-right-bottom">
-          {/* <div className="experienceRightBottomTop">
-            <RightTopRectangles />
-          </div>
-          <div className="experienceRightBottomBottom">
-            <RightBottomRectangles />
-          </div> */}
-
           <div className="skills-container">
             <div className="skill-section skill-left font__3">
               <h2>Software</h2>
               <ul>
-                <li>Java</li>
                 <li>Python</li>
-                <li>C & C++</li>
-                <li>JavaScript</li>
+                <li>Java & Kotlin</li>
+                <li>JavaScript & React</li>
                 <li>HTML & CSS</li>
-                <li>React</li>
                 <li>Flutter & Dart</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
               </ul>
             </div>
 

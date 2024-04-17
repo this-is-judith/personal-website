@@ -4,38 +4,27 @@
 }
 
 .experience-section {
+  flex: 1;
   padding-top: 7.5rem;
   display: flex;
   height: var(--homeExperience-height);
   flex-direction: column;
 }
 
-.experience-left {
-  flex: 1;
-  background-color: var(--background-color);
-  display: flex;
-}
-
+.experience-left,
 .experience-right {
-  flex: 1;
   background-color: var(--background-color);
   display: flex;
 }
 
-.experienceLeftTop {
+.experience-left-top,
+.experience-left-bottom,
+.experience-right-top {
   flex: 1;
 }
 
 .experience-left-middle {
   flex: 2;
-}
-
-.experienceLeftBottom {
-  flex: 1;
-}
-
-.experience-right-top {
-  flex: 1;
 }
 
 .experience-right-bottom {
@@ -44,15 +33,7 @@
   flex-direction: column;
 }
 
-.experienceRightBottomTop {
-  flex: 2;
-}
-
-.experienceRightBottomBottom {
-  flex: 1;
-}
-
-/* Text and button positioning */
+/* Text and button styles */
 .number-experience {
   font: var(--number-font);
   position: relative;
@@ -87,6 +68,10 @@
   top: -5rem;
 }
 
+.at-a-glance {
+  font-size: 2.5rem;
+}
+
 /* Skills at a glance */
 .skills-container {
   display: flex;
@@ -106,7 +91,6 @@
 
 .skill-section h2 {
   padding-bottom: 1rem;
-  color: var(--accent-one);
   border-bottom: 0.1rem dashed var(--accent-one);
 }
 
