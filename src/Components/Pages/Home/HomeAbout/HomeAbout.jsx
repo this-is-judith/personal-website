@@ -44,7 +44,7 @@ const HomeAbout = () => {
       <section className="about-section about-right">
         <div className="about-right-top">
           <RightRectangle className="faith-rectangle" />
-          <FaCross className="cross" size={"3rem"} />
+          <FaCross className="cross" size={"2.75rem"} />
           <h1 className="font__0 faith">FAITH</h1>
         </div>
         <div className="about-right-middle">

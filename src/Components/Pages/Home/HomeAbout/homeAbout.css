@@ -42,6 +42,11 @@
   flex: 1;
 }
 
+.about-right-middle,
+.about-right-bottom {
+  margin-top: -2rem;
+}
+
 .number {
   font: var(--number-font);
   position: relative;
