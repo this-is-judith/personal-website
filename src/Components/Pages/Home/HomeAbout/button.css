@@ -15,10 +15,6 @@
   top: 0.8rem;
 }
 
-a .button-text {
-  text-decoration: none;
-}
-
 a:hover .button-container {
   background-color: var(--accent-one);
 }

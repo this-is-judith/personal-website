@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import RightRectangle from "./RightRectangle";
 import Button from "./Button";
 import { FaCross } from "react-icons/fa";
@@ -48,29 +49,42 @@ const HomeAbout = () => {
             text="FAITH"
             x="225"
             y="115"
-            fontSize="2.75rem"
+            fontSize="2.25rem"
+            url="/about" // TODO: update url to specific part of about
           />
-          <FaCross className="cross" size={"2.75rem"} />
+
+          <Link to="/about">
+            {/* TODO: update url to specific part of about */}
+            <FaCross className="homeAbout-icon" size={"2.5rem"} />
+          </Link>
         </div>
+
         <div className="about-right-middle">
           <RightRectangle
             className="education-rectangle"
             text="EDUCATION"
             x="225"
             y="115"
-            fontSize="2.5rem"
+            fontSize="2rem"
           />
-          <FaGraduationCap className="cap" size={"3rem"} />
+
+          <Link to="/about">
+            <FaGraduationCap className="homeAbout-icon" size={"3rem"} />
+          </Link>
         </div>
+
         <div className="about-right-bottom">
           <RightRectangle
             className="hobbies-rectangle"
             text="HOBBIES"
             x="225"
             y="115"
-            fontSize="2.625rem"
+            fontSize="2.125rem"
           />
-          <FaBookOpen className="book" size={"3rem"} />
+
+          <Link to="/about">
+            <FaBookOpen className="homeAbout-icon" size={"3rem"} />
+          </Link>
         </div>
       </section>
     </div>

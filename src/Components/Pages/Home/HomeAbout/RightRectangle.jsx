@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const RightRectangle = ({ text, x, y, fontSize }) => {
   return (
     <svg width="400" height="200">
@@ -14,6 +16,7 @@ const RightRectangle = ({ text, x, y, fontSize }) => {
         stroke="var(--accent-one)"
         strokeWidth="0.8"
       />
+
       <text
         x={x}
         y={y}

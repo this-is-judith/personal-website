@@ -3,7 +3,7 @@
 }
 
 .about-section {
-  padding-top: 6.5rem;
+  padding-top: 7.5rem;
   display: flex;
   height: var(--homeAbout-height);
   flex-direction: column;
@@ -41,11 +41,11 @@
 .about-right-bottom {
   flex: 1;
 }
-/* 
+
 .about-right-middle,
 .about-right-bottom {
-  margin-top: -2rem;
-} */
+  margin-top: -2.5rem;
+}
 
 .number {
   font: var(--number-font);
@@ -81,35 +81,20 @@
   top: -8rem;
 }
 
-.cross,
-.cap,
-.book {
+.homeAbout-icon {
   position: relative;
   right: 12.25rem;
   top: -8rem;
   color: var(--accent-one);
 }
 
-.faith,
-.education,
-.hobbies {
-  position: relative;
+a .homeAbout-icon,
+a:visited .homeAbout-icon,
+a:active .homeAbout-icon {
+  transition: color 0.3s, transform 0.3s;
 }
 
-.faith {
-  font-size: 2.5rem;
-  left: 10.75rem;
-  top: -6rem;
-}
-
-.education {
-  font-size: 2rem;
-  left: 8.75rem;
-  top: -6rem;
-}
-
-.hobbies {
-  font-size: 2.15rem;
-  left: 9.5rem;
-  top: -6rem;
+a:hover .homeAbout-icon {
+  color: var(--accent-two);
+  transform: scale(1.2);
 }
