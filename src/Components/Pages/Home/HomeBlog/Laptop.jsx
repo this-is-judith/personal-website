@@ -5,6 +5,7 @@ const Laptop = () => {
   const [isScreenOn, setScreenOn] = useState(false);
   const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
   const [bootingText, setBootingText] = useState("");
+  const [showTopics, setShowTopics] = useState(false);
 
   useEffect(() => {
     let timer;
@@ -16,16 +17,21 @@ const Laptop = () => {
       bootingTimer = setInterval(() => {
         dots = (dots + 1) % 4; // Cycle through 0, 1, 2, 3
         setBootingText(`Booting${".".repeat(dots)}`);
-      }, 500); // Change dots every 500 ms
+      }, 400); // Change dots every 400 ms
 
       // Set timeout to show welcome message after 3 seconds
       timer = setTimeout(() => {
-        clearInterval(bootingTimer); // Stop the booting animation
-        setBootingText(""); // Clear booting text
+        clearInterval(bootingTimer);
+        setBootingText("");
         setShowWelcomeMessage(true);
-      }, 4000);
+        setTimeout(() => {
+          setShowWelcomeMessage(false);
+          setShowTopics(true);
+        }, 3000); // Hide welcome and show topics after 2 seconds
+      }, 3000);
     } else {
       setShowWelcomeMessage(false);
+      setShowTopics(false);
       setBootingText("");
     }
 
@@ -49,11 +55,20 @@ const Laptop = () => {
         onClick={toggleScreen}
       >
         <div className="camera"></div>
-        {bootingText && <div className="booting-message">{bootingText}</div>}
+        {bootingText && <div className="message">{bootingText}</div>}
         {showWelcomeMessage && (
-          <div className="welcome-message">
-            Welcome! Judith's blog is currently under construction :D
-          </div>
+          <div className="message">Welcome, this is Judith's Blog</div>
+        )}
+        {showTopics && (
+          <>
+            <div className="search-bar">Search</div>
+            <div className="topics-container">
+              <div className="topic-box">Faith</div>
+              <div className="topic-box">Tech</div>
+              <div className="topic-box">Money</div>
+              <div className="topic-box">College</div>
+            </div>
+          </>
         )}
       </div>
 

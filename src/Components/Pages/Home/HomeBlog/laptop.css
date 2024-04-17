@@ -71,3 +71,32 @@
 .extra-wide-key {
   flex: 6;
 }
+
+.search-bar,
+.topic-box {
+  background-color: #666;
+  margin: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.search-bar {
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+.topic-box {
+  flex: 1 1 45%;
+  margin: 5px;
+  height: 3rem;
+}
+
+.topics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
