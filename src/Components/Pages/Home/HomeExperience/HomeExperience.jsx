@@ -2,6 +2,8 @@ import React from "react";
 import RightTopRectangles from "./RightTopRectangles";
 import RightBottomRectangles from "./RightBottomRectangles";
 import Button from "../HomeAbout/Button";
+import PDFButton from "./PDFButton";
+import resumePath from "../../../../Assets/Documents/judith-most-recent-resume.pdf";
 
 import "./homeExperience.css";
 
@@ -33,7 +35,7 @@ function HomeExperience() {
           </div>
 
           <div className="button-2">
-            <Button message="VIEW RESUME" /> {/* TODO: add url for contact */}
+            <PDFButton message="VIEW RESUME" url={resumePath} />
           </div>
         </div>
       </section>
