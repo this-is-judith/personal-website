@@ -42,9 +42,9 @@ const HomeAbout = () => {
         </div>
       </section>
 
-      <div className="about-section about-right">
-        <div className="right-rectangle about-right-top">
-          <Link to="/about" className="homeAbout-rectangle-link">
+      <section className="about-section about-right">
+        <Link to="/about">
+          <div className="right-rectangle about-right-top">
             <div className="homeAbout-icon-container">
               <FaGlobeAfrica className="homeAbout-icon" size={"2.8rem"} />
             </div>
@@ -52,11 +52,11 @@ const HomeAbout = () => {
             <div className="homeAbout-text-container">
               <h1 className="homeAbout-background"> BACKGROUND </h1>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="right-rectangle about-right-middle">
-          <Link to="/about" className="homeAbout-rectangle-link">
+        <Link to="/about">
+          <div className="right-rectangle about-right-middle">
             <div className="homeAbout-icon-container">
               <FaGraduationCap className="homeAbout-icon" size={"3.5rem"} />
             </div>
@@ -64,11 +64,11 @@ const HomeAbout = () => {
             <div className="homeAbout-text-container">
               <h1> EDUCATION </h1>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="right-rectangle about-right-bottom">
-          <Link to="/about" className="homeAbout-rectangle-link">
+        <Link to="/about">
+          <div className="right-rectangle about-right-bottom">
             <div className="homeAbout-icon-container">
               <FaBookOpen className="homeAbout-icon" size={"3.5rem"} />
             </div>
@@ -76,9 +76,9 @@ const HomeAbout = () => {
             <div className="homeAbout-text-container">
               <h1> HOBBIES </h1>
             </div>
-          </Link>
-        </div>
-      </div>
+          </div>
+        </Link>
+      </section>
     </div>
   );
 };

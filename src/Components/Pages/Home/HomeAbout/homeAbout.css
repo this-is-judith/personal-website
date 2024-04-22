@@ -47,7 +47,7 @@
 }
 
 .about-right-top {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .homeAbout-icon-container,
@@ -107,9 +107,11 @@
   border: 0.1rem solid var(--accent-one);
   border-radius: 0.5rem;
   width: 16em;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   color: var(--accent-one);
+  padding-top: 0.5rem;
 }
 
 .right-rectangle h1 {
@@ -117,6 +119,14 @@
   font-size: 2rem;
 }
 
-.homeAbout-rectangle-link {
-  padding: 1rem;
+a,
+a:visited,
+a:active {
+  color: var(--accent-two);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-two);
+  background-color: var(--accent-one);
 }
