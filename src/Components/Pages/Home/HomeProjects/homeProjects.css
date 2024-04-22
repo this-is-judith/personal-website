@@ -96,25 +96,36 @@
   flex: 1.6;
   display: flex;
   flex-direction: column;
+  color: var(--accent-one);
 }
 
 .project-title {
   flex: 1;
-  border: 0.1rem solid green;
+  display: flex;
+  justify-content: center;
 }
 
 .project-title h3 {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0.5rem;
 }
 
 .project-description {
   flex: 2;
-  border: 0.1rem solid red;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -2rem;
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .project-extras {
   flex: 1;
-  border: 0.1rem solid yellow;
   display: flex;
 }
 

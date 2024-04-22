@@ -55,9 +55,16 @@ function HomeProjects() {
 
             <div className="projects-right-bottom-top-right">
               <div className="project-title">
-                <h3>STASH - FINANCE TRACKER APP</h3>
+                <h3>STASH</h3>
               </div>
-              <div className="project-description"></div>
+
+              <div className="project-description">
+                <p>
+                  Student-friendly budgetting and finance tracker app made using
+                  Flutter, Dart and Android Studio.
+                </p>
+              </div>
+
               <div className="project-extras">
                 <div className="project-timeline"></div>
                 <div className="project-links"></div>
