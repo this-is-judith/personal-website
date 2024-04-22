@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import RightRectangle from "./RightRectangle";
 import Button from "./Button";
-import { FaCross } from "react-icons/fa";
+import { FaGlobeAfrica } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaBookOpen } from "react-icons/fa6";
 
@@ -37,7 +37,7 @@ const HomeAbout = () => {
           </div>
 
           <div className="button-2">
-            {/* <Button message="CONTACT ME" /> TODO: add url for contact */}
+            {/* TODO: add url for contact */}
             <Button message="CONTACT ME" />
           </div>
         </div>
@@ -45,46 +45,33 @@ const HomeAbout = () => {
 
       <section className="about-section about-right">
         <div className="right-rectangle about-right-top">
-          {/* <RightRectangle
-            className="faith-rectangle"
-            text="FAITH"
-            x="225"
-            y="115"
-            fontSize="2.25rem"
-            url="/about" // TODO: update url to specific part of about
-          /> */}
+          <div className="homeAbout-icon-container">
+            <FaGlobeAfrica className="homeAbout-icon" size={"2.8rem"} />
+          </div>
 
-          {/* <Link to="/about">
-            <FaCross className="homeAbout-icon" size={"2.5rem"} />
-          </Link> */}
+          <div className="homeAbout-text-container">
+            <h1 className="homeAbout-background"> BACKGROUND </h1>
+          </div>
         </div>
 
         <div className="right-rectangle about-right-middle">
-          {/* <RightRectangle
-            className="education-rectangle"
-            text="EDUCATION"
-            x="225"
-            y="115"
-            fontSize="2rem"
-          />
+          <div className="homeAbout-icon-container">
+            <FaGraduationCap className="homeAbout-icon" size={"3.5rem"} />
+          </div>
 
-          <Link to="/about">
-            <FaGraduationCap className="homeAbout-icon" size={"3rem"} />
-          </Link> */}
+          <div className="homeAbout-text-container">
+            <h1> EDUCATION </h1>
+          </div>
         </div>
 
         <div className="right-rectangle about-right-bottom">
-          {/* <RightRectangle
-            className="hobbies-rectangle"
-            text="HOBBIES"
-            x="225"
-            y="115"
-            fontSize="2.125rem"
-          />
+          <div className="homeAbout-icon-container">
+            <FaBookOpen className="homeAbout-icon" size={"3.5rem"} />
+          </div>
 
-          <Link to="/about">
-            <FaBookOpen className="homeAbout-icon" size={"3rem"} />
-          </Link> */}
+          <div className="homeAbout-text-container">
+            <h1> HOBBIES </h1>
+          </div>
         </div>
       </section>
     </div>
