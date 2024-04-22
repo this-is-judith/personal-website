@@ -5,7 +5,7 @@
 
 .experience-section {
   flex: 1;
-  padding-top: 7.5rem;
+  padding-top: 4rem;
   display: flex;
   height: var(--homeExperience-height);
   flex-direction: column;

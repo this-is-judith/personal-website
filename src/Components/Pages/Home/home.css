@@ -1,11 +1,7 @@
 /*=============== HOME PAGE ===============*/
 .homeMain,
-.homeExperience,
-.homeProjects,
+.homeAbout,
 .homeBlog {
-  height: var(--homeSection-height);
-}
-.homeAbout {
   height: var(--homeSection-height);
 }
 
@@ -24,7 +20,7 @@
   --homeSection-height: 45rem;
   --homeAbout-height: 38rem;
   --homeExperience-height: 38.5rem;
-  --homeProjects-height: 38.5rem;
+  --homeProjects-height: 38rem;
   --homeBlog-height: 38.5rem;
   --homeResources-height: 38.5rem;
 

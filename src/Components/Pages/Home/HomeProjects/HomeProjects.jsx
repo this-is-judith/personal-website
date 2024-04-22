@@ -7,7 +7,7 @@ import "./homeProjects.css";
 function HomeProjects() {
   return (
     <div className="homeProjects-container">
-      <section className="projectsSection projectsLeft">
+      <section className="homeProjects-section projectsLeft">
         <div className="projectsLeftTop">
           <div>
             <h4 className="font__4 numberProjects">03.</h4>
@@ -37,12 +37,19 @@ function HomeProjects() {
         </div>
       </section>
 
-      <section className="projectsSection projectsRight">
-        <div className="projectsRightTop">Most Recent Projects</div>
-        <div className="projectsRightBottom">
-          <div className="projectsRightBottomTop"></div>
-          <div className="projectsRightBottomMiddle"></div>
-          <div className="projectsRightBottomBottom"></div>
+      <section className="homeProjects-section projects-right">
+        <div className="projects-right-top">
+          <h2 className="most-recent-projects">Most Recent Projects</h2>
+        </div>
+        <div className="projects-right-bottom">
+          <div className="projects-right-bottom-top">
+            <div className="projects-right-bottom-top-left"></div>
+            <div className="projects-right-bottom-top-right"></div>
+          </div>
+          <div className="projects-right-bottom-bottom">
+            <div className="projects-right-bottom-bottom-left"></div>
+            <div className="projects-right-bottom-bottom-right"></div>
+          </div>
         </div>
       </section>
     </div>
