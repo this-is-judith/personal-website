@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import "./homeProjects.css";
+import { Link } from "react-router-dom";
 
 function HomeProjects() {
   return (
@@ -100,7 +101,48 @@ function HomeProjects() {
           </div>
 
           <div className="projects-right-bottom-bottom">
-            <div className="projects-right-bottom-bottom-left"></div>
+            <div className="projects-right-bottom-bottom-left">
+              <div className="project-title">
+                <h3>PERSONAL WEBSITE</h3>
+              </div>
+
+              <div className="project-description">
+                <p>
+                  This very website! Features include 6+ pages,
+                  mobile-responsiveness, and a blog. Built using React and
+                  Firebase.
+                </p>
+              </div>
+
+              <div className="project-extras">
+                <div className="project-timeline">
+                  <FaRegClock size="18" />
+                  <span>Jan 2024 - present</span>
+                </div>
+
+                <div className="project-links">
+                  <a
+                    // TODO: update link
+                    href="https://github.com/this-is-judith"
+                    className="social-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size="18" />
+                  </a>
+
+                  <Link
+                    to="/"
+                    className="social-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt size="18" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <div className="projects-right-bottom-bottom-right">
               <img
                 src={personalWebsitePath}

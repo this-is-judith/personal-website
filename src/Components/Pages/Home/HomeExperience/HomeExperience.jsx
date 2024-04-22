@@ -60,10 +60,10 @@ function HomeExperience() {
               <h2>Software</h2>
               <ul>
                 <li>Python</li>
-                <li>Java & Kotlin</li>
-                <li>JavaScript & React</li>
-                <li>HTML & CSS</li>
-                <li>Flutter & Dart</li>
+                <li>Java</li>
+                <li>C/C++</li>
+                <li>App development</li>
+                <li>Web development</li>
                 <li>Data Structures & Algo</li>
                 <li>2+ years school exp.</li>
               </ul>
@@ -78,7 +78,7 @@ function HomeExperience() {
                 <li>Oscilloscope Probing</li>
                 <li>Power Sequencing</li>
                 <li>Microsoldering</li>
-                <li>6+ months industry exp.</li>
+                <li>4+ months industry exp.</li>
               </ul>
             </section>
           </div>
