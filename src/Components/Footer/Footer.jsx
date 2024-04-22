@@ -4,13 +4,17 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <div className="footerSection section1">Section 1</div>
+      <section className="footer-section footer-left">Section 1</section>
 
-      <div className="footerSection section2">
-        Judith Osei-Tete | Copyright 2024
-      </div>
+      <section className="footer-section footer-middle">
+        <div className="footer-middle-top"></div>
 
-      <div className="footerSection section3">Section 3</div>
+        <div className="footer-middle-bottom">
+          <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
+        </div>
+      </section>
+
+      <section className="footer-section footer-right">Section 3</section>
     </footer>
   );
 };

@@ -5,14 +5,43 @@
   height: var(--footer-height);
 }
 
-.footerSection {
+.footer-section {
   flex: 1;
   color: var(--footer-text-color);
-}
-
-.section1,
-.section2,
-.section3 {
   display: flex;
   justify-content: center;
+  border: 0.1rem solid yellow;
+}
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-middle {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-middle-top,
+.footer-middle-bottom {
+  border: 0.1rem solid green;
+  display: flex;
+}
+
+.footer-middle-bottom {
+  justify-content: center;
+}
+
+.footer-middle-top {
+  flex: 5;
+}
+
+.footer-middle-bottom {
+  flex: 1;
+}
+
+.name-and-copyright {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
