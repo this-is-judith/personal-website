@@ -64,7 +64,7 @@ function HomeProjects() {
               <div className="project-description">
                 <p>
                   Student-friendly budgetting and finance tracker app made using
-                  Flutter, Dart and Android Studio.
+                  Flutter, Dart, Android Studio and Kotlin.
                 </p>
               </div>
 
@@ -75,8 +75,25 @@ function HomeProjects() {
                 </div>
 
                 <div className="project-links">
-                  <FaGithub size="18" />
-                  <FaExternalLinkAlt size="18" />
+                  <a
+                    // TODO: update link
+                    href="https://github.com/this-is-judith"
+                    className="social-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size="18" />
+                  </a>
+
+                  <a
+                    // TODO: update link
+                    href="https://github.com/this-is-judith"
+                    className="social-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt size="18" />
+                  </a>
                 </div>
               </div>
             </div>
