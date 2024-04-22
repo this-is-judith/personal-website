@@ -1,6 +1,8 @@
 import React from "react";
+
 import Button from "../HomeAbout/Button";
-import LeftRectangles from "../HomeAbout/LeftRectangles";
+import projectImagePath from "../../../../Assets/Photos/stash.jpeg";
+import personalWebsitePath from "../../../../Assets/Photos/personalWebsite.jpeg";
 
 import "./homeProjects.css";
 
@@ -43,12 +45,31 @@ function HomeProjects() {
         </div>
         <div className="projects-right-bottom">
           <div className="projects-right-bottom-top">
-            <div className="projects-right-bottom-top-left"></div>
-            <div className="projects-right-bottom-top-right"></div>
+            <div className="projects-right-bottom-top-left">
+              <img
+                src={projectImagePath}
+                alt="Stash App"
+                className="projectImage-1"
+              />
+            </div>
+
+            <div className="projects-right-bottom-top-right">
+              {/* Flex */}
+              <div className="project-title"></div>
+              <div className="project-description"></div>
+              <div className="project-time"></div>
+            </div>
           </div>
+
           <div className="projects-right-bottom-bottom">
             <div className="projects-right-bottom-bottom-left"></div>
-            <div className="projects-right-bottom-bottom-right"></div>
+            <div className="projects-right-bottom-bottom-right">
+              <img
+                src={personalWebsitePath}
+                alt="Personal Website"
+                className="projectImage-2"
+              />
+            </div>
           </div>
         </div>
       </section>
