@@ -54,10 +54,14 @@ function HomeProjects() {
             </div>
 
             <div className="projects-right-bottom-top-right">
-              {/* Flex */}
-              <div className="project-title"></div>
+              <div className="project-title">
+                <h3>STASH - FINANCE TRACKER APP</h3>
+              </div>
               <div className="project-description"></div>
-              <div className="project-time"></div>
+              <div className="project-extras">
+                <div className="project-timeline"></div>
+                <div className="project-links"></div>
+              </div>
             </div>
           </div>
 
