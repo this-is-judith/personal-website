@@ -50,7 +50,7 @@ const HomeAbout = () => {
             </div>
 
             <div className="homeAbout-text-container">
-              <h1 className="homeAbout-background"> BACKGROUND </h1>
+              <h1 className="homeAbout-text"> BACKGROUND </h1>
             </div>
           </div>
         </Link>
@@ -62,7 +62,7 @@ const HomeAbout = () => {
             </div>
 
             <div className="homeAbout-text-container">
-              <h1> EDUCATION </h1>
+              <h1 className="homeAbout-text"> EDUCATION </h1>
             </div>
           </div>
         </Link>
@@ -74,7 +74,7 @@ const HomeAbout = () => {
             </div>
 
             <div className="homeAbout-text-container">
-              <h1> HOBBIES </h1>
+              <h1 className="homeAbout-text"> HOBBIES </h1>
             </div>
           </div>
         </Link>

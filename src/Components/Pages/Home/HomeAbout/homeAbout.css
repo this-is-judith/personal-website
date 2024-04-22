@@ -114,19 +114,17 @@
   padding-top: 0.5rem;
 }
 
+a:hover .homeAbout-icon-container {
+  background-color: var(--accent-one);
+  color: var(--background-color);
+}
+
+a:hover .homeAbout-text-container {
+  background-color: var(--accent-one);
+  color: var(--background-color);
+}
+
 .right-rectangle h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-}
-
-a,
-a:visited,
-a:active {
-  color: var(--accent-two);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-two);
-  background-color: var(--accent-one);
 }
