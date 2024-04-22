@@ -3,6 +3,9 @@ import React from "react";
 import Button from "../HomeAbout/Button";
 import projectImagePath from "../../../../Assets/Photos/stash.jpeg";
 import personalWebsitePath from "../../../../Assets/Photos/personalWebsite.jpeg";
+import { FaRegClock } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import "./homeProjects.css";
 
@@ -66,8 +69,15 @@ function HomeProjects() {
               </div>
 
               <div className="project-extras">
-                <div className="project-timeline"></div>
-                <div className="project-links"></div>
+                <div className="project-timeline">
+                  <FaRegClock size="18" />
+                  <span>April 2024 - present</span>
+                </div>
+
+                <div className="project-links">
+                  <FaGithub size="18" />
+                  <FaExternalLinkAlt size="18" />
+                </div>
               </div>
             </div>
           </div>

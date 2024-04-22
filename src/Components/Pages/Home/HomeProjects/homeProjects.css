@@ -120,23 +120,36 @@
 }
 
 .project-description p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-family: "Poppins", sans-serif;
 }
 
 .project-extras {
   flex: 1;
   display: flex;
+  margin-top: -0.5rem;
 }
 
 .project-timeline {
-  flex: 3;
-  border: 0.1rem solid purple;
+  flex: 2;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.project-timeline span {
+  font-size: 0.8rem;
+  font-family: "Poppins";
 }
 
 .project-links {
   flex: 1;
-  border: 0.1rem solid blue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
 }
 
 .projects-right-bottom-bottom-left {
