@@ -1,22 +1,26 @@
-.button-container {
+a .button-container,
+a:visited .button-container,
+a:active .button-container {
   display: inline-block;
   text-align: center;
   width: 10rem;
   height: 3rem;
   background-color: var(--accent-two);
-  color: var(--background-color);
   border-radius: 25px;
-}
-
-.button-text {
-  font-family: var(--header-font);
-  font-size: 1.1rem;
-  position: relative;
-  top: 0.8rem;
 }
 
 a:hover .button-container {
   background-color: var(--accent-one);
+}
+
+a .button-text,
+a:visited .button-text,
+a:active .button-text {
+  color: var(--background-color);
+  font-family: var(--header-font);
+  font-size: 1.1rem;
+  position: relative;
+  top: 0.8rem;
 }
 
 a:hover .button-text {

@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import RightRectangle from "./RightRectangle";
 import Button from "./Button";
 import { FaGlobeAfrica } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
@@ -43,37 +42,43 @@ const HomeAbout = () => {
         </div>
       </section>
 
-      <section className="about-section about-right">
+      <div className="about-section about-right">
         <div className="right-rectangle about-right-top">
-          <div className="homeAbout-icon-container">
-            <FaGlobeAfrica className="homeAbout-icon" size={"2.8rem"} />
-          </div>
+          <Link to="/about" className="homeAbout-rectangle-link">
+            <div className="homeAbout-icon-container">
+              <FaGlobeAfrica className="homeAbout-icon" size={"2.8rem"} />
+            </div>
 
-          <div className="homeAbout-text-container">
-            <h1 className="homeAbout-background"> BACKGROUND </h1>
-          </div>
+            <div className="homeAbout-text-container">
+              <h1 className="homeAbout-background"> BACKGROUND </h1>
+            </div>
+          </Link>
         </div>
 
         <div className="right-rectangle about-right-middle">
-          <div className="homeAbout-icon-container">
-            <FaGraduationCap className="homeAbout-icon" size={"3.5rem"} />
-          </div>
+          <Link to="/about" className="homeAbout-rectangle-link">
+            <div className="homeAbout-icon-container">
+              <FaGraduationCap className="homeAbout-icon" size={"3.5rem"} />
+            </div>
 
-          <div className="homeAbout-text-container">
-            <h1> EDUCATION </h1>
-          </div>
+            <div className="homeAbout-text-container">
+              <h1> EDUCATION </h1>
+            </div>
+          </Link>
         </div>
 
         <div className="right-rectangle about-right-bottom">
-          <div className="homeAbout-icon-container">
-            <FaBookOpen className="homeAbout-icon" size={"3.5rem"} />
-          </div>
+          <Link to="/about" className="homeAbout-rectangle-link">
+            <div className="homeAbout-icon-container">
+              <FaBookOpen className="homeAbout-icon" size={"3.5rem"} />
+            </div>
 
-          <div className="homeAbout-text-container">
-            <h1> HOBBIES </h1>
-          </div>
+            <div className="homeAbout-text-container">
+              <h1> HOBBIES </h1>
+            </div>
+          </Link>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
