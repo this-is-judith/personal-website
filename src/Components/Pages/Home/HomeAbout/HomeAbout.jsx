@@ -36,14 +36,13 @@ const HomeAbout = () => {
           </div>
 
           <div className="button-2">
-            {/* TODO: add url for contact */}
-            <Button message="CONTACT ME" />
+            <Button message="CONTACT ME" url="/about" />
           </div>
         </div>
       </section>
 
       <section className="about-section about-right">
-        <Link to="/about">
+        <Link to="/about" className="link-style">
           <div className="right-rectangle about-right-top">
             <div className="homeAbout-icon-container">
               <FaGlobeAfrica className="homeAbout-icon" size={"2.8rem"} />
@@ -55,7 +54,7 @@ const HomeAbout = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/about" className="link-style">
           <div className="right-rectangle about-right-middle">
             <div className="homeAbout-icon-container">
               <FaGraduationCap className="homeAbout-icon" size={"3.5rem"} />
@@ -67,7 +66,7 @@ const HomeAbout = () => {
           </div>
         </Link>
 
-        <Link to="/about">
+        <Link to="/about" className="link-style">
           <div className="right-rectangle about-right-bottom">
             <div className="homeAbout-icon-container">
               <FaBookOpen className="homeAbout-icon" size={"3.5rem"} />
