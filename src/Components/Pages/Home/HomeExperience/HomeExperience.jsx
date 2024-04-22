@@ -56,7 +56,7 @@ function HomeExperience() {
 
         <div className="experience-right-bottom">
           <div className="skills-container">
-            <div className="skill-section skill-left font__3">
+            <section className="skill-section skill-left font__3">
               <h2>Software</h2>
               <ul>
                 <li>Python</li>
@@ -67,9 +67,9 @@ function HomeExperience() {
                 <li>Data Structures & Algo</li>
                 <li>2+ years school exp.</li>
               </ul>
-            </div>
+            </section>
 
-            <div className="skill-section font__3">
+            <section className="skill-section font__3">
               <h2>Hardware</h2>
               <ul>
                 <li>PCB Layout & Design</li>
@@ -80,7 +80,7 @@ function HomeExperience() {
                 <li>Microsoldering</li>
                 <li>6+ months industry exp.</li>
               </ul>
-            </div>
+            </section>
           </div>
         </div>
       </section>

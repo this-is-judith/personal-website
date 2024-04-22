@@ -44,24 +44,23 @@ const HomeAbout = () => {
       </section>
 
       <section className="about-section about-right">
-        <div className="about-right-top">
-          <RightRectangle
+        <div className="right-rectangle about-right-top">
+          {/* <RightRectangle
             className="faith-rectangle"
             text="FAITH"
             x="225"
             y="115"
             fontSize="2.25rem"
             url="/about" // TODO: update url to specific part of about
-          />
+          /> */}
 
-          <Link to="/about">
-            {/* TODO: update url to specific part of about */}
+          {/* <Link to="/about">
             <FaCross className="homeAbout-icon" size={"2.5rem"} />
-          </Link>
+          </Link> */}
         </div>
 
-        <div className="about-right-middle">
-          <RightRectangle
+        <div className="right-rectangle about-right-middle">
+          {/* <RightRectangle
             className="education-rectangle"
             text="EDUCATION"
             x="225"
@@ -71,11 +70,11 @@ const HomeAbout = () => {
 
           <Link to="/about">
             <FaGraduationCap className="homeAbout-icon" size={"3rem"} />
-          </Link>
+          </Link> */}
         </div>
 
-        <div className="about-right-bottom">
-          <RightRectangle
+        <div className="right-rectangle about-right-bottom">
+          {/* <RightRectangle
             className="hobbies-rectangle"
             text="HOBBIES"
             x="225"
@@ -85,7 +84,7 @@ const HomeAbout = () => {
 
           <Link to="/about">
             <FaBookOpen className="homeAbout-icon" size={"3rem"} />
-          </Link>
+          </Link> */}
         </div>
       </section>
     </div>

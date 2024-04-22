@@ -3,14 +3,14 @@
 }
 
 .about-section {
-  padding-top: 7.5rem;
+  padding-top: 6rem;
   display: flex;
   height: var(--homeAbout-height);
   flex-direction: column;
 }
 
 .about-left {
-  flex: 1.5;
+  flex: 1.2;
   background-color: var(--background-color);
   display: flex;
 }
@@ -34,6 +34,7 @@
   flex: 1;
   display: flex;
   background-color: var(--background-color);
+  align-items: center;
 }
 
 .about-right-top,
@@ -53,6 +54,13 @@
   left: 5rem;
   top: 1rem;
   color: var(--accent-two);
+}
+
+.right-rectangle {
+  border: 0.1rem solid var(--accent-one);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  width: 17rem;
 }
 
 .who-am-I {
