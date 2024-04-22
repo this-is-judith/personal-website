@@ -32,8 +32,7 @@ function HomeProjects() {
           </div>
 
           <div className="button-2">
-            <Button message="PITCH IDEA" />
-            {/* TODO: add url for suggest project */}
+            <Button message="PITCH IDEA" url="/projects" />
           </div>
         </div>
       </section>
@@ -41,21 +40,9 @@ function HomeProjects() {
       <section className="projectsSection projectsRight">
         <div className="projectsRightTop">Most Recent Projects</div>
         <div className="projectsRightBottom">
-          <div className="projectsRightBottomTop">
-            <svg width="600" height="170">
-              <rect x="150" y="10" width="260" height="160" fill="grey" />
-            </svg>
-          </div>
-          <div className="projectsRightBottomMiddle">
-            <svg width="600" height="170">
-              <rect x="250" y="10" width="260" height="160" fill="grey" />
-            </svg>
-          </div>
-          <div className="projectsRightBottomBottom">
-            <svg width="600" height="170">
-              <rect x="150" y="10" width="260" height="160" fill="grey" />
-            </svg>
-          </div>
+          <div className="projectsRightBottomTop"></div>
+          <div className="projectsRightBottomMiddle"></div>
+          <div className="projectsRightBottomBottom"></div>
         </div>
       </section>
     </div>
