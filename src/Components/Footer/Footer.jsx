@@ -1,10 +1,70 @@
 import React from "react";
+
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 import "./footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <section className="footer-section footer-left">Section 1</section>
+      <section className="footer-section footer-left">
+        <div className="footer-left-left">
+          <h2> LET'S CONNECT! </h2>
+        </div>
+
+        <div className="footer-left-right">
+          <div className="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/judithoseitete/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={24} />
+            </a>
+
+            <a
+              href="https://github.com/this-is-judith"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={24} />
+            </a>
+
+            <a
+              href="mailto:jao92@cornell.edu"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoMdMail size={24} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/thisisjudith._/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillInstagram size={24} />
+            </a>
+
+            <a
+              href="https://www.facebook.com/JudyTheSuperhero/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook size={24} />
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="footer-section footer-middle">
         <div className="footer-middle-top"></div>

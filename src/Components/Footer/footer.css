@@ -1,3 +1,4 @@
+/* Container Positioning */
 .footer-container {
   background-color: var(--footer-color);
   padding-top: 8rem;
@@ -10,13 +11,53 @@
   color: var(--footer-text-color);
   display: flex;
   justify-content: center;
-  border: 0.1rem solid yellow;
-}
-.footer-left,
-.footer-right {
-  flex: 1;
 }
 
+/* Left Section */
+.footer-left {
+  flex: 1;
+  display: flex;
+}
+
+.footer-left-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left-left h2 {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-left-right {
+  flex: 1;
+  margin-left: -3rem;
+}
+
+.footer-socials {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-socials a.social-icon,
+.footer-socials a.social-icon:visited,
+.footer-socials a.social-icon:active {
+  text-decoration: none;
+  color: var(--background-color);
+  transition: transform 0.3s;
+}
+
+.footer-socials a.social-icon:hover {
+  transform: scale(1.4);
+}
+
+/* Middle Section */
 .footer-middle {
   flex: 2;
   display: flex;
@@ -44,4 +85,9 @@
 .name-and-copyright {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+}
+
+/* Right Section */
+.footer-right {
+  flex: 1;
 }
