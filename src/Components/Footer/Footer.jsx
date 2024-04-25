@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import ContactForm from "./ContactForm";
 
 import "./footer.css";
 
@@ -12,11 +13,11 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <section className="footer-section footer-left">
-        <div className="footer-left-left">
+        <div className="footer-left-top">
           <h2> LET'S CONNECT! </h2>
         </div>
 
-        <div className="footer-left-right">
+        <div className="footer-left-bottom">
           <div className="footer-socials">
             <a
               href="https://www.linkedin.com/in/judithoseitete/"
@@ -67,7 +68,9 @@ const Footer = () => {
       </section>
 
       <section className="footer-section footer-middle">
-        <div className="footer-middle-top"></div>
+        <div className="footer-middle-top">
+          <ContactForm />
+        </div>
 
         <div className="footer-middle-bottom">
           <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
