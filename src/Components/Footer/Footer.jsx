@@ -13,9 +13,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <section className="footer-section footer-top"></section>
-
-      <section className="footer-section footer-bottom">
+      <section className="footer-section footer-top">
         <section className="footer-middle">
           <div className="footer-middle-top">
             <ContactFormDetails />
@@ -76,14 +74,16 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-middle-bottom">
-            <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
-          </div>
+          <div className="footer-middle-bottom"></div>
         </section>
 
         <section className="footer-right">
           <ContactFormMessage />
         </section>
+      </section>
+
+      <section className="footer-section footer-bottom">
+        <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
       </section>
     </footer>
   );

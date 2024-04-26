@@ -3,6 +3,7 @@
   background-color: var(--footer-color);
   padding-top: 8rem;
   display: flex;
+  flex-direction: column;
   height: var(--footer-height);
 }
 
@@ -11,11 +12,12 @@
   color: var(--footer-text-color);
   display: flex;
   justify-content: center;
+  border: 0.1rem solid yellow;
 }
 
-/* Middle Section */
-.footer-middle {
-  flex: 2;
+/* Top Section */
+.footer-top {
+  flex: 5;
   display: flex;
   flex-direction: column;
 }
@@ -93,7 +95,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Right Section */
-.footer-right {
+/* Bottom Section */
+.footer-bottom {
   flex: 1;
 }
