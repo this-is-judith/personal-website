@@ -115,6 +115,18 @@
   font-size: 1.2rem;
 }
 
+a.topic-box,
+a.topic-box:visited,
+a.topic-box:active {
+  color: var(--accent-one);
+  text-decoration: none;
+}
+
+a.topic-box:hover {
+  background-color: var(--accent-one);
+  color: var(--background-color);
+}
+
 /* Keyboard */
 .keyboard {
   height: 60px;
