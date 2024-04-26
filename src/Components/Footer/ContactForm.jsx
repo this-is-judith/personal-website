@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-function ContactFormMessage() {
+function ContactFormDetails() {
   // State to store input values
   const [formData, setFormData] = useState({
-    category: "",
-    message: "",
+    firstName: "",
+    lastName: "",
+    email: "",
   });
 
   // Handle input changes
@@ -26,6 +27,41 @@ function ContactFormMessage() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label className="form-label">
+        <input
+          className="input-text"
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+          value={formData.firstName}
+          onChange={handleChange}
+          required
+        />
+      </label>
+
+      <label className="form-label">
+        <input
+          className="input-text"
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          value={formData.lastName}
+          onChange={handleChange}
+          required
+        />
+      </label>
+
+      <label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </label>
+
       <label>
         <select
           name="category"
@@ -53,4 +89,4 @@ function ContactFormMessage() {
   );
 }
 
-export default ContactFormMessage;
+export default ContactFormDetails;
