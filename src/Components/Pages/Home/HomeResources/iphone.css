@@ -7,6 +7,16 @@
   position: relative;
 }
 
+.iphone-screen {
+  width: 180px;
+  height: 380px;
+  background-color: grey;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 20px;
+}
+
 .iphone-notch {
   width: 100px;
   height: 18px;
@@ -19,12 +29,28 @@
   border-bottom-right-radius: 10px;
 }
 
-.iphone-screen {
-  width: 180px;
-  height: 380px;
-  background-color: grey;
+.iphone-volume-up,
+.iphone-volume-down {
+  width: 8px;
+  height: 40px;
+  background-color: var(--accent-one);
+  position: relative;
+  left: -7.5%;
+}
+
+.iphone-volume-up {
+  top: 70px;
+}
+
+.iphone-volume-down {
+  top: 80px;
+}
+
+.iphone-power-button {
+  width: 8px;
+  height: 70px;
+  background-color: var(--accent-one);
   position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 20px;
+  top: 85px;
+  right: -7%;
 }
