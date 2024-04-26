@@ -1,3 +1,4 @@
+/* IPhone */
 .iphone {
   width: 200px;
   height: 400px;
@@ -7,16 +8,7 @@
   position: relative;
 }
 
-.iphone-screen {
-  width: 180px;
-  height: 380px;
-  background-color: grey;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 20px;
-}
-
+/* Iphone Notch */
 .iphone-notch {
   width: 120px;
   height: 18px;
@@ -44,12 +36,13 @@
   height: 50%;
   background-color: grey;
   border-radius: 100%;
-  margin-right: 0.7rem;
+  margin-right: 1rem;
   display: flex;
   position: relative;
   top: 25%;
 }
 
+/* Iphone Buttons */
 .iphone-volume-up,
 .iphone-volume-down {
   width: 8px;
@@ -74,6 +67,23 @@
   position: absolute;
   top: 80px;
   right: -7%;
+  cursor: pointer;
+}
+
+/* Iphone Screen */
+.iphone-screen {
+  width: 180px;
+  height: 380px;
+  background-color: grey;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.iphone-screen.on {
+  background-color: var(--background-color);
 }
 
 .iphone-swipe-bar {
@@ -97,4 +107,15 @@
   50% {
     transform: translateX(-50%) translateY(-10px);
   }
+}
+
+.iphone-welcome-message {
+  color: black;
+  font-size: 16px; /* Adjust size as necessary */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
