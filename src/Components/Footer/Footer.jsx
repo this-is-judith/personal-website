@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
@@ -27,30 +28,87 @@ const Footer = () => {
           <div className="footer-quick-links footer-about">
             <h3>About</h3>
             <ul className="footer-links">
-              <li className="footer-link-item">Background</li>
-              <li className="footer-link-item">Faith</li>
-              <li className="footer-link-item">Education</li>
-              <li className="footer-link-item">Hobbies</li>
+              <li className="footer-link-item">
+                <Link to="/about" className="footer-link">
+                  Faith
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/about" className="footer-link">
+                  Background
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/about" className="footer-link">
+                  Education
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/about" className="footer-link">
+                  Hobbies
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="footer-quick-links footer-experience">
             <h3>Experience</h3>
             <ul className="footer-links">
-              <li className="footer-link-item">Skills</li>
-              <li className="footer-link-item">Work</li>
-              <li className="footer-link-item">Hardware</li>
-              <li className="footer-link-item">Software</li>
+              <li className="footer-link-item">
+                <Link to="/experience" className="footer-link">
+                  Skills
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/experience" className="footer-link">
+                  Work
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/experience" className="footer-link">
+                  Hardware
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/experience" className="footer-link">
+                  Software
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="footer-quick-links footer-blog">
             <h3>Blog</h3>
             <ul className="footer-links">
-              <li className="footer-link-item">Faith</li>
-              <li className="footer-link-item">Money</li>
-              <li className="footer-link-item">Tech</li>
-              <li className="footer-link-item">College</li>
+              <li className="footer-link-item">
+                <Link to="/blog" className="footer-link">
+                  Faith
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/blog" className="footer-link">
+                  Money
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/blog" className="footer-link">
+                  Tech
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/blog" className="footer-link">
+                  College
+                </Link>
+              </li>
             </ul>
           </div>
 

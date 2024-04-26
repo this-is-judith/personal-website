@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import logo from "../../Assets/Photos/logo.png";
 import { useScrollToTop } from "../../Assets/Hooks/useScrollToTop";
@@ -20,37 +21,37 @@ const Header = () => {
         <div className="header-section-2">
           <ul className="header-content-list">
             <li>
-              <Link to="/" className="nav-item" onClick={handleScrollToTop}>
+              <Link to="/" className="header-link" onClick={handleScrollToTop}>
                 Home
               </Link>
             </li>
 
             <li>
-              <Link to="/about" className="nav-item">
+              <Link to="/about" className="header-link">
                 About
               </Link>
             </li>
 
             <li>
-              <Link to="/experience" className="nav-item">
+              <Link to="/experience" className="header-link">
                 Experience
               </Link>
             </li>
 
             <li>
-              <Link to="/projects" className="nav-item">
+              <Link to="/projects" className="header-link">
                 Projects
               </Link>
             </li>
 
             <li>
-              <Link to="/blog" className="nav-item">
+              <Link to="/blog" className="header-link">
                 Blog
               </Link>
             </li>
 
             <li>
-              <Link to="/resources" className="nav-item">
+              <Link to="/resources" className="header-link">
                 Resources
               </Link>
             </li>

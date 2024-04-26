@@ -1,11 +1,11 @@
-a.nav-item,
-a.nav-item:visited,
-a.nav-item:active {
+a.header-link,
+a.header-link:visited,
+a.header-link:active {
   text-decoration: none;
   color: var(--header-text-color);
 }
 
-a.nav-item:hover {
+a.header-link:hover {
   color: var(--accent-two);
 }
 
