@@ -18,12 +18,12 @@
 .footer-top {
   flex: 5;
   display: flex;
+  padding-top: 1.5rem;
 }
 
 .footer-top-left,
 .footer-top-right {
   flex: 1;
-  border: 0.1rem solid red;
 }
 
 .footer-top-left {
@@ -34,7 +34,6 @@
 .footer-top-left-top {
   display: flex;
   justify-content: center;
-  border: 0.1rem solid purple;
 }
 
 .footer-top-left-bottom {
@@ -49,7 +48,6 @@
 .footer-middle-bottom,
 .footer-middle-middle {
   display: flex;
-  /* border: 0.1rem solid yellow; */
 }
 
 .footer-middle-top {
