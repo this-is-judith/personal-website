@@ -15,7 +15,7 @@
 /*=============== CSS VARIABLES ===============*/
 :root {
   /*========== Section Heights ==========*/
-  --footer-height: 15rem;
+  --footer-height: 20rem;
 
   --homeSection-height: 45rem;
   --homeAbout-height: 38rem;

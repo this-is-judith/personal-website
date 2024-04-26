@@ -1,9 +1,5 @@
 import React from "react";
 
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
-import AboutDescription from "./AboutDescription";
-
 import "./about.css";
 
 function About() {
