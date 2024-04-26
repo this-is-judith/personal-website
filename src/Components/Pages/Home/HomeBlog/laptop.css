@@ -56,24 +56,62 @@
   border: 0.1rem solid var(--accent-one);
   margin: 0.5rem;
   border-radius: 0.4rem;
+  display: flex;
+}
+
+.search-bar-filter {
+  border-right: 0.1rem solid var(--accent-one);
+}
+
+.search-bar-filter,
+.search-bar-glass {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-search {
+  flex: 8;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
 }
 
 .topics-container {
   flex: 5;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.topic-row {
+  flex: 1;
+  display: flex;
 }
 
 .topic-box {
   flex: 1;
   margin: 0.5rem;
   border: 0.1rem solid var(--accent-one);
+  display: flex;
+  flex-direction: column;
 }
 
-.topic-row {
+.topic-box-section {
+  border: 0.1rem solid purple;
+}
+
+.topic-box-icon {
   flex: 1;
+}
+
+.topic-box-word {
+  flex: 2;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Keyboard */

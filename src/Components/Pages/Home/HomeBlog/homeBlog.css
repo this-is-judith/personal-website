@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
-  border: 0.1rem solid yellow;
 }
 
 /* Left Section */

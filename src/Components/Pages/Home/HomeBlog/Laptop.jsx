@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+
+import { FaFilter } from "react-icons/fa";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+
 import "./laptop.css";
 
 const Laptop = () => {
@@ -59,17 +63,43 @@ const Laptop = () => {
         )}
         {showTopics && (
           <div className="content-container">
-            <div className="search-bar"></div>
+            <div className="search-bar">
+              <div className="search-bar-section search-bar-filter">
+                <FaFilter size="12" />
+              </div>
+
+              <div className="search-bar-section search-bar-search">SEARCH</div>
+
+              <div className="search-bar-section search-bar-glass">
+                <FaMagnifyingGlass />
+              </div>
+            </div>
 
             <div className="topics-container">
               <div className="topic-row">
-                <div className="topic-box"></div>
-                <div className="topic-box"></div>
+                <div className="topic-box">
+                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-word">Faith</div>
+                </div>
+
+                <div className="topic-box">
+                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-word">Tech</div>
+                </div>
               </div>
 
               <div className="topic-row">
-                <div className="topic-box"></div>
-                <div className="topic-box"></div>
+                <div className="topic-box">
+                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-word">
+                    College
+                  </div>
+                </div>
+
+                <div className="topic-box">
+                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-word">Money</div>
+                </div>
               </div>
             </div>
           </div>
