@@ -49,6 +49,8 @@
   height: 100%;
   width: 100%;
   padding: 1rem;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
 }
 
 .search-bar {
@@ -76,8 +78,6 @@
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
-  font-family: var(--font-family);
-  font-size: 0.9rem;
 }
 
 .topics-container {
@@ -100,18 +100,19 @@
 }
 
 .topic-box-section {
-  border: 0.1rem solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topic-box-icon {
   flex: 1;
+  align-items: end;
 }
 
 .topic-box-word {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1.5;
+  font-size: 1.2rem;
 }
 
 /* Keyboard */

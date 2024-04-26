@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 
 import { FaFilter } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaCross } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { FaUniversity } from "react-icons/fa";
+import { HiMiniCurrencyDollar } from "react-icons/hi2";
 
 import "./laptop.css";
 
@@ -78,26 +82,34 @@ const Laptop = () => {
             <div className="topics-container">
               <div className="topic-row">
                 <div className="topic-box">
-                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-icon">
+                    <FaCross size="18" />
+                  </div>
                   <div className="topic-box-section topic-box-word">Faith</div>
                 </div>
 
                 <div className="topic-box">
-                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-icon">
+                    <FaCode size="20" />
+                  </div>
                   <div className="topic-box-section topic-box-word">Tech</div>
                 </div>
               </div>
 
               <div className="topic-row">
                 <div className="topic-box">
-                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-icon">
+                    <FaUniversity size="20" />
+                  </div>
                   <div className="topic-box-section topic-box-word">
                     College
                   </div>
                 </div>
 
                 <div className="topic-box">
-                  <div className="topic-box-section topic-box-icon"></div>
+                  <div className="topic-box-section topic-box-icon">
+                    <HiMiniCurrencyDollar size="20" />
+                  </div>
                   <div className="topic-box-section topic-box-word">Money</div>
                 </div>
               </div>
