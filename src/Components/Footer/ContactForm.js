@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 function ContactForm() {
     // State to store input values
     const [formData, setFormData] = useState({
-        fullName: '',
+        firstName: '',
+        lastName: '',
         email: '',
-        category: 'pitchingIdea',
+        category: '',
         message: ''
     });
 
@@ -28,42 +29,62 @@ function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
-                Full Name:
+           <label className="form-label">
                 <input 
+                    className="input-text"
                     type="text" 
-                    name="fullName" 
-                    value={formData.fullName} 
+                    name="firstName" 
+                    placeholder="First Name"
+                    value={formData.firstName} 
                     onChange={handleChange} 
                     required 
                 />
             </label>
+
+            <label className="form-label">
+                <input 
+                    className="input-text"
+                    type="text" 
+                    name="lastName" 
+                    placeholder="Last Name"
+                    value={formData.lastName} 
+                    onChange={handleChange} 
+                    required 
+                />
+            </label>
+
+
             <label>
-                Email:
                 <input 
                     type="email" 
                     name="email" 
+                    placeholder="Email"
                     value={formData.email} 
                     onChange={handleChange} 
                     required 
                 />
             </label>
+
             <label>
-                Category:
-                <select name="category" value={formData.category} onChange={handleChange}>
-                    <option value="pitchingIdea">Pitching an Idea</option>
-                    <option value="sharingResource">Sharing a Resource</option>
+                <select name="category"
+                value={formData.category}
+                onChange={handleChange}>
+                    <option value="pitchingIdea">Project idea</option>
+                    <option value="pitchingIdea">Blog idea</option>
+                    <option value="sharingResource">Resource</option>
                 </select>
             </label>
+
             <label>
-                Message:
                 <textarea 
                     name="message" 
+                    placeholder="Type your message"
                     value={formData.message} 
                     onChange={handleChange} 
                     required 
                 />
             </label>
+
             <button type="submit">Submit</button>
         </form>
     );

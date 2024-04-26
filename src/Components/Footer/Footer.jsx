@@ -12,64 +12,64 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <section className="footer-section footer-left">
-        <div className="footer-left-top">
-          <h2> LET'S CONNECT! </h2>
-        </div>
-
-        <div className="footer-left-bottom">
-          <div className="footer-socials">
-            <a
-              href="https://www.linkedin.com/in/judithoseitete/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin size={24} />
-            </a>
-
-            <a
-              href="https://github.com/this-is-judith"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub size={24} />
-            </a>
-
-            <a
-              href="mailto:jao92@cornell.edu"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IoMdMail size={24} />
-            </a>
-
-            <a
-              href="https://www.instagram.com/thisisjudith._/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillInstagram size={24} />
-            </a>
-
-            <a
-              href="https://www.facebook.com/JudyTheSuperhero/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook size={24} />
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="footer-section footer-middle">
         <div className="footer-middle-top">
           <ContactForm />
+        </div>
+
+        <div className="footer-middle-middle">
+          <div className="footer-middle-middle-top">
+            <h2> LET'S CONNECT! </h2>
+          </div>
+
+          <div className="footer-middle-middle-bottom">
+            <div className="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/judithoseitete/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={24} />
+              </a>
+
+              <a
+                href="https://github.com/this-is-judith"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={24} />
+              </a>
+
+              <a
+                href="mailto:jao92@cornell.edu"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoMdMail size={24} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/thisisjudith._/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram size={24} />
+              </a>
+
+              <a
+                href="https://www.facebook.com/JudyTheSuperhero/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={24} />
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="footer-middle-bottom">
