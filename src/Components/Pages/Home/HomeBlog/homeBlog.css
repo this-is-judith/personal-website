@@ -1,41 +1,41 @@
+/* Container positioning */
 .homeBlog-container {
   display: flex;
 }
 
-.blogSection {
-  padding-top: 6.5rem;
-  display: flex;
+.blog-section {
   height: var(--homeBlog-height);
+  padding-top: 7rem;
+  display: flex;
   flex-direction: column;
+  background-color: var(--background-color);
+  border: 0.1rem solid yellow;
 }
 
-.blogLeft {
+/* Left Section */
+.blog-left {
   flex: 1;
-  background-color: var(--background-color);
   display: flex;
 }
 
-.blogRight {
-  flex: 1;
-  background-color: var(--background-color);
-}
-
-.blogLeftTop {
+.blog-left-top {
   flex: 1;
 }
 
-.blogLeftMiddle {
+.blog-left-middle {
   flex: 2;
 }
 
-.blogLeftBottom {
+.blog-left-bottom {
   flex: 1;
 }
 
-.blogLaptop {
-  position: relative;
-  top: 5rem;
-  right: 0rem;
+/* Right Section */
+.blog-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .numberBlog {

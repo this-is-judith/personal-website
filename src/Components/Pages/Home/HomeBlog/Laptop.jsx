@@ -12,14 +12,14 @@ const Laptop = () => {
     let bootingTimer;
 
     if (isScreenOn) {
-      // Start the booting animation
+      // Starts the booting animation
       let dots = 0;
       bootingTimer = setInterval(() => {
-        dots = (dots + 1) % 4; // Cycle through 0, 1, 2, 3
+        dots = (dots + 1) % 4; // Cycles through 0, 1, 2, 3
         setBootingText(`Booting${".".repeat(dots)}`);
-      }, 400); // Change dots every 400 ms
+      }, 400); // Changes dots every 400 ms
 
-      // Set timeout to show welcome message after 3 seconds
+      // Sets timeout to show welcome message after 3 seconds
       timer = setTimeout(() => {
         clearInterval(bootingTimer);
         setBootingText("");
@@ -27,7 +27,7 @@ const Laptop = () => {
         setTimeout(() => {
           setShowWelcomeMessage(false);
           setShowTopics(true);
-        }, 3000); // Hide welcome and show topics after 2 seconds
+        }, 3000); // Hides welcome and show topics after 2 seconds
       }, 3000);
     } else {
       setShowWelcomeMessage(false);
@@ -35,7 +35,7 @@ const Laptop = () => {
       setBootingText("");
     }
 
-    // Cleanup function to clear timers
+    // Cleans up function to clear timers
     return () => {
       clearTimeout(timer);
       clearInterval(bootingTimer);

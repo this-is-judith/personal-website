@@ -7,7 +7,7 @@ import "./homeBlog.css";
 function HomeBlog() {
   return (
     <div className="homeBlog-container">
-      <section className="blogSection blogLeft">
+      <section className="blog-section blog-left">
         <div className="blogLeftTop">
           <div>
             <h4 className="font__4 numberBlog">04.</h4>
@@ -19,7 +19,7 @@ function HomeBlog() {
           </div>
         </div>
 
-        <div className="blogLeftMiddle">
+        <div className="blog-left-middle">
           <h3 className="font__3 myBlogAnswer">
             <p>A place I share my thoughts, journey and</p>
             <p>write about anything and everything.</p>
@@ -27,7 +27,7 @@ function HomeBlog() {
           </h3>
         </div>
 
-        <div className="blogLeftBottom">
+        <div className="blog-left-bottom">
           <div className="button-1">
             <Button message="LEARN MORE" url="/blog" />
           </div>
@@ -38,8 +38,8 @@ function HomeBlog() {
         </div>
       </section>
 
-      <section className="blogSection blogRight">
-        <div className="blogLaptop">
+      <section className="blog-section blog-right">
+        <div className="blog-laptop">
           <Laptop />
         </div>
       </section>
