@@ -5,7 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import ContactForm from "./ContactForm";
+import ContactFormDetails from "./ContactFormDetails";
+import ContactFormMessage from "./ContactFormMessage";
 
 import "./footer.css";
 
@@ -14,7 +15,7 @@ const Footer = () => {
     <footer className="footer-container">
       <section className="footer-section footer-middle">
         <div className="footer-middle-top">
-          <ContactForm />
+          <ContactFormDetails />
         </div>
 
         <div className="footer-middle-middle">
@@ -77,7 +78,9 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className="footer-section footer-right">Section 3</section>
+      <section className="footer-section footer-right">
+        <ContactFormMessage />
+      </section>
     </footer>
   );
 };

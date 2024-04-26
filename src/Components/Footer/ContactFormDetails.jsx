@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
-function ContactForm() {
+function ContactFormDetails() {
     // State to store input values
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
-        email: '',
-        category: '',
-        message: ''
+        email: ''
     });
 
     // Handle input changes
@@ -64,30 +62,8 @@ function ContactForm() {
                     required 
                 />
             </label>
-
-            <label>
-                <select name="category"
-                value={formData.category}
-                onChange={handleChange}>
-                    <option value="pitchingIdea">Project idea</option>
-                    <option value="pitchingIdea">Blog idea</option>
-                    <option value="sharingResource">Resource</option>
-                </select>
-            </label>
-
-            <label>
-                <textarea 
-                    name="message" 
-                    placeholder="Type your message"
-                    value={formData.message} 
-                    onChange={handleChange} 
-                    required 
-                />
-            </label>
-
-            <button type="submit">Submit</button>
         </form>
     );
 }
 
-export default ContactForm;
+export default ContactFormDetails;
