@@ -16,6 +16,17 @@ function IPhone() {
           <div className="iphone-camera"></div>
         </div>
 
+        <div className="iphone-main-screen">
+          <div className="iphone-screen-section iphone-lock"></div>
+          <div className="iphone-screen-section iphone-date"></div>
+          <div className="iphone-screen-section iphone-time"></div>
+          <div className="iphone-screen-section iphone-main"></div>
+          <div className="iphone-screen-section iphone-extras">
+            <div className="iphone-torchlight-icon"></div>
+            <div className="iphone-camera-icon"></div>
+          </div>
+        </div>
+
         {isPowerOn && (
           <div className="iphone-welcome-message">Welcome to iPhone</div>
         )}

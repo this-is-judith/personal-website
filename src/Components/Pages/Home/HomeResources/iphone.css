@@ -48,7 +48,7 @@
   width: 8px;
   height: 40px;
   background-color: var(--accent-one);
-  position: relative;
+  position: absolute;
   left: -7.5%;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .iphone-volume-down {
-  top: 80px;
+  top: 120px;
 }
 
 .iphone-power-button {
@@ -118,4 +118,45 @@
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
+}
+
+.iphone-main-screen {
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid yellow;
+}
+
+.iphone-screen-section {
+  flex: 1;
+  border: 0.1rem solid purple;
+}
+
+.iphone-lock {
+  flex: 0.5;
+}
+
+.iphone-date {
+  flex: 1;
+}
+
+.iphone-time {
+  flex: 1.5;
+}
+
+.iphone-main {
+  flex: 6;
+}
+
+.iphone-extras {
+  flex: 1;
+  display: flex;
+}
+
+.iphone-camera-icon,
+.iphone-torchlight-icon {
+  flex: 1;
+  border: 0.1rem solid red;
 }
