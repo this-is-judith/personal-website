@@ -13,73 +13,77 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <section className="footer-section footer-middle">
-        <div className="footer-middle-top">
-          <ContactFormDetails />
-        </div>
+      <section className="footer-section footer-top"></section>
 
-        <div className="footer-middle-middle">
-          <div className="footer-middle-middle-top">
-            <h2> LET'S CONNECT! </h2>
+      <section className="footer-section footer-bottom">
+        <section className="footer-middle">
+          <div className="footer-middle-top">
+            <ContactFormDetails />
           </div>
 
-          <div className="footer-middle-middle-bottom">
-            <div className="footer-socials">
-              <a
-                href="https://www.linkedin.com/in/judithoseitete/"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={24} />
-              </a>
+          <div className="footer-middle-middle">
+            <div className="footer-middle-middle-top">
+              <h2> LET'S CONNECT! </h2>
+            </div>
 
-              <a
-                href="https://github.com/this-is-judith"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={24} />
-              </a>
+            <div className="footer-middle-middle-bottom">
+              <div className="footer-socials">
+                <a
+                  href="https://www.linkedin.com/in/judithoseitete/"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={24} />
+                </a>
 
-              <a
-                href="mailto:jao92@cornell.edu"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IoMdMail size={24} />
-              </a>
+                <a
+                  href="https://github.com/this-is-judith"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={24} />
+                </a>
 
-              <a
-                href="https://www.instagram.com/thisisjudith._/"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram size={24} />
-              </a>
+                <a
+                  href="mailto:jao92@cornell.edu"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoMdMail size={24} />
+                </a>
 
-              <a
-                href="https://www.facebook.com/JudyTheSuperhero/"
-                className="social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook size={24} />
-              </a>
+                <a
+                  href="https://www.instagram.com/thisisjudith._/"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillInstagram size={24} />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/JudyTheSuperhero/"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook size={24} />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="footer-middle-bottom">
-          <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
-        </div>
-      </section>
+          <div className="footer-middle-bottom">
+            <p className="name-and-copyright">Judith Osei-Tete © 2024</p>
+          </div>
+        </section>
 
-      <section className="footer-section footer-right">
-        <ContactFormMessage />
+        <section className="footer-right">
+          <ContactFormMessage />
+        </section>
       </section>
     </footer>
   );

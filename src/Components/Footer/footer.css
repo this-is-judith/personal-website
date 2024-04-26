@@ -24,11 +24,7 @@
 .footer-middle-bottom,
 .footer-middle-middle {
   display: flex;
-  border: 0.1rem solid yellow;
-}
-
-.footer-middle-bottom {
-  justify-content: center;
+  /* border: 0.1rem solid yellow; */
 }
 
 .footer-middle-top {
@@ -37,10 +33,16 @@
 
 .footer-middle-middle {
   flex: 2;
+  justify-content: end;
+  align-items: end;
+  padding-right: 6em;
 }
 
 .footer-middle-bottom {
   flex: 1;
+  justify-content: end;
+  align-items: end;
+  padding-right: 7em;
 }
 
 .footer-middle-middle {
