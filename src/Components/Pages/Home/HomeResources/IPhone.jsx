@@ -13,6 +13,7 @@ function IPhone() {
         <div className="iphone-volume-up"></div>
         <div className="iphone-volume-down"></div>
         <div className="iphone-power-button"></div>
+        <div className="iphone-swipe-bar"></div>
       </div>
     </div>
   );

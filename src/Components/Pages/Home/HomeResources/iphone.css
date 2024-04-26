@@ -54,3 +54,14 @@
   top: 85px;
   right: -7%;
 }
+
+.iphone-swipe-bar {
+  width: 100px;
+  height: 7px;
+  background-color: var(--accent-one);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
