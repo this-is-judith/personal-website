@@ -94,12 +94,6 @@ const Footer = () => {
 
               <li className="footer-link-item">
                 <Link to="/blog" className="footer-link">
-                  Money
-                </Link>
-              </li>
-
-              <li className="footer-link-item">
-                <Link to="/blog" className="footer-link">
                   Tech
                 </Link>
               </li>
@@ -107,6 +101,12 @@ const Footer = () => {
               <li className="footer-link-item">
                 <Link to="/blog" className="footer-link">
                   College
+                </Link>
+              </li>
+
+              <li className="footer-link-item">
+                <Link to="/blog" className="footer-link">
+                  Money
                 </Link>
               </li>
             </ul>
