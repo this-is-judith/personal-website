@@ -14,11 +14,14 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <section className="footer-section footer-top">
-        <section className="footer-middle">
+        <div className="footer-top-left">
           <div className="footer-middle-top">
             <ContactFormDetails />
+            <ContactFormMessage />
           </div>
+        </div>
 
+        <div className="footer-top-right">
           <div className="footer-middle-middle">
             <div className="footer-middle-middle-top">
               <h2> LET'S CONNECT! </h2>
@@ -73,13 +76,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          <div className="footer-middle-bottom"></div>
-        </section>
-
-        <section className="footer-right">
-          <ContactFormMessage />
-        </section>
+        </div>
       </section>
 
       <section className="footer-section footer-bottom">
