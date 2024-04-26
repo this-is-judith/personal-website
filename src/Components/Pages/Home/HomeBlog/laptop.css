@@ -9,23 +9,22 @@
 /* Screen */
 .screen {
   height: 15rem;
-  background-color: #333333;
+  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   border: 0.75rem solid var(--accent-one);
-  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
 .screen.on {
-  background-color: #e0e0e0;
+  background-color: var(--background-color);
 }
 
-.welcome-message,
-.booting-message {
-  color: #333;
-  font-size: 1.2rem;
+.laptop-text {
+  color: var(--accent-one);
+  font-size: 1rem;
   text-align: center;
   padding: 10px;
   font-family: "Poppins", sans-serif;
@@ -65,7 +64,10 @@
   flex: 1;
   margin: 1px;
   background-color: #ccc;
+  border: 0.05rem solid black;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
 }
 
 .wide-key {
@@ -74,6 +76,27 @@
 
 .extra-wide-key {
   flex: 6;
+}
+
+.power-button-container {
+  flex: 2;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+.power-button {
+  background-color: var(--accent-two);
+  color: var(--background-color);
+}
+
+.power-button:hover {
+  background-color: var(--accent-one);
+}
+
+.power-button:active {
+  filter: brightness(80%);
 }
 
 /* Blog Simulator */

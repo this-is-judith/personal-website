@@ -19,7 +19,6 @@ const Laptop = () => {
         setBootingText(`Booting${".".repeat(dots)}`);
       }, 400); // Changes dots every 400 ms
 
-      // Sets timeout to show welcome message after 3 seconds
       timer = setTimeout(() => {
         clearInterval(bootingTimer);
         setBootingText("");
@@ -27,8 +26,8 @@ const Laptop = () => {
         setTimeout(() => {
           setShowWelcomeMessage(false);
           setShowTopics(true);
-        }, 3000); // Hides welcome and show topics after 2 seconds
-      }, 3000);
+        }, 5000); // Hides welcome and show topics after 5 seconds
+      }, 3000); // Sets timeout to show welcome message after 3 seconds
     } else {
       setShowWelcomeMessage(false);
       setShowTopics(false);
@@ -46,18 +45,17 @@ const Laptop = () => {
     setScreenOn(!isScreenOn);
   };
 
-  const generateKey = (keyClass = "key") => <div className={keyClass}></div>;
+  const generateKey = (keyClass = "key", keyText = "") => (
+    <div className={keyClass}>{keyText}</div>
+  );
 
   return (
     <div className="laptop">
-      <div
-        className={`screen ${isScreenOn ? "on" : ""}`}
-        onClick={toggleScreen}
-      >
+      <div className={`screen ${isScreenOn ? "on" : ""}`}>
         <div className="camera"></div>
-        {bootingText && <div className="message">{bootingText}</div>}
+        {bootingText && <div className="laptop-text">{bootingText}</div>}
         {showWelcomeMessage && (
-          <div className="message">Welcome, this is Judith's Blog</div>
+          <div className="laptop-text">Welcome, this is Judith's Blog</div>
         )}
         {showTopics && (
           <>
@@ -101,7 +99,10 @@ const Laptop = () => {
           {generateKey("key wide-key")} {/* for shift */}
           {generateKey()} {generateKey()} {generateKey()}
           {generateKey("key extra-wide-key")} {/* for spacebar */}
-          {generateKey()} {generateKey()} {generateKey()}
+          <div className={"power-button-container"} onClick={toggleScreen}>
+            {generateKey("key power-button", `${isScreenOn ? "ON" : "OFF"}`)}
+          </div>
+          {generateKey()} {generateKey()}
           {generateKey("key wide-key")} {/* for ctrl */}
         </div>
       </div>
