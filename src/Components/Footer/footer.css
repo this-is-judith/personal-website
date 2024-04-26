@@ -1,7 +1,7 @@
 /* Container Positioning */
 .footer-container {
   background-color: var(--footer-color);
-  padding-top: 8rem;
+  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   height: var(--footer-height);
@@ -122,4 +122,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }

@@ -8,7 +8,7 @@ function ContactForm() {
     firstName: "",
     lastName: "",
     email: "",
-    category: "pitchingIdea", // initialize category and message
+    category: "", // initialize category and message
     message: "",
   });
 
@@ -36,7 +36,7 @@ function ContactForm() {
             className="input-text"
             type="text"
             name="firstName"
-            placeholder="First Name"
+            placeholder="FIRST NAME"
             value={formData.firstName}
             onChange={handleChange}
             required
@@ -48,7 +48,7 @@ function ContactForm() {
             className="input-text"
             type="text"
             name="lastName"
-            placeholder="Last Name"
+            placeholder="LAST NAME"
             value={formData.lastName}
             onChange={handleChange}
             required
@@ -60,7 +60,7 @@ function ContactForm() {
             className="input-text"
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="EMAIL"
             value={formData.email}
             onChange={handleChange}
             required
@@ -72,9 +72,9 @@ function ContactForm() {
         <div className="message-container">
           <label>
             <textarea
-              className="message-text"
+              className="additional-text message-text"
               name="message"
-              placeholder="Type your message"
+              placeholder="TYPE YOUR MESSAGE HERE"
               value={formData.message}
               onChange={handleChange}
               required
@@ -85,19 +85,19 @@ function ContactForm() {
         <div className="category-submit-container">
           <label>
             <select
-              className="category-text"
+              className="additional-text category-text"
               name="category"
               value={formData.category}
               onChange={handleChange}
             >
-              <option value="projectIdea">Project idea</option>
-              <option value="blogIdea">Blog idea</option> // fixed value
-              <option value="sharingResource">Resource</option>
+              <option className="option">Project idea</option>
+              <option className="option">Blog idea</option>
+              <option className="option">Resource</option>
             </select>
           </label>
 
-          <button className="submit-button" type="submit">
-            Submit
+          <button className="additional-text submit-button" type="submit">
+            SUBMIT
           </button>
         </div>
       </div>
