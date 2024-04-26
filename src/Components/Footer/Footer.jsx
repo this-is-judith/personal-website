@@ -24,58 +24,102 @@ const Footer = () => {
         </div>
 
         <div className="footer-top-right">
-          <div className="footer-middle-middle">
-            <div className="footer-middle-middle-top">
-              <h2> LET'S CONNECT! </h2>
-            </div>
+          <div className="footer-quick-links footer-about">
+            <h3>About</h3>
+            <ul className="footer-links">
+              <li className="footer-link-item">Item 1</li>
+              <li className="footer-link-item">Item 2</li>
+              <li className="footer-link-item">Item 3</li>
+              <li className="footer-link-item">Item 4</li>
+            </ul>
+          </div>
 
-            <div className="footer-middle-middle-bottom">
-              <div className="footer-socials">
-                <a
-                  href="https://www.linkedin.com/in/judithoseitete/"
-                  className="social-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={24} />
-                </a>
+          <div className="footer-quick-links footer-experience">
+            <h3>Experience</h3>
+            <ul className="footer-links">
+              <li className="footer-link-item">Item 1</li>
+              <li className="footer-link-item">Item 2</li>
+              <li className="footer-link-item">Item 3</li>
+              <li className="footer-link-item">Item 4</li>
+            </ul>
+          </div>
 
-                <a
-                  href="https://github.com/this-is-judith"
-                  className="social-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={24} />
-                </a>
+          <div className="footer-quick-links footer-projects">
+            <h3>Projects</h3>
+            <ul className="footer-links">
+              <li className="footer-link-item">Item 1</li>
+              <li className="footer-link-item">Item 2</li>
+              <li className="footer-link-item">Item 3</li>
+              <li className="footer-link-item">Item 4</li>
+            </ul>
+          </div>
 
-                <a
-                  href="mailto:jao92@cornell.edu"
-                  className="social-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IoMdMail size={24} />
-                </a>
+          <div className="footer-quick-links footer-blog">
+            <h3>Blog</h3>
+            <ul className="footer-links">
+              <li className="footer-link-item">Item 1</li>
+              <li className="footer-link-item">Item 2</li>
+              <li className="footer-link-item">Item 3</li>
+              <li className="footer-link-item">Item 4</li>
+            </ul>
+          </div>
 
-                <a
-                  href="https://www.instagram.com/thisisjudith._/"
-                  className="social-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillInstagram size={24} />
-                </a>
+          <div className="footer-quick-links footer-resources">
+            <h3>Resources</h3>
+            <ul className="footer-links">
+              <li className="footer-link-item">Item 1</li>
+              <li className="footer-link-item">Item 2</li>
+              <li className="footer-link-item">Item 3</li>
+              <li className="footer-link-item">Item 4</li>
+            </ul>
+          </div>
 
-                <a
-                  href="https://www.facebook.com/JudyTheSuperhero/"
-                  className="social-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook size={24} />
-                </a>
-              </div>
+          <div className="footer-quick-links footer-socials-container">
+            <div className="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/judithoseitete/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={24} />
+              </a>
+
+              <a
+                href="https://github.com/this-is-judith"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={24} />
+              </a>
+
+              <a
+                href="mailto:jao92@cornell.edu"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoMdMail size={24} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/thisisjudith._/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram size={24} />
+              </a>
+
+              <a
+                href="https://www.facebook.com/JudyTheSuperhero/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={24} />
+              </a>
             </div>
           </div>
         </div>
