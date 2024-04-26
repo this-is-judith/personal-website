@@ -1,0 +1,51 @@
+.contact-form {
+  display: flex;
+  height: 100%;
+}
+
+.personal-info,
+.additional-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid yellow;
+}
+
+.personal-info {
+  align-items: center;
+}
+
+.form-label {
+  margin-bottom: 1rem;
+}
+
+.input-text {
+  height: 3rem;
+  width: 15rem;
+}
+
+.message-container,
+.category-submit-container {
+  border: 0.1rem solid purple;
+  flex: 1;
+}
+
+.category-submit-container {
+  display: flex;
+  gap: 0.75rem;
+}
+.message-text {
+  height: 8.5rem;
+  width: 18rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-text {
+  height: 2.25rem;
+  width: 12rem;
+}
+
+.submit-button {
+  height: 2.25rem;
+  width: 5.5rem;
+}

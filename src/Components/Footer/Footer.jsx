@@ -14,7 +14,13 @@ const Footer = () => {
     <footer className="footer-container">
       <section className="footer-section footer-top">
         <div className="footer-top-left">
-          <ContactForm />
+          <div className="footer-top-left-top">
+            <h2>SHARE IDEAS WITH ME</h2>
+          </div>
+
+          <div className="footer-top-left-bottom">
+            <ContactForm />
+          </div>
         </div>
 
         <div className="footer-top-right">

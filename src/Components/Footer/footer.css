@@ -26,6 +26,25 @@
   border: 0.1rem solid red;
 }
 
+.footer-top-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top-left-top {
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid purple;
+}
+
+.footer-top-left-bottom {
+  height: 100%;
+}
+
+.footer-top-left-top h2 {
+  font-family: var(--font-family);
+}
+
 .footer-middle-top,
 .footer-middle-bottom,
 .footer-middle-middle {
@@ -102,4 +121,7 @@
 /* Bottom Section */
 .footer-bottom {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

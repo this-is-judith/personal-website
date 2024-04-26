@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-function ContactFormDetails() {
+import "./contactForm.css";
+
+function ContactForm() {
   // State to store input values
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
+    category: "pitchingIdea", // initialize category and message
+    message: "",
   });
 
   // Handle input changes
@@ -20,73 +24,85 @@ function ContactFormDetails() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the data submission to an API or server
     console.log("Form Data:", formData);
     alert("Form submitted, check the console for data!");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label className="form-label">
-        <input
-          className="input-text"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
-      </label>
+    <form onSubmit={handleSubmit} className="contact-form">
+      <div className="personal-info">
+        <label className="form-label">
+          <input
+            className="input-text"
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-      <label className="form-label">
-        <input
-          className="input-text"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
-      </label>
+        <label className="form-label">
+          <input
+            className="input-text"
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-      <label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </label>
+        <label className="form-label">
+          <input
+            className="input-text"
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </label>
+      </div>
 
-      <label>
-        <select
-          name="category"
-          value={formData.category}
-          onChange={handleChange}
-        >
-          <option value="pitchingIdea">Project idea</option>
-          <option value="pitchingIdea">Blog idea</option>
-          <option value="sharingResource">Resource</option>
-        </select>
-      </label>
+      <div className="additional-info">
+        <div className="message-container">
+          <label>
+            <textarea
+              className="message-text"
+              name="message"
+              placeholder="Type your message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </label>
+        </div>
 
-      <label>
-        <textarea
-          name="message"
-          placeholder="Type your message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-      </label>
+        <div className="category-submit-container">
+          <label>
+            <select
+              className="category-text"
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+            >
+              <option value="projectIdea">Project idea</option>
+              <option value="blogIdea">Blog idea</option> // fixed value
+              <option value="sharingResource">Resource</option>
+            </select>
+          </label>
 
-      <button type="submit">Submit</button>
+          <button className="submit-button" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
     </form>
   );
 }
 
-export default ContactFormDetails;
+export default ContactForm;
