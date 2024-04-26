@@ -26,7 +26,7 @@ const Laptop = () => {
         setTimeout(() => {
           setShowWelcomeMessage(false);
           setShowTopics(true);
-        }, 5000); // Hides welcome and show topics after 5 seconds
+        }, 4000); // Hides welcome and shows topics after 4 seconds
       }, 3000); // Sets timeout to show welcome message after 3 seconds
     } else {
       setShowWelcomeMessage(false);
@@ -55,22 +55,24 @@ const Laptop = () => {
         <div className="camera"></div>
         {bootingText && <div className="laptop-text">{bootingText}</div>}
         {showWelcomeMessage && (
-          <div className="laptop-text">Welcome, this is Judith's Blog</div>
+          <div className="laptop-text">Welcome! This is Judith's Blog</div>
         )}
         {showTopics && (
-          <>
-            <div className="search-bar">Search</div>
+          <div className="content-container">
+            <div className="search-bar"></div>
+
             <div className="topics-container">
               <div className="topic-row">
-                <div className="topic-box">Faith</div>
-                <div className="topic-box">Tech</div>
+                <div className="topic-box"></div>
+                <div className="topic-box"></div>
               </div>
+
               <div className="topic-row">
-                <div className="topic-box">Money</div>
-                <div className="topic-box">College</div>
+                <div className="topic-box"></div>
+                <div className="topic-box"></div>
               </div>
             </div>
-          </>
+          </div>
         )}
       </div>
 

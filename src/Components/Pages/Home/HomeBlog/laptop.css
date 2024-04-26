@@ -6,6 +6,18 @@
   margin: 50px auto;
 }
 
+/* Camera */
+.camera {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Screen */
 .screen {
   height: 15rem;
@@ -30,16 +42,38 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Camera */
-.camera {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #666;
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Blog Simulator */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.search-bar {
+  flex: 1;
+  border: 0.1rem solid var(--accent-one);
+  margin: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.topics-container {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.topic-box {
+  flex: 1;
+  margin: 0.5rem;
+  border: 0.1rem solid var(--accent-one);
+}
+
+.topic-row {
+  flex: 1;
+  display: flex;
 }
 
 /* Keyboard */
@@ -96,43 +130,5 @@
 }
 
 .power-button:active {
-  filter: brightness(80%);
-}
-
-/* Blog Simulator */
-.search-bar {
-  background-color: #666;
-  margin: 10px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  height: 2.5rem; /* Slightly taller for the search bar */
-  font-size: 1rem;
-  width: calc(100% - 20px); /* Full width with margin accounted */
-}
-
-.topic-box {
-  background-color: #666;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  flex: 1 1 48%; /* Each box takes nearly half the container's width */
-  margin: 5px;
-  height: 3rem; /* Height of each topic box */
-}
-
-.topics-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.topic-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
+  filter: brightness(150%);
 }
