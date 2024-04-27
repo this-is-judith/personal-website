@@ -1,7 +1,20 @@
 import React, { useState } from "react";
+
+import { IoIosFlashlight } from "react-icons/io";
+import { FaCamera } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+
 import "./iphone.css";
 
 function IPhone() {
+  const [date, setDate] = React.useState("");
+
+  React.useEffect(() => {
+    const today = new Date();
+    const options = { weekday: "long", month: "long", day: "numeric" };
+    setDate(today.toLocaleDateString("en-US", options));
+  }, []);
+
   const [isPowerOn, setIsPowerOn] = useState(false);
 
   const togglePower = () => {
@@ -17,13 +30,19 @@ function IPhone() {
         </div>
 
         <div className="iphone-main-screen">
-          <div className="iphone-screen-section iphone-lock"></div>
-          <div className="iphone-screen-section iphone-date"></div>
+          <div className="iphone-screen-section iphone-lock">
+            <FaLock size="12" />
+          </div>
+          <div className="iphone-screen-section iphone-date">{date}</div>
           <div className="iphone-screen-section iphone-time"></div>
           <div className="iphone-screen-section iphone-main"></div>
           <div className="iphone-screen-section iphone-extras">
-            <div className="iphone-torchlight-icon"></div>
-            <div className="iphone-camera-icon"></div>
+            <div className="iphone-torchlight-icon">
+              <IoIosFlashlight size="25" />
+            </div>
+            <div className="iphone-camera-icon">
+              <FaCamera size="17.5" />
+            </div>
           </div>
         </div>
 
