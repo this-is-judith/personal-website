@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
 import { IoIosFlashlight } from "react-icons/io";
-import { FaCamera } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
+import { FaCamera, FaLock, FaCross, FaCode } from "react-icons/fa";
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 import "./iphone.css";
 
@@ -44,7 +45,7 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
     return () => clearTimeout(timeout);
   }, []);
 
-  // Screen Saver
+  // From Power Off to Screen Saver
   const [showScreenSaver, setShowScreenSaver] = useState(false);
 
   useEffect(() => {
@@ -54,6 +55,12 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
       setShowScreenSaver(false);
     }
   }, [isPowerOn]);
+
+  // From First Screen to Screen Saver
+  const [isFirstScreenUpArrowClicked, setisFirstScreenUpArrowClicked] =
+    useState(false);
+  const [isFirstScreenDownArrowClicked, setisFirstScreenDownArrowClicked] =
+    useState(false);
 
   return (
     <div className="iphone">
@@ -91,14 +98,34 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
         )}
 
         {showScreenSaver && isSwipeBarClicked && (
-          <>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
-            <div>Hello</div>
-          </>
+          <div className="iphone-firstScreen-content-container">
+            <div className="first-screen iphone-arrow">
+              <MdKeyboardArrowUp size="60" />
+            </div>
+
+            <Link
+              to="/resources"
+              className="topic-box first-screen iphone-firstScreen-content-1"
+            >
+              <div className="topic-box-section topic-box-icon">
+                <FaCross size="18" />
+              </div>
+              <div className="topic-box-section topic-box-word">Faith</div>
+            </Link>
+
+            <Link
+              to="/resources"
+              className="topic-box first-screen iphone-firstScreen-content-2"
+            >
+              <div className="topic-box-section topic-box-icon">
+                <FaCode size="20" />
+              </div>
+              <div className="topic-box-section topic-box-word">Tech</div>
+            </Link>
+            <div className="first-screen iphone-arrow">
+              <MdKeyboardArrowDown size="60" />
+            </div>
+          </div>
         )}
 
         <div className="iphone-volume-up"></div>
