@@ -2,7 +2,7 @@
 .iphone {
   width: 200px;
   height: 400px;
-  background-color: var(--accent-one);
+  background-color: var(--accent-two);
   border-radius: 25px;
   margin: 50px auto;
   position: relative;
@@ -12,7 +12,7 @@
 .iphone-notch {
   width: 120px;
   height: 18px;
-  background-color: var(--accent-one);
+  background-color: var(--accent-two);
   position: absolute;
   top: -3px;
   left: 50%;
@@ -47,7 +47,7 @@
 .iphone-volume-down {
   width: 8px;
   height: 40px;
-  background-color: var(--accent-one);
+  background-color: var(--accent-two);
   position: absolute;
   left: -7.5%;
 }
@@ -63,7 +63,7 @@
 .iphone-power-button {
   width: 8px;
   height: 70px;
-  background-color: var(--accent-one);
+  background-color: var(--accent-two);
   position: absolute;
   top: 80px;
   right: -7%;
@@ -74,52 +74,34 @@
 .iphone-screen {
   width: 180px;
   height: 380px;
-  background-color: lightgray;
-  color: var(--accent-one);
+  background-color: black;
+  color: white;
   position: absolute;
   top: 10px;
   left: 10px;
   border-radius: 20px;
-  transition: background-color 0.5s ease;
+  transition: background-image 5s ease;
   font-family: var(--font-family);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 2px black;
 }
 
 .iphone-screen.on {
-  background-color: var(--background-color);
+  background-image: url("../../../../Assets/Photos/screenSaver.jpg");
 }
 
 .iphone-swipe-bar {
   width: 100px;
   height: 7px;
-  background-color: var(--accent-one);
+  background-color: white;
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
-  animation: swipe-bar-bounce 1.5s ease-in-out infinite;
   cursor: pointer;
-}
-
-@keyframes swipe-bar-bounce {
-  0%,
-  100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px);
-  }
-}
-
-.iphone-welcome-message {
-  color: black;
-  font-size: 16px; /* Adjust size as necessary */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
+  filter: drop-shadow(5px 5px 5px black);
 }
 
 .iphone-main-screen {
@@ -167,6 +149,10 @@
   flex: 1;
   display: flex;
   align-items: center;
+}
+
+.icon-shadow {
+  filter: drop-shadow(5px 5px 5px black);
 }
 
 .iphone-camera-icon {

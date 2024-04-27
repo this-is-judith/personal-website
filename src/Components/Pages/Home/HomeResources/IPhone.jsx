@@ -63,17 +63,17 @@ function IPhone() {
           <>
             <div className="iphone-main-screen">
               <div className="iphone-screen-section iphone-lock">
-                <FaLock size="12" />
+                <FaLock size="12" className="icon-shadow" />
               </div>
               <div className="iphone-screen-section iphone-date">{date}</div>
               <div className="iphone-screen-section iphone-time">{time}</div>
               <div className="iphone-screen-section iphone-main"></div>
               <div className="iphone-screen-section iphone-extras">
                 <div className="iphone-torchlight-icon">
-                  <IoIosFlashlight size="25" />
+                  <IoIosFlashlight size="25" className="icon-shadow" />
                 </div>
                 <div className="iphone-camera-icon">
-                  <FaCamera size="17.5" />
+                  <FaCamera size="17.5" className="icon-shadow" />
                 </div>
               </div>
             </div>

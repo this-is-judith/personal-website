@@ -22,7 +22,3 @@ a:active .button-text {
   position: relative;
   top: 0.8rem;
 }
-
-a:hover .button-text {
-  color: var(--accent-two);
-}
