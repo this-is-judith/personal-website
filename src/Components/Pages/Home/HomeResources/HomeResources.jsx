@@ -8,18 +8,9 @@ import "./homeResources.css";
 
 function HomeResources() {
   const [isPowerOn, setIsPowerOn] = useState(false);
-  const [isSwipeBarClicked, setIsSwipeBarClicked] = useState(false);
 
   const togglePower = () => {
-    if (isPowerOn) {
-      setIsSwipeBarClicked(false);
-    }
-
     setIsPowerOn(!isPowerOn);
-  };
-
-  const toggleSwipe = () => {
-    setIsSwipeBarClicked(!isSwipeBarClicked);
   };
 
   return (
@@ -58,16 +49,11 @@ function HomeResources() {
       <div className="resources-section resources-right">
         <div className="resources-iphone-container">
           <div className="resources-iphone">
-            <IPhone
-              isPowerOn={isPowerOn}
-              togglePower={togglePower}
-              isSwipeBarClicked={isSwipeBarClicked}
-              toggleSwipe={toggleSwipe}
-            />
+            <IPhone isPowerOn={isPowerOn} togglePower={togglePower} />
           </div>
 
           <div className="resources-click-bar">
-            {isPowerOn && !isSwipeBarClicked && (
+            {isPowerOn && (
               <>
                 <div className="resources-arrow-container swipe-arrow">
                   <FaArrowUpLong size="30" className="bounce-up-down" />

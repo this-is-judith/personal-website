@@ -2,12 +2,19 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import { IoIosFlashlight } from "react-icons/io";
-import { FaCamera, FaLock, FaCross, FaCode } from "react-icons/fa";
+import {
+  FaCamera,
+  FaLock,
+  FaCross,
+  FaCode,
+  FaUniversity,
+} from "react-icons/fa";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import { HiMiniCurrencyDollar } from "react-icons/hi2";
 
 import "./iphone.css";
 
-function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
+function IPhone({ isPowerOn, togglePower }) {
   // Date and Time
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -45,36 +52,65 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
     return () => clearTimeout(timeout);
   }, []);
 
-  // From Power Off to Screen Saver
   const [showScreenSaver, setShowScreenSaver] = useState(false);
+  const [showFirstScreen, setShowFirstScreen] = useState(false);
+  const [showSecondScreen, setShowSecondScreen] = useState(false);
+
+  // Screen Saver
+  const ToScreenSaver = () => {
+    setShowScreenSaver(true);
+    setShowFirstScreen(false);
+    setShowSecondScreen(false);
+  };
 
   useEffect(() => {
-    if (isPowerOn) {
+    if (isPowerOn && !showFirstScreen && !showSecondScreen) {
       setShowScreenSaver(true);
     } else {
       setShowScreenSaver(false);
     }
-  }, [isPowerOn]);
+  }, [isPowerOn, showFirstScreen, showSecondScreen]);
 
-  // From First Screen to Screen Saver
-  const [isFirstScreenUpArrowClicked, setisFirstScreenUpArrowClicked] =
-    useState(false);
-  const [isFirstScreenDownArrowClicked, setisFirstScreenDownArrowClicked] =
-    useState(false);
+  // First Screen
+  const ToFirstScreen = () => {
+    setShowFirstScreen(true);
+    setShowSecondScreen(false);
+    setShowScreenSaver(false);
+  };
+
+  useEffect(() => {
+    if (!isPowerOn) {
+      setShowFirstScreen(false);
+    }
+  });
+
+  // Second Screen
+  const ToSecondScreen = () => {
+    setShowSecondScreen(true);
+    setShowFirstScreen(false);
+    setShowScreenSaver(false);
+  };
+
+  useEffect(() => {
+    if (!isPowerOn) {
+      setShowSecondScreen(false);
+    }
+  });
 
   return (
     <div className="iphone">
       <div
         className={`iphone-screen screen-${isPowerOn ? "on" : ""} ${
-          isSwipeBarClicked ? "first-screen" : ""
-        }`}
+          showFirstScreen ? "first-screen" : ""
+        } ${showSecondScreen ? "second-screen" : ""}`}
       >
         <div className="iphone-notch">
           <div className="iphone-speaker"></div>
           <div className="iphone-camera"></div>
         </div>
 
-        {showScreenSaver && !isSwipeBarClicked && (
+        {/* Screen Saver */}
+        {showScreenSaver && (
           <>
             <div className="iphone-main-screen">
               <div className="iphone-screen-section iphone-lock">
@@ -93,14 +129,19 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
               </div>
             </div>
 
-            <div className="iphone-swipe-bar" onClick={toggleSwipe}></div>
+            <div className="iphone-swipe-bar" onClick={ToFirstScreen}></div>
           </>
         )}
 
-        {showScreenSaver && isSwipeBarClicked && (
+        {/* First Screen */}
+        {showFirstScreen && (
           <div className="iphone-firstScreen-content-container">
-            <div className="first-screen iphone-arrow">
-              <MdKeyboardArrowUp size="60" />
+            <div className="first-screen iphone-arrow-container">
+              <MdKeyboardArrowUp
+                size="60"
+                className="iphone-arrow"
+                onClick={ToScreenSaver}
+              />
             </div>
 
             <Link
@@ -122,8 +163,54 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
               </div>
               <div className="topic-box-section topic-box-word">Tech</div>
             </Link>
-            <div className="first-screen iphone-arrow">
-              <MdKeyboardArrowDown size="60" />
+
+            <div className="first-screen iphone-arrow-container">
+              <MdKeyboardArrowDown
+                size="60"
+                className="iphone-arrow"
+                onClick={ToSecondScreen}
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Second Screen */}
+        {showSecondScreen && (
+          <div className="iphone-firstScreen-content-container">
+            <div className="first-screen iphone-arrow-container">
+              <MdKeyboardArrowUp
+                size="60"
+                className="iphone-arrow"
+                onClick={ToFirstScreen}
+              />
+            </div>
+
+            <Link
+              to="/resources"
+              className="topic-box first-screen iphone-firstScreen-content-1"
+            >
+              <div className="topic-box-section topic-box-icon">
+                <FaUniversity size="20" />
+              </div>
+              <div className="topic-box-section topic-box-word">College</div>
+            </Link>
+
+            <Link
+              to="/resources"
+              className="topic-box first-screen iphone-firstScreen-content-2"
+            >
+              <div className="topic-box-section topic-box-icon">
+                <HiMiniCurrencyDollar size="20" />
+              </div>
+              <div className="topic-box-section topic-box-word">Money</div>
+            </Link>
+
+            <div className="first-screen iphone-arrow-container">
+              <MdKeyboardArrowDown
+                size="60"
+                className="iphone-arrow"
+                onClick={ToScreenSaver}
+              />
             </div>
           </div>
         )}
