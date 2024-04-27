@@ -80,7 +80,6 @@
   top: 10px;
   left: 10px;
   border-radius: 20px;
-  transition: background-image 5s ease;
   font-family: var(--font-family);
   background-size: cover;
   background-position: center;

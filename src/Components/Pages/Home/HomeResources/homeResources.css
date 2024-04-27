@@ -1,22 +1,98 @@
+/* Container Positioning */
 .homeResources-container {
   display: flex;
 }
 
-.resourcesSection {
-  display: flex;
+.resources-section {
   height: var(--homeResources-height);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+/* Right Section */
+.resources-right {
+  flex-direction: row;
+}
+
+.resources-iphone-container {
+  flex: 1.5;
+  border: 0.1rem solid yellow;
+  display: flex;
   flex-direction: column;
 }
 
-.resourcesLeft {
+.resources-iphone {
+  flex: 3.3;
+  border: 0.1rem solid green;
+  padding-top: 1rem;
+}
+
+.iphone {
+  position: absolute;
+  right: 20%;
+}
+
+.resources-click-bar {
   flex: 1;
-  background-color: var(--background-color);
+  border: 0.1rem solid green;
+}
+
+.resources-click-pwr-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-click-pwr {
+  flex: 1;
   display: flex;
 }
 
-.resourcesRight {
+@keyframes bounce-left-right {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.resources-arrow-container {
   flex: 1;
-  background-color: var(--background-color);
+  border: 0.1rem solid red;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 1.5rem;
+}
+
+.resources-arrow {
+  animation: bounce-left-right 2s infinite ease-in-out;
+}
+
+.resources-words {
+  flex: 3.5;
+  border: 0.1rem solid red;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+}
+
+.resources-words h4 {
+  margin-bottom: -2rem;
+  position: relative;
+  top: 9rem;
+  word-spacing: 0.2rem;
+}
+
+h4.lower {
+  left: 1.4rem;
+}
+
+.resources-empty {
+  flex: 1.6;
 }
 
 .resourcesLeftTop {

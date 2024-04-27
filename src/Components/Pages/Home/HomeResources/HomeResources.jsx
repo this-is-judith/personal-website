@@ -1,13 +1,15 @@
 import React from "react";
+
 import Button from "../HomeAbout/Button";
 import IPhone from "./IPhone";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 import "./homeResources.css";
 
 function HomeResources() {
   return (
     <div className="homeResources-container">
-      <div className="resourcesSection resourcesLeft">
+      <div className="resources-section resources-left">
         <div className="resourcesLeftTop">
           <div>
             <h4 className="font__4 numberResources ">05.</h4>
@@ -37,8 +39,26 @@ function HomeResources() {
           </div>
         </div>
       </div>
-      <div className="resourcesSection resourcesRight">
-        <IPhone />
+
+      <div className="resources-section resources-right">
+        <div className="resources-iphone-container">
+          <div className="resources-iphone">
+            <IPhone className="iphone" />
+          </div>
+          <div className="resources-click-bar"></div>
+        </div>
+        <div className="resources-click-pwr-container">
+          <div className="resources-click-pwr">
+            <div className="resources-arrow-container">
+              <FaArrowLeftLong size="30" className="resources-arrow" />
+            </div>
+            <div className="resources-words">
+              <h4>Click Power</h4>
+              <h4 class="lower">Button</h4>
+            </div>
+          </div>
+          <div className="resources-empty"></div>
+        </div>
       </div>
     </div>
   );
