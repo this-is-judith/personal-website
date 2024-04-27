@@ -86,8 +86,13 @@
   text-shadow: 2px 2px 2px black;
 }
 
-.iphone-screen.on {
+.iphone-screen.screen-on {
   background-image: url("../../../../Assets/Photos/screenSaver.jpg");
+}
+
+.iphone-screen.screen-on.first-screen {
+  background-image: none;
+  background-color: var(--background-color);
 }
 
 .iphone-swipe-bar {

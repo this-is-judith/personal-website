@@ -44,7 +44,7 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
     return () => clearTimeout(timeout);
   }, []);
 
-  // Toggle Power
+  // Screen Saver
   const [showScreenSaver, setShowScreenSaver] = useState(false);
 
   useEffect(() => {
@@ -57,11 +57,16 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
 
   return (
     <div className="iphone">
-      <div className={`iphone-screen ${isPowerOn ? "on" : ""}`}>
+      <div
+        className={`iphone-screen screen-${isPowerOn ? "on" : ""} ${
+          isSwipeBarClicked ? "first-screen" : ""
+        }`}
+      >
         <div className="iphone-notch">
           <div className="iphone-speaker"></div>
           <div className="iphone-camera"></div>
         </div>
+
         {showScreenSaver && !isSwipeBarClicked && (
           <>
             <div className="iphone-main-screen">
@@ -84,7 +89,18 @@ function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
             <div className="iphone-swipe-bar" onClick={toggleSwipe}></div>
           </>
         )}
-        {showScreenSaver && isSwipeBarClicked && <div>Hello</div>}
+
+        {showScreenSaver && isSwipeBarClicked && (
+          <>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+          </>
+        )}
+
         <div className="iphone-volume-up"></div>
         <div className="iphone-volume-down"></div>
         <div className="iphone-power-button" onClick={togglePower}></div>
