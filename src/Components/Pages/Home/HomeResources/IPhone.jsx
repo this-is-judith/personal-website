@@ -6,7 +6,7 @@ import { FaLock } from "react-icons/fa";
 
 import "./iphone.css";
 
-function IPhone({ isPowerOn, togglePower }) {
+function IPhone({ isPowerOn, togglePower, isSwipeBarClicked, toggleSwipe }) {
   // Date and Time
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -44,6 +44,17 @@ function IPhone({ isPowerOn, togglePower }) {
     return () => clearTimeout(timeout);
   }, []);
 
+  // Toggle Power
+  const [showScreenSaver, setShowScreenSaver] = useState(false);
+
+  useEffect(() => {
+    if (isPowerOn) {
+      setShowScreenSaver(true);
+    } else {
+      setShowScreenSaver(false);
+    }
+  }, [isPowerOn]);
+
   return (
     <div className="iphone">
       <div className={`iphone-screen ${isPowerOn ? "on" : ""}`}>
@@ -51,8 +62,7 @@ function IPhone({ isPowerOn, togglePower }) {
           <div className="iphone-speaker"></div>
           <div className="iphone-camera"></div>
         </div>
-
-        {isPowerOn && (
+        {showScreenSaver && !isSwipeBarClicked && (
           <>
             <div className="iphone-main-screen">
               <div className="iphone-screen-section iphone-lock">
@@ -71,10 +81,10 @@ function IPhone({ isPowerOn, togglePower }) {
               </div>
             </div>
 
-            <div className="iphone-swipe-bar"></div>
+            <div className="iphone-swipe-bar" onClick={toggleSwipe}></div>
           </>
         )}
-
+        {showScreenSaver && isSwipeBarClicked && <div>Hello</div>}
         <div className="iphone-volume-up"></div>
         <div className="iphone-volume-down"></div>
         <div className="iphone-power-button" onClick={togglePower}></div>

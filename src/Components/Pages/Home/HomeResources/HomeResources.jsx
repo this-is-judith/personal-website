@@ -7,12 +7,19 @@ import { FaArrowLeftLong, FaArrowUpLong } from "react-icons/fa6";
 import "./homeResources.css";
 
 function HomeResources() {
-  // State to manage the power status
   const [isPowerOn, setIsPowerOn] = useState(false);
+  const [isSwipeBarClicked, setIsSwipeBarClicked] = useState(false);
 
-  // Function to toggle power status
   const togglePower = () => {
+    if (isPowerOn) {
+      setIsSwipeBarClicked(false);
+    }
+
     setIsPowerOn(!isPowerOn);
+  };
+
+  const toggleSwipe = () => {
+    setIsSwipeBarClicked(!isSwipeBarClicked);
   };
 
   return (
@@ -51,11 +58,16 @@ function HomeResources() {
       <div className="resources-section resources-right">
         <div className="resources-iphone-container">
           <div className="resources-iphone">
-            <IPhone isPowerOn={isPowerOn} togglePower={togglePower} />
+            <IPhone
+              isPowerOn={isPowerOn}
+              togglePower={togglePower}
+              isSwipeBarClicked={isSwipeBarClicked}
+              toggleSwipe={toggleSwipe}
+            />
           </div>
 
           <div className="resources-click-bar">
-            {isPowerOn && (
+            {isPowerOn && !isSwipeBarClicked && (
               <>
                 <div className="resources-arrow-container swipe-arrow">
                   <FaArrowUpLong size="30" className="bounce-up-down" />
