@@ -6,7 +6,7 @@ import { FaLock } from "react-icons/fa";
 
 import "./iphone.css";
 
-function IPhone() {
+function IPhone({ isPowerOn, togglePower }) {
   // Date and Time
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -43,13 +43,6 @@ function IPhone() {
     // Cleanup on unmount
     return () => clearTimeout(timeout);
   }, []);
-
-  // Power Toggle
-  const [isPowerOn, setIsPowerOn] = useState(false);
-
-  const togglePower = () => {
-    setIsPowerOn(!isPowerOn);
-  };
 
   return (
     <div className="iphone">
