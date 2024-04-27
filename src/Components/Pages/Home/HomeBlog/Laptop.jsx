@@ -145,7 +145,7 @@ const Laptop = () => {
           {generateKey()} {generateKey()} {generateKey()}
           {generateKey("key extra-wide-key")} {/* for spacebar */}
           <div className={"power-button-container"} onClick={toggleScreen}>
-            {generateKey("key power-button", `${isScreenOn ? "ON" : "OFF"}`)}
+            {generateKey("key power-button", `${isScreenOn ? "OFF" : "ON"}`)}
           </div>
           {generateKey()} {generateKey()}
           {generateKey("key wide-key")} {/* for ctrl */}
