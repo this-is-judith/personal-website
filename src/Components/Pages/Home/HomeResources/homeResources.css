@@ -18,14 +18,12 @@
 
 .resources-iphone-container {
   flex: 1.5;
-  border: 0.1rem solid yellow;
   display: flex;
   flex-direction: column;
 }
 
 .resources-iphone {
   flex: 3.3;
-  border: 0.1rem solid green;
   padding-top: 1rem;
 }
 
@@ -36,7 +34,9 @@
 
 .resources-click-bar {
   flex: 1;
-  border: 0.1rem solid green;
+  display: flex;
+  flex-direction: column;
+  color: var(--accent-one);
 }
 
 .resources-click-pwr-container {
@@ -48,6 +48,48 @@
 .resources-click-pwr {
   flex: 1;
   display: flex;
+  color: var(--accent-one);
+}
+
+.resources-arrow-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 0.6rem;
+}
+
+.resources-words {
+  flex: 3.5;
+  font-family: var(--font-family);
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.click-button {
+  position: relative;
+  bottom: -1.4rem;
+}
+
+.swipe-bar {
+  align-items: end;
+  padding-right: 0.6rem;
+}
+.swipe-bar h4 {
+  position: relative;
+  top: -1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.swipe-arrow {
+  position: relative;
+  left: 6rem;
+  top: 0.5rem;
+}
+
+.resources-empty {
+  flex: 1.8;
 }
 
 @keyframes bounce-left-right {
@@ -60,41 +102,25 @@
   }
 }
 
-.resources-arrow-container {
-  flex: 1;
-  border: 0.1rem solid red;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-bottom: 1.5rem;
-}
-
-.resources-arrow {
+.bounce-left-right {
   animation: bounce-left-right 2s infinite ease-in-out;
 }
 
-.resources-words {
-  flex: 3.5;
-  border: 0.1rem solid red;
-  font-family: var(--font-family);
-  font-size: 1.2rem;
+@keyframes bounce-up-down {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
-.resources-words h4 {
-  margin-bottom: -2rem;
-  position: relative;
-  top: 9rem;
-  word-spacing: 0.2rem;
+.bounce-up-down {
+  animation: bounce-up-down 2s infinite ease-in-out;
 }
 
-h4.lower {
-  left: 1.4rem;
-}
-
-.resources-empty {
-  flex: 1.6;
-}
-
+/* Left Section */
 .resourcesLeftTop {
   flex: 1;
 }

@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../HomeAbout/Button";
 import IPhone from "./IPhone";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 import "./homeResources.css";
 
@@ -45,16 +46,27 @@ function HomeResources() {
           <div className="resources-iphone">
             <IPhone className="iphone" />
           </div>
-          <div className="resources-click-bar"></div>
+          <div className="resources-click-bar">
+            <div className="resources-arrow-container swipe-arrow">
+              <FaArrowUpLong size="30" className="bounce-up-down" />
+            </div>
+            <div className="resources-words swipe-bar">
+              <h4>Click Swipe Bar</h4>
+            </div>
+          </div>
         </div>
         <div className="resources-click-pwr-container">
           <div className="resources-click-pwr">
             <div className="resources-arrow-container">
-              <FaArrowLeftLong size="30" className="resources-arrow" />
+              <FaArrowLeftLong size="30" className="bounce-left-right" />
             </div>
+
             <div className="resources-words">
-              <h4>Click Power</h4>
-              <h4 class="lower">Button</h4>
+              <div className="resources-empty"></div>
+
+              <div className="click-button">
+                <h4>Click Button</h4>
+              </div>
             </div>
           </div>
           <div className="resources-empty"></div>
