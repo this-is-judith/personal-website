@@ -14,11 +14,6 @@ function HomeResources() {
     setIsPowerOn(!isPowerOn);
   };
 
-  // Screen Saver
-  const disableClickSwipeBar = (bool) => {
-    setIsScreenSaverActive(bool);
-  };
-
   return (
     <div className="homeResources-container">
       <div className="resources-section resources-left">
@@ -58,8 +53,7 @@ function HomeResources() {
             <IPhone
               isPowerOn={isPowerOn}
               togglePower={togglePower}
-              isScreenSaverActive={isScreenSaverActive}
-              disableClickSwipeBar={disableClickSwipeBar}
+              setIsScreenSaverActive={setIsScreenSaverActive}
             />
           </div>
 

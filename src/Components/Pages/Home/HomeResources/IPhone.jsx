@@ -14,12 +14,7 @@ import { HiMiniCurrencyDollar } from "react-icons/hi2";
 
 import "./iphone.css";
 
-function IPhone({
-  isPowerOn,
-  togglePower,
-  isScreenSaverActive,
-  disableClickSwipeBar,
-}) {
+function IPhone({ isPowerOn, togglePower, setIsScreenSaverActive }) {
   // Date and Time
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -66,6 +61,7 @@ function IPhone({
     setShowScreenSaver(true);
     setShowFirstScreen(false);
     setShowSecondScreen(false);
+    setIsScreenSaverActive(true);
   };
 
   useEffect(() => {
@@ -81,6 +77,7 @@ function IPhone({
     setShowFirstScreen(true);
     setShowSecondScreen(false);
     setShowScreenSaver(false);
+    setIsScreenSaverActive(false);
   };
 
   useEffect(() => {
@@ -94,6 +91,7 @@ function IPhone({
     setShowSecondScreen(true);
     setShowFirstScreen(false);
     setShowScreenSaver(false);
+    setIsScreenSaverActive(false);
   };
 
   useEffect(() => {
@@ -138,7 +136,6 @@ function IPhone({
               className="iphone-swipe-bar"
               onClick={() => {
                 ToFirstScreen();
-                disableClickSwipeBar(isScreenSaverActive);
               }}
             ></div>
           </>
