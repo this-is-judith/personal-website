@@ -8,9 +8,15 @@ import "./homeResources.css";
 
 function HomeResources() {
   const [isPowerOn, setIsPowerOn] = useState(false);
+  const [isScreenSaverActive, setIsScreenSaverActive] = useState(true);
 
   const togglePower = () => {
     setIsPowerOn(!isPowerOn);
+  };
+
+  // Screen Saver
+  const disableClickSwipeBar = (bool) => {
+    setIsScreenSaverActive(bool);
   };
 
   return (
@@ -49,11 +55,16 @@ function HomeResources() {
       <div className="resources-section resources-right">
         <div className="resources-iphone-container">
           <div className="resources-iphone">
-            <IPhone isPowerOn={isPowerOn} togglePower={togglePower} />
+            <IPhone
+              isPowerOn={isPowerOn}
+              togglePower={togglePower}
+              isScreenSaverActive={isScreenSaverActive}
+              disableClickSwipeBar={disableClickSwipeBar}
+            />
           </div>
 
           <div className="resources-click-bar">
-            {isPowerOn && (
+            {isPowerOn && isScreenSaverActive && (
               <>
                 <div className="resources-arrow-container swipe-arrow">
                   <FaArrowUpLong size="30" className="bounce-up-down" />

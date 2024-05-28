@@ -14,7 +14,12 @@ import { HiMiniCurrencyDollar } from "react-icons/hi2";
 
 import "./iphone.css";
 
-function IPhone({ isPowerOn, togglePower }) {
+function IPhone({
+  isPowerOn,
+  togglePower,
+  isScreenSaverActive,
+  disableClickSwipeBar,
+}) {
   // Date and Time
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -129,7 +134,13 @@ function IPhone({ isPowerOn, togglePower }) {
               </div>
             </div>
 
-            <div className="iphone-swipe-bar" onClick={ToFirstScreen}></div>
+            <div
+              className="iphone-swipe-bar"
+              onClick={() => {
+                ToFirstScreen();
+                disableClickSwipeBar(isScreenSaverActive);
+              }}
+            ></div>
           </>
         )}
 
