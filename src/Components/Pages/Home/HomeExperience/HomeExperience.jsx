@@ -62,9 +62,9 @@ function HomeExperience() {
                 <li>Python</li>
                 <li>Java</li>
                 <li>C/C++</li>
-                <li>App development</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
                 <li>Web development</li>
-                <li>Data Structures & Algo</li>
                 <li>2+ years school exp.</li>
               </ul>
             </section>
@@ -72,13 +72,13 @@ function HomeExperience() {
             <section className="skill-section font__3">
               <h2>Hardware</h2>
               <ul>
-                <li>PCB Layout & Design</li>
-                <li>Digital Logic Design</li>
+                <li>CPU Design</li>
+                <li>PCB Design</li>
                 <li>Computer Architecture</li>
                 <li>Oscilloscope Probing</li>
                 <li>Power Sequencing</li>
                 <li>Microsoldering</li>
-                <li>4+ months industry exp.</li>
+                <li>5+ months industry exp.</li>
               </ul>
             </section>
           </div>
