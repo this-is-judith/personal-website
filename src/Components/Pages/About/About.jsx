@@ -1,5 +1,6 @@
 import React from "react";
 
+import Header from "../../Header/Header";
 import "./about.css";
 
 function About() {
@@ -8,26 +9,19 @@ function About() {
   }
 
   return (
-    <h1>About Coming Soon</h1>
-    // <div className="aboutPage">
-    //   {/* <div class="header">
-    //     <Header />
-    //   </div>
+    <>
+      <div className="about-page">
+        <div class="header">
+          <Header />
+        </div>
 
-    //   <main className="main">
-    //     <div className="aboutDescription">
-    //       <AboutDescription />
-    //     </div>
-
-    //     <div className="aboutContainer">Number Two</div>
-    //     <div className="aboutContainer">Number Three</div>
-    //     <div className="aboutContainer">Number Four</div>
-    //   </main>
-
-    //   <div className="footer">
-    //     <Footer />
-    //   </div> */}
-    // </div>
+        <main className="about-container">
+          <div className="about-description">
+            Judith's About Page is Coming Soon :)
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
 

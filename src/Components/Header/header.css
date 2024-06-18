@@ -16,7 +16,7 @@ a.header-link:hover {
   display: flex;
   color: var(--header-text-color);
   font-family: var(--header-font);
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .header-section-1 {
