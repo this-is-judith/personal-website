@@ -18,26 +18,23 @@ const HomeMain = () => {
     <div className="homeMain-container">
       <section className="mainSection mainLeft">
         <div className="leftSection mainTop">
-          <div className="font__4-container">
-            <h4 className="font__4">Hey, I'm</h4>
+          <div className="homeMain-text-container homeMain-text-1">
+            <h4 className="homeMain-text font_4">Hey, I'm</h4>
           </div>
 
-          <div>
-            <h1 className="font__0">Judith</h1>
-            <h1 className="font__0">Osei-Tete</h1>
+          <div className="homeMain-text-container homeMain-text-2">
+            <h1 className="homeMain-text font_0">Judith</h1>
+            <h1 className="homeMain-text font_0">Osei-Tete</h1>
           </div>
 
-          <div>
-            <h3 className="font__3">
-              A Computer Engineer interested in both hardware
+          <div className="homeMain-text-container homeMain-text-3">
+            <h3 className="homeMain-text font_3">
+              A Computer Engineer interested in both hardware and software.
             </h3>
-            <h3 className="font__3 bottom">and software.</h3>
           </div>
         </div>
 
-        <div className="leftSection mainBottom">
-          <Rectangles />
-        </div>
+        <div className="leftSection mainBottom">{/* <Rectangles /> */}</div>
       </section>
 
       <section className="mainSection mainRight">

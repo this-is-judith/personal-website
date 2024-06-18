@@ -15,7 +15,7 @@ a.header-link:hover {
   border-bottom: 1.5px solid var(--header-text-color);
   display: flex;
   color: var(--header-text-color);
-  font-family: var(--header-font);
+  font-family: var(--font-family);
   font-size: 16px;
 }
 
