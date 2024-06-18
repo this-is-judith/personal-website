@@ -60,7 +60,7 @@
 .homeMain-rectangle-1 {
   flex: 2;
   display: flex;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 }
 
 .scripture-square {
@@ -82,6 +82,17 @@
   border: solid var(--accent-one) 1.5px;
   border-radius: 5px;
   margin: 5px 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scripture-of-the-week h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: normal;
+  color: var(--accent-one);
 }
 
 .verse {
@@ -89,6 +100,8 @@
   border: solid var(--accent-one) 1.5px;
   border-radius: 5px;
   margin: 5px 5px 5px 0;
+  display: flex;
+  align-items: center;
 }
 
 /* Right Section */

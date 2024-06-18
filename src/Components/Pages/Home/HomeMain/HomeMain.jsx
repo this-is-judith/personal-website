@@ -3,6 +3,7 @@ import React from "react";
 import Circles from "./Circles";
 import Rectangles from "./Rectangles";
 import ScrollDown from "./ScrollDown";
+import ScrollingText from "./ScrollingText";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -39,8 +40,12 @@ const HomeMain = () => {
             <div className="scripture-square"></div>
 
             <div className="scripture-content">
-              <div className="scripture-of-the-week"></div>
-              <div className="verse"></div>
+              <div className="scripture-of-the-week">
+                <h3>SCRIPTURE OF THE WEEK</h3>
+              </div>
+              <div className="verse">
+                <ScrollingText />
+              </div>
             </div>
           </div>
           <div className="homeMain-rectangle homeMain-rectangle-2"></div>

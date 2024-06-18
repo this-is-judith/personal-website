@@ -10,7 +10,7 @@ const ScrollingText = () => {
       <text
         fill="var(--accent-one)"
         fontSize="20"
-        fontFamily="var(--header-font)"
+        fontFamily="var(--font-family)"
       >
         <textPath href="#text-path-2" startOffset="0%">
           {scriptureOfTheWeek}
