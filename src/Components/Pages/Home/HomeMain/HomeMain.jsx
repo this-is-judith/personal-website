@@ -34,7 +34,17 @@ const HomeMain = () => {
           </div>
         </div>
 
-        <div className="leftSection mainBottom">{/* <Rectangles /> */}</div>
+        <div className="leftSection mainBottom">
+          <div className="homeMain-rectangle homeMain-rectangle-1">
+            <div className="scripture-square"></div>
+
+            <div className="scripture-content">
+              <div className="scripture-of-the-week"></div>
+              <div className="verse"></div>
+            </div>
+          </div>
+          <div className="homeMain-rectangle homeMain-rectangle-2"></div>
+        </div>
       </section>
 
       <section className="mainSection mainRight">

@@ -17,22 +17,17 @@
 }
 
 .leftSection {
-  padding: 80px 0 0 0;
   border: solid yellow 2px;
 }
 
 .mainTop {
-  flex: 1.75;
+  padding: 60px 0 0 0;
+  flex: 1.5;
   display: flex;
   flex-direction: column;
 }
 
-.mainBottom {
-  flex: 1;
-}
-
 .homeMain-text-container {
-  /* border: solid green 2px; */
   flex: 1;
   display: flex;
   align-items: center;
@@ -49,6 +44,51 @@
 .homeMain-text {
   margin: 0 0 0 0;
   width: 100%;
+}
+
+.mainBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeMain-rectangle {
+  height: 100%;
+  flex: 1;
+}
+
+.homeMain-rectangle-1 {
+  flex: 2;
+  display: flex;
+  padding: 0 10px 0 10px;
+}
+
+.scripture-square {
+  flex: 1;
+  border: solid var(--accent-one) 1.5px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.scripture-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 10px 0;
+}
+
+.scripture-of-the-week {
+  flex: 1;
+  border: solid var(--accent-one) 1.5px;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0;
+}
+
+.verse {
+  flex: 1.75;
+  border: solid var(--accent-one) 1.5px;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0;
 }
 
 /* Right Section */
