@@ -1,7 +1,6 @@
 import React from "react";
 
 import Circles from "./Circles";
-import Rectangles from "./Rectangles";
 import ScrollDown from "./ScrollDown";
 import ScrollingText from "./ScrollingText";
 import { FaPlayCircle } from "react-icons/fa";
