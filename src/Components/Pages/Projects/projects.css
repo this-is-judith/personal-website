@@ -1,0 +1,19 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-description {
+  font-family: var(--font-family);
+  color: var(--accent-one);
+  font-size: 30px;
+}

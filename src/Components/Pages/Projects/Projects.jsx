@@ -1,7 +1,28 @@
 import React from "react";
 
+import Header from "../../Header/Header";
+import "./projects.css";
+
 function Projects() {
-  return <h1>Projects Coming Soon</h1>;
+  {
+    document.body.style.margin = 0;
+  }
+
+  return (
+    <>
+      <div className="projects-page">
+        <div class="header">
+          <Header />
+        </div>
+
+        <main className="projects-container">
+          <div className="projects-description">
+            Judith's Projects Page is Coming Soon :)
+          </div>
+        </main>
+      </div>
+    </>
+  );
 }
 
 export default Projects;
