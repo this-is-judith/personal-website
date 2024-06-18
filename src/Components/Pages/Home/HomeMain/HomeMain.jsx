@@ -37,7 +37,9 @@ const HomeMain = () => {
 
         <div className="leftSection mainBottom">
           <div className="homeMain-rectangle homeMain-rectangle-1">
-            <div className="scripture-square"></div>
+            <div className="scripture-square">
+              <h3>John 3:16</h3>
+            </div>
 
             <div className="scripture-content">
               <div className="scripture-of-the-week">
