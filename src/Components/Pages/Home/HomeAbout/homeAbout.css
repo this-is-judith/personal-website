@@ -9,7 +9,6 @@
   display: flex;
   height: var(--homeAbout-height);
   flex-direction: column;
-  border: solid red 2px;
 }
 
 /* Left Section */
