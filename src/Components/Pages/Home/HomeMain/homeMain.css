@@ -13,6 +13,7 @@
 
 /* Left Section */
 .mainLeft {
+  flex: 1;
   background-color: var(--background-color);
 }
 
@@ -200,6 +201,10 @@
   column-gap: 40px;
   justify-content: end;
   padding: 0 50px 0 0;
+}
+
+.social-icon {
+  height: fit-content;
 }
 
 .font__4 {

@@ -81,7 +81,7 @@ const HomeMain = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={30} />
           </a>
 
           <a
@@ -90,7 +90,7 @@ const HomeMain = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={24} />
+            <FaGithub size={30} />
           </a>
 
           <a
@@ -99,7 +99,7 @@ const HomeMain = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoMdMail size={24} />
+            <IoMdMail size={30} />
           </a>
 
           <a
@@ -108,7 +108,7 @@ const HomeMain = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillInstagram size={24} />
+            <AiFillInstagram size={30} />
           </a>
 
           <a
@@ -117,7 +117,7 @@ const HomeMain = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook size={24} />
+            <FaFacebook size={30} />
           </a>
         </div>
       </section>
