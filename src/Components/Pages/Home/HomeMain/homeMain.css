@@ -8,16 +8,12 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: solid red 2px;
+  padding: 0 0 0 10px;
 }
 
 /* Left Section */
 .mainLeft {
   background-color: var(--background-color);
-}
-
-.leftSection {
-  border: solid yellow 2px;
 }
 
 .mainTop {
@@ -114,12 +110,6 @@
   align-items: center;
 }
 
-/* Right Section */
-.mainRight {
-  background-color: var(--background-color);
-  display: flex;
-}
-
 .font_4 {
   font: var(--font_4);
   color: var(--accent-two);
@@ -134,12 +124,82 @@
   font-family: var(--header-font);
 }
 
-.font_3.bottom {
-}
-
 .font_0,
 .font_3 {
   color: var(--accent-one);
+}
+
+/* Right Section */
+.mainRight {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 0;
+}
+
+.rightSection {
+  flex: 3.5;
+}
+.circles-container {
+  display: flex;
+}
+
+.homeMain-circle-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeMain-circle-box-left {
+  flex: 1.2;
+}
+
+.homeMain-circle-box-right {
+  flex: 1;
+}
+
+.homeMain-circle-bigger-box {
+  flex: 1.5;
+}
+
+.homeMain-circle-smaller-box {
+  flex: 1;
+
+  height: 100%;
+}
+
+.big-circle {
+  background-color: var(--accent-one);
+  border-radius: 50%;
+  padding: 20px;
+  position: relative;
+  left: 30%;
+  top: 10%;
+  z-index: 1;
+  background-image: url("../../../../Assets/Photos/profileImage.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.small-circle {
+  background-color: var(--accent-two);
+  border-radius: 50%;
+  padding: 30px 0px 30px 40px;
+  margin: 20px;
+  position: relative;
+  left: -25%;
+  top: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  flex: 1.2;
+  display: flex;
+  column-gap: 40px;
+  justify-content: end;
+  padding: 0 50px 0 0;
 }
 
 .font__4 {
@@ -170,32 +230,16 @@
   color: var(--accent-one);
 }
 
-.playCircle {
-  position: absolute;
-  bottom: 12.5rem;
-  left: 63.75rem;
-}
-
 a.playCircle-link,
 a.playCircle-link:visited,
 a.playCircle-link:active {
   text-decoration: none;
-  color: #f5f5f5;
+  color: var(--background-color);
   transition: color 0.3s;
 }
 
 a.playCircle-link:hover {
   color: var(--header-text-color);
-}
-
-.socials {
-  flex: 1;
-  display: flex;
-  column-gap: 2.5rem;
-  justify-content: center;
-  position: absolute;
-  bottom: 2rem;
-  right: 5rem;
 }
 
 a.social-icon,

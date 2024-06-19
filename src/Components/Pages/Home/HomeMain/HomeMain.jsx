@@ -1,7 +1,5 @@
 import React from "react";
 
-import Circles from "./Circles";
-import ScrollDown from "./ScrollDown";
 import ScrollingText from "./ScrollingText";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -54,22 +52,29 @@ const HomeMain = () => {
       </section>
 
       <section className="mainSection mainRight">
-        <Circles />
+        <div className="rightSection circles-container">
+          <div className="homeMain-circle-box homeMain-circle-box-left">
+            <div className="homeMain-circle-bigger-box big-circle"></div>
 
-        <div className="playCircle">
-          <a
-            href={songOfTheWeek}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="playCircle-link"
-          >
-            <FaPlayCircle size={30} className="playIcon" />
-          </a>
+            <div className="homeMain-circle-smaller-box"></div>
+          </div>
+
+          <div className="homeMain-circle-box homeMain-circle-box-right">
+            <div className="homeMain-circle-bigger-box"></div>
+            <div className="homeMain-circle-smaller-box small-circle">
+              <a
+                href={songOfTheWeek}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="playCircle-link"
+              >
+                <FaPlayCircle size={35} className="playIcon" />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <ScrollDown />
-
-        <div className="socials">
+        <div className="rightSection socials">
           <a
             href="https://www.linkedin.com/in/judithoseitete/"
             className="social-icon"
