@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a.header-link,
 a.header-link:visited,
 a.header-link:active {
@@ -44,4 +48,39 @@ a.header-link:hover {
   column-gap: 40px;
   list-style-type: none;
   font-weight: var(--font-medium);
+}
+
+/* For Phones */
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 10vh;
+    font-size: 1vh;
+  }
+
+  .header-section-1 {
+    flex: 1;
+    border-right: 1.5px solid var(--header-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .header-section-2 {
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px 0 0;
+  }
+
+  .header-content-list {
+    display: flex;
+    column-gap: 40px;
+    list-style-type: none;
+    font-weight: var(--font-medium);
+  }
 }

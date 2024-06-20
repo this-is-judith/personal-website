@@ -113,3 +113,16 @@ a:hover .right-rectangle {
 .link-style {
   text-decoration: none;
 }
+
+/* For Phones */
+@media (max-width: 768px) {
+  .homeAbout-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .about-left,
+  .about-right {
+    height: 100vh;
+  }
+}

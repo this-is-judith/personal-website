@@ -58,3 +58,16 @@
   left: 14rem;
   top: -1rem;
 }
+
+/* For Phones */
+@media (max-width: 768px) {
+  .homeBlog-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .blog-left,
+  .blog-right {
+    height: 100vh;
+  }
+}

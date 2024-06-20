@@ -163,3 +163,16 @@
   fill: var(--accent-two);
   animation: moveEight 6s ease;
 }
+
+/* For Phones */
+@media (max-width: 768px) {
+  .homeExperience-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .experience-left,
+  .experience-right {
+    height: 100vh;
+  }
+}

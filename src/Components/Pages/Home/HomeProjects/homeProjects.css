@@ -173,3 +173,16 @@
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
+
+/* For Phones */
+@media (max-width: 768px) {
+  .homeProjects-container {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .projects-left,
+  .projects-right {
+    height: 100vh;
+  }
+}
