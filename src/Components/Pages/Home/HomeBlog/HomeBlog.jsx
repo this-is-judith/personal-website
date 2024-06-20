@@ -23,7 +23,7 @@ function HomeBlog() {
           <h3 className="font__3 myBlogAnswer">
             <p>A place I share my thoughts, journey and</p>
             <p>write about anything and everything.</p>
-            <p>p.s, click the laptop screen!</p>
+            <p>p.s, click the "on" button!</p>
           </h3>
         </div>
 
