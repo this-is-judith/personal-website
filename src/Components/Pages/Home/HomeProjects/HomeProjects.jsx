@@ -50,29 +50,29 @@ function HomeProjects() {
         <div className="projects-right-bottom">
           <div className="projects-right-bottom-top">
             <div className="projects-right-bottom-top-left">
-              <img
+              {/* <img
                 src={projectImagePath}
                 alt="Stash App"
                 className="projectImage-1"
-              />
+              /> */}
             </div>
 
             <div className="projects-right-bottom-top-right">
               <div className="project-title">
-                <h3>STASH</h3>
+                <h3>SIMPLE RHYTHM</h3>
               </div>
 
               <div className="project-description">
                 <p>
-                  Student-friendly budgetting and finance tracker app made using
-                  Flutter, Dart, Android Studio and Kotlin.
+                  Simple planner with a weekly calendar, to-do list and notes
+                  section.
                 </p>
               </div>
 
               <div className="project-extras">
                 <div className="project-timeline">
                   <FaRegClock size="18" />
-                  <span>April 2024 - present</span>
+                  <span>May 2024 - present</span>
                 </div>
 
                 <div className="project-links">
@@ -144,11 +144,11 @@ function HomeProjects() {
             </div>
 
             <div className="projects-right-bottom-bottom-right">
-              <img
+              {/* <img
                 src={personalWebsitePath}
                 alt="Personal Website"
                 className="projectImage-2"
-              />
+              /> */}
             </div>
           </div>
         </div>
