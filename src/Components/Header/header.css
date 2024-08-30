@@ -14,73 +14,113 @@ a.header-link:hover {
 }
 
 .header-container {
-  height: 90px;
+  height: 7.5vh;
   background: var(--header-color);
-  border-bottom: 1.5px solid var(--header-text-color);
+  border-bottom: 0.2vh solid var(--header-text-color);
   display: flex;
   color: var(--header-text-color);
   font-family: var(--font-family);
-  font-size: 16px;
 }
 
 .header-section-1 {
   flex: 1;
-  border-right: 1.5px solid var(--header-text-color);
+  border-right: 0.2vh solid var(--header-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  width: 70px;
+  width: 5vh;
 }
 
 .header-section-2 {
-  flex: 6;
+  flex: 5;
   display: flex;
   align-items: center;
-  justify-content: end;
-  padding: 0 30px 0 0;
+  justify-content: center;
 }
 
 .header-content-list {
+  padding: 0;
   display: flex;
-  column-gap: 40px;
+  column-gap: 2.5vh;
   list-style-type: none;
   font-weight: var(--font-medium);
+  font-size: 1.8vh;
 }
 
-/* For Phones */
-@media screen and (max-width: 768px) {
-  .header-container {
-    height: 10vh;
-    font-size: 1vh;
-  }
-
-  .header-section-1 {
-    flex: 1;
-    border-right: 1.5px solid var(--header-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Media Queries */
+@media (min-width: 340px) {
+  .header-section-2 {
+    flex: 6;
   }
 
   .logo {
-    width: 70px;
+    width: 5vh;
+  }
+
+  .header-content-list {
+    column-gap: 1.75vh;
+    font-size: 1.4vh;
+  }
+}
+
+@media (min-width: 390px) {
+  .header-section-2 {
+    flex: 6;
+  }
+
+  .header-content-list {
+    column-gap: 2vh;
+    font-size: 1.6vh;
+  }
+}
+
+@media (min-width: 540px) {
+  .header-container {
+    height: 8vh;
   }
 
   .header-section-2 {
     flex: 6;
-    display: flex;
-    align-items: center;
+  }
+
+  .logo {
+    width: 7vh;
+  }
+
+  .header-section-2 {
     justify-content: end;
-    padding: 0 30px 0 0;
+    padding-right: 3vh;
   }
 
   .header-content-list {
-    display: flex;
-    column-gap: 40px;
-    list-style-type: none;
-    font-weight: var(--font-medium);
+    column-gap: 4vh;
+    font-size: 2vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-container {
+    height: 12vh;
+  }
+
+  .header-section-2 {
+    flex: 6;
+  }
+
+  .logo {
+    width: 10vh;
+  }
+
+  .header-section-2 {
+    justify-content: end;
+    padding-right: 6vh;
+  }
+
+  .header-content-list {
+    column-gap: 8vh;
+    font-size: 2.5vh;
   }
 }

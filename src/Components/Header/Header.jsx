@@ -32,12 +32,6 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to="/experience" className="header-link">
-              Experience
-            </Link>
-          </li>
-
-          <li>
             <Link to="/projects" className="header-link">
               Projects
             </Link>

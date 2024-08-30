@@ -22,7 +22,7 @@ function Home() {
         <div class="header">
           <Header />
         </div>
-
+        {/* 
         <main className="main">
           <div className="homeMain">
             <HomeMain />
@@ -51,7 +51,7 @@ function Home() {
 
         <div className="footer">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </>
   );
