@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../../Header/Header";
 import HomeMain from "./HomeMain/HomeMain";
+import HomeScripture from "./HomeMain/HomeScripture";
 import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeExperience from "./HomeExperience/HomeExperience";
 import HomeProjects from "./HomeProjects/HomeProjects";
@@ -26,6 +27,10 @@ function Home() {
         <main className="main">
           <div className="homeMain">
             <HomeMain />
+          </div>
+
+          <div className="homeScripture">
+            <HomeScripture />
           </div>
 
           {/* <div className="homeAbout">

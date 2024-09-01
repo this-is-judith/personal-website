@@ -112,25 +112,6 @@ const HomeMain = () => {
           </ul>
         </div>
       </div>
-
-      {/* 
-        <div className="leftSection mainBottom">
-          <div className="homeMain-rectangle homeMain-rectangle-1">
-            <div className="scripture-square">
-              <h3>John 3:16</h3>
-            </div>
-
-            <div className="scripture-content">
-              <div className="scripture-of-the-week">
-                <h3>SCRIPTURE OF THE WEEK</h3>
-              </div>
-              <div className="verse">
-                <ScrollingText />
-              </div>
-            </div>
-          </div>
-          <div className="homeMain-rectangle homeMain-rectangle-2"></div>
-        </div> */}
     </div>
   );
 };

@@ -1,18 +1,16 @@
 import React from "react";
 
+import "./scrollingText.css";
+
 const ScrollingText = () => {
   const scriptureOfTheWeek =
     "For God so loved the world that He gave His one and only Son, that whoever believes in Him shall not perish but have eternal life.";
 
   return (
-    <svg width="360" height="70" viewBox="0 0 360 70">
-      <path id="text-path-2" d="M0,35 H360" />
-      <text
-        fill="var(--accent-one)"
-        fontSize="20"
-        fontFamily="var(--font-family)"
-      >
-        <textPath href="#text-path-2" startOffset="0%">
+    <svg className="animated-svg" viewBox="0 0 340 60">
+      <path id="text-path" d="M0,35 H360" />
+      <text className="svg-text">
+        <textPath href="#text-path" startOffset="0%">
           {scriptureOfTheWeek}
           <animate
             attributeName="startOffset"

@@ -140,69 +140,6 @@ a.play-circle-link:active {
   font-size: 3.75vh;
 }
 
-/* Scripture */
-/* .homeMain-rectangle {
-  height: 100%;
-  flex: 1;
-}
-
-.homeMain-rectangle-1 {
-  flex: 2;
-  display: flex;
-  padding: 5px 30px 5px 30px;
-}
-
-.scripture-square {
-  flex: 1;
-  border: solid var(--accent-one) 1.5px;
-  margin: 15px;
-  border-radius: 5px;
-  background-color: var(--accent-two);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scripture-content {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 10px 10px 0;
-}
-
-.scripture-of-the-week {
-  flex: 1;
-  border: solid var(--accent-one) 1.5px;
-  border-radius: 5px;
-  margin: 5px 5px 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scripture-of-the-week h3,
-.scripture-square h3 {
-  margin: 0;
-  font-size: 18px;
-  font-family: var(--font-family);
-  font-weight: normal;
-  color: var(--accent-one);
-}
-
-.scripture-square h3 {
-  font-size: 20px;
-  color: var(--background-color);
-}
-
-.verse {
-  flex: 1.75;
-  border: solid var(--accent-one) 1.5px;
-  border-radius: 5px;
-  margin: 5px 5px 5px 0;
-  display: flex;
-  align-items: center;
-} */
-
 /* Media Queries */
 @media (width: 344px) {
   .first-greeting {

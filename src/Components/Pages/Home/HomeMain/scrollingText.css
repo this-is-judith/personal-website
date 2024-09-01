@@ -1,0 +1,30 @@
+.svg-text {
+  fill: var(--accent-one);
+  font-size: 3vh;
+  font-family: var(--font-family);
+}
+
+/* Media Queries */
+@media (min-width: 540px) {
+  .svg-text {
+    font-size: 2.5vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .svg-text {
+    font-size: 2vh;
+  }
+}
+
+@media (min-width: 820px) {
+  .svg-text {
+    font-size: 1.75vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .svg-text {
+    font-size: 1.5vh;
+  }
+}
