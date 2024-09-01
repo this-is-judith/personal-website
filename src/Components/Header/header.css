@@ -51,6 +51,21 @@ a.header-link:hover {
 }
 
 /* Media Queries */
+@media (width: 344px) {
+  .header-section-2 {
+    flex: 6;
+  }
+
+  .logo {
+    width: 5vh;
+  }
+
+  .header-content-list {
+    column-gap: 1.75vh;
+    font-size: 1.4vh;
+  }
+}
+
 @media (width: 340px) {
   .header-section-2 {
     flex: 6;
@@ -102,8 +117,7 @@ a.header-link:hover {
   }
 
   .header-section-2 {
-    justify-content: end;
-    padding-right: 3vh;
+    /* padding-right: v; */
   }
 
   .header-content-list {

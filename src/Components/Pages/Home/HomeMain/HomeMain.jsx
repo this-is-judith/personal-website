@@ -35,20 +35,81 @@ const HomeMain = () => {
         </div>
       </div>
 
-      <div className="homeMain-picture">
-        <div className="homeMain-circle-box">
-          <div className="homeMain-big-circle big-circle"></div>
+      <div className="homeMain-picture-and-socials">
+        <div className="homeMain-picture">
+          <div className="homeMain-circle-box">
+            <div className="homeMain-big-circle big-circle"></div>
 
-          <div className="small-circle">
-            <a
-              href={songOfTheWeek}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="play-circle-link"
-            >
-              <FaPlayCircle size={25} className="play-circle" />
-            </a>
+            <div className="small-circle">
+              <a
+                href={songOfTheWeek}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="play-circle-link"
+              >
+                <FaPlayCircle className="play-circle" />
+              </a>
+            </div>
           </div>
+        </div>
+
+        <div className="homeMain-socials">
+          <ul className="socials-content-list">
+            <li className="social-icon-list-item">
+              <a
+                href="https://www.linkedin.com/in/judithoseitete/"
+                target="_blank"
+                className="social-icon"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="icon" />
+              </a>
+            </li>
+
+            <li className="social-icon-list-item">
+              <a
+                href="https://github.com/this-is-judith"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="icon" />
+              </a>
+            </li>
+
+            <li className="social-icon-list-item">
+              <a
+                href="mailto:jao92@cornell.edu"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoMdMail className="icon" />
+              </a>
+            </li>
+
+            <li className="social-icon-list-item">
+              <a
+                href="https://www.instagram.com/thisisjudith._/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram className="icon" />
+              </a>
+            </li>
+
+            <li className="social-icon-list-item">
+              <a
+                href="https://www.facebook.com/JudyTheSuperhero/"
+                className="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook className="icon" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -70,65 +131,6 @@ const HomeMain = () => {
           </div>
           <div className="homeMain-rectangle homeMain-rectangle-2"></div>
         </div> */}
-
-      <div className="homeMain-socials">
-        <ul className="socials-content-list">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/judithoseitete/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin size={25} />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://github.com/this-is-judith"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub size={25} />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="mailto:jao92@cornell.edu"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IoMdMail size={25} />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.instagram.com/thisisjudith._/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillInstagram size={25} />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.facebook.com/JudyTheSuperhero/"
-              className="social-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook size={25} />
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
