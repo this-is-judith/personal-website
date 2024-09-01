@@ -22,13 +22,13 @@ function Home() {
         <div class="header">
           <Header />
         </div>
-        {/* 
+
         <main className="main">
           <div className="homeMain">
             <HomeMain />
           </div>
 
-          <div className="homeAbout">
+          {/* <div className="homeAbout">
             <HomeAbout />
           </div>
 
@@ -46,12 +46,12 @@ function Home() {
 
           <div className="homeResources">
             <HomeResources />
-          </div>
+          </div> */}
         </main>
 
         <div className="footer">
           <Footer />
-        </div> */}
+        </div>
       </div>
     </>
   );

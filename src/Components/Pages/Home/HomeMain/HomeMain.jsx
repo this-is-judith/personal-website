@@ -14,24 +14,45 @@ import "./homeMain.css";
 const HomeMain = () => {
   return (
     <div className="homeMain-container">
-      <section className="mainSection mainLeft">
-        <div className="leftSection mainTop">
-          <div className="homeMain-text-container homeMain-text-1">
-            <h4 className="homeMain-text font_4">Hey, I'm</h4>
-          </div>
-
-          <div className="homeMain-text-container homeMain-text-2">
-            <h1 className="homeMain-text font_0">Judith</h1>
-            <h1 className="homeMain-text font_0">Osei-Tete</h1>
-          </div>
-
-          <div className="homeMain-text-container homeMain-text-3">
-            <h3 className="homeMain-text font_3">
-              A Computer Engineer interested in both hardware and software.
-            </h3>
-          </div>
+      <div className="homeMain-greetings">
+        <div className="first-greeting">
+          <h4 className="first-greeting-text">Hey, I'm</h4>
         </div>
 
+        <div className="second-greeting">
+          <h1 className="second-greeting-text second-greeting-text-1">
+            Judith
+          </h1>
+          <h1 className="second-greeting-text second-greeting-text-2">
+            Osei-Tete
+          </h1>
+        </div>
+
+        <div className="third-greeting">
+          <p className="third-greeting-text">
+            I love building creative things.
+          </p>
+        </div>
+      </div>
+
+      <div className="homeMain-picture">
+        <div className="homeMain-circle-box">
+          <div className="homeMain-big-circle big-circle"></div>
+
+          <div className="small-circle">
+            <a
+              href={songOfTheWeek}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="play-circle-link"
+            >
+              <FaPlayCircle size={25} className="play-circle" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 
         <div className="leftSection mainBottom">
           <div className="homeMain-rectangle homeMain-rectangle-1">
             <div className="scripture-square">
@@ -48,79 +69,66 @@ const HomeMain = () => {
             </div>
           </div>
           <div className="homeMain-rectangle homeMain-rectangle-2"></div>
-        </div>
-      </section>
+        </div> */}
 
-      <section className="mainSection mainRight">
-        <div className="rightSection circles-container">
-          <div className="homeMain-circle-box homeMain-circle-box-left">
-            <div className="homeMain-circle-bigger-box big-circle"></div>
+      <div className="homeMain-socials">
+        <ul className="socials-content-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/judithoseitete/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={25} />
+            </a>
+          </li>
 
-            <div className="homeMain-circle-smaller-box"></div>
-          </div>
+          <li>
+            <a
+              href="https://github.com/this-is-judith"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={25} />
+            </a>
+          </li>
 
-          <div className="homeMain-circle-box homeMain-circle-box-right">
-            <div className="homeMain-circle-bigger-box"></div>
-            <div className="homeMain-circle-smaller-box small-circle">
-              <a
-                href={songOfTheWeek}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="playCircle-link"
-              >
-                <FaPlayCircle size={35} className="playIcon" />
-              </a>
-            </div>
-          </div>
-        </div>
+          <li>
+            <a
+              href="mailto:jao92@cornell.edu"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoMdMail size={25} />
+            </a>
+          </li>
 
-        <div className="rightSection socials">
-          <a
-            href="https://www.linkedin.com/in/judithoseitete/"
-            className="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={30} />
-          </a>
+          <li>
+            <a
+              href="https://www.instagram.com/thisisjudith._/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillInstagram size={25} />
+            </a>
+          </li>
 
-          <a
-            href="https://github.com/this-is-judith"
-            className="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size={30} />
-          </a>
-
-          <a
-            href="mailto:jao92@cornell.edu"
-            className="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IoMdMail size={30} />
-          </a>
-
-          <a
-            href="https://www.instagram.com/thisisjudith._/"
-            className="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AiFillInstagram size={30} />
-          </a>
-
-          <a
-            href="https://www.facebook.com/JudyTheSuperhero/"
-            className="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook size={30} />
-          </a>
-        </div>
-      </section>
+          <li>
+            <a
+              href="https://www.facebook.com/JudyTheSuperhero/"
+              className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook size={25} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

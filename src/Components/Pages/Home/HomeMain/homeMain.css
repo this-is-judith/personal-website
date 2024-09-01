@@ -1,15 +1,112 @@
 /* Container positioning */
 .homeMain-container {
   display: flex;
+  height: 92.5vh;
+  flex-direction: column;
+  background: var(--header-color);
 }
 
-.mainSection {
-  flex: 1;
-  height: 100vh;
-  width: 100vw;
+/* Greetings */
+.first-greeting {
+  font: 5vh roboto-thin, roboto, sans-serif;
+  color: var(--accent-two);
+  display: flex;
+  justify-content: center;
+}
+
+.first-greeting-text {
+  padding-top: 3vh;
+  margin: 0;
+}
+
+.second-greeting {
+  font: 5.5vh roboto-bold, roboto, sans-serif;
+  color: var(--accent-one);
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 10px;
+}
+
+.second-greeting-text {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.second-greeting-text-1 {
+  padding-top: 2vh;
+}
+
+.third-greeting {
+  font: 2.75vh "Poppins", sans-serif;
+  color: var(--accent-one);
+  text-align: center;
+}
+
+.third-greeting-text {
+  padding-top: 2vh;
+  margin: 0;
+}
+
+/* Picture and Circles */
+.homeMain-picture {
+  padding-top: 5vh;
+}
+
+.homeMain-circle-box {
+  display: flex;
+
+  display: flex;
+  justify-content: center;
+}
+
+.big-circle {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-color: var(--accent-one);
+  background-image: url("../../../../Assets/Photos/profileImage.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.small-circle {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: var(--accent-two);
+  margin-left: -11vh;
+  margin-top: 14vh;
+}
+
+.play-circle {
+  color: white;
+  margin-top: 9vh;
+  margin-left: 2.5vh;
+}
+
+a.play-circle-link,
+a.play-circle-link:visited,
+a.play-circle-link:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Socials */
+.homeMain-socials {
+  padding-top: 2.25vh;
+  display: flex;
+  justify-content: center;
+}
+
+.socials-content-list {
+  padding: 0;
+  display: flex;
+  column-gap: 6vh;
+  list-style-type: none;
 }
 
 /* Left Section */
@@ -112,25 +209,6 @@
   align-items: center;
 }
 
-.font_4 {
-  font: var(--font_4);
-  color: var(--accent-two);
-}
-
-.font_0 {
-  font: var(--font_0);
-}
-
-.font_3 {
-  font: var(--font_3);
-  font-family: var(--header-font);
-}
-
-.font_0,
-.font_3 {
-  color: var(--accent-one);
-}
-
 /* Right Section */
 .mainRight {
   background-color: var(--background-color);
@@ -141,59 +219,6 @@
 
 .rightSection {
   flex: 3.5;
-}
-.circles-container {
-  display: flex;
-}
-
-.homeMain-circle-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.homeMain-circle-box-left {
-  flex: 1.2;
-}
-
-.homeMain-circle-box-right {
-  flex: 1;
-}
-
-.homeMain-circle-bigger-box {
-  flex: 1.5;
-}
-
-.homeMain-circle-smaller-box {
-  flex: 1;
-
-  height: 100%;
-}
-
-.big-circle {
-  background-color: var(--accent-one);
-  border-radius: 50%;
-  padding: 20px;
-  position: relative;
-  left: 30%;
-  top: 10%;
-  z-index: 1;
-  background-image: url("../../../../Assets/Photos/profileImage.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.small-circle {
-  background-color: var(--accent-two);
-  border-radius: 50%;
-  padding: 30px 0px 30px 40px;
-  margin: 20px;
-  position: relative;
-  left: -25%;
-  top: -10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .socials {
@@ -206,46 +231,6 @@
 
 .social-icon {
   height: fit-content;
-}
-
-.font__4 {
-  font: var(--font_4);
-  margin: 0;
-  margin-bottom: 0.5rem;
-  padding-bottom: 1rem;
-  color: var(--accent-two);
-}
-
-.font__0 {
-  font: var(--font_0);
-  margin: -10px;
-  letter-spacing: 1px;
-}
-
-.font__3 {
-  font: var(--font_3);
-  font-family: var(--header-font);
-}
-
-.font__3.bottom {
-  margin-top: -0.75rem;
-}
-
-.font__0,
-.font__3 {
-  color: var(--accent-one);
-}
-
-a.playCircle-link,
-a.playCircle-link:visited,
-a.playCircle-link:active {
-  text-decoration: none;
-  color: var(--background-color);
-  transition: color 0.3s;
-}
-
-a.playCircle-link:hover {
-  color: var(--header-text-color);
 }
 
 a.social-icon,
@@ -261,32 +246,6 @@ a.social-icon:hover {
   transform: scale(1.4);
 }
 
-/* For Phones */
-@media (max-width: 768px) {
-  .big-circle {
-    background-color: aliceblue;
-  }
-
-  .homeMain-container {
-    flex-direction: column;
-    width: 100vw;
-  }
-
-  .mainLeft,
-  .mainRight {
-    height: 100vh;
-  }
-  /* .mainSection {
-    flex: 1;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 10px;
-  }
-
-  .mainLeft {
-    flex: 1;
-    background-color: var(--background-color);
-  } */
-}
+/* Media Queries */
+/* @media (min-width: 40px) {
+} */

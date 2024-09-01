@@ -51,7 +51,7 @@ a.header-link:hover {
 }
 
 /* Media Queries */
-@media (min-width: 340px) {
+@media (width: 340px) {
   .header-section-2 {
     flex: 6;
   }
@@ -63,6 +63,17 @@ a.header-link:hover {
   .header-content-list {
     column-gap: 1.75vh;
     font-size: 1.4vh;
+  }
+}
+
+@media (width: 360px) {
+  .header-section-2 {
+    flex: 6;
+  }
+
+  .header-content-list {
+    column-gap: 2vh;
+    font-size: 1.6vh;
   }
 }
 
