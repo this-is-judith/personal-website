@@ -91,3 +91,27 @@
     font-size: 2.5vh;
   }
 }
+
+@media (min-width: 1280px) {
+  .homeScipture-container {
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    padding-left: 2vh;
+  }
+
+  .scripture-square {
+    margin-left: 4vh;
+  }
+
+  .scripture-content {
+    margin-right: 3vh;
+  }
+
+  .scripture-square-text {
+    font-size: 3vh;
+  }
+
+  .scripture-of-the-week h3 {
+    font-size: 2.75vh;
+  }
+}

@@ -42,3 +42,9 @@
   /*========= z index ==========*/
   --z-fixed: 100;
 }
+
+@media (min-width: 1280px) {
+  #small-and-mediums {
+    display: none;
+  }
+}

@@ -29,7 +29,7 @@ function Home() {
             <HomeMain />
           </div>
 
-          <div className="homeScripture">
+          <div className="homeScripture" id="small-and-mediums">
             <HomeScripture />
           </div>
 

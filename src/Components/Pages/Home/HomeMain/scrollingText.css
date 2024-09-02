@@ -28,3 +28,9 @@
     font-size: 1.5vh;
   }
 }
+
+@media (min-width: 1280px) {
+  .svg-text {
+    font-size: 2.3vh;
+  }
+}

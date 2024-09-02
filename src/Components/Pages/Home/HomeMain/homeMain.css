@@ -4,6 +4,7 @@
   background: var(--header-color);
   display: flex;
   flex-direction: column;
+  padding-left: 2vh;
 }
 
 /* Greetings */
@@ -141,6 +142,12 @@ a.play-circle-link:active {
 }
 
 /* Media Queries */
+@media (width < 1280px) {
+  #large {
+    display: none;
+  }
+}
+
 @media (width: 344px) {
   .first-greeting {
     font-size: 4.25vh;
@@ -299,17 +306,17 @@ a.play-circle-link:active {
   .first-greeting {
     font-size: 8vh;
     justify-content: left;
-    padding-left: 11vh;
+    padding-left: 7vh;
   }
 
   .first-greeting-text {
-    padding-top: 12vh;
+    padding-top: 6vh;
     margin: 0;
   }
 
   .second-greeting {
     font-size: 7.5vh;
-    padding-left: 10vh;
+    padding-left: 6vh;
   }
 
   .second-greeting-text {
@@ -323,8 +330,9 @@ a.play-circle-link:active {
   .third-greeting {
     display: flex;
     justify-content: left;
-    padding-left: 11vh;
+    padding-left: 7vh;
     font-size: 3vh;
+    padding-bottom: 5vh;
   }
 
   .homeMain-greetings {
@@ -363,7 +371,7 @@ a.play-circle-link:active {
   }
 
   .socials-content-list {
-    column-gap: 8.5vh;
+    column-gap: 7.5vh;
   }
 
   .social-icon-list-item:hover {
@@ -371,6 +379,6 @@ a.play-circle-link:active {
   }
 
   .icon {
-    font-size: 4.5vh;
+    font-size: 4.25vh;
   }
 }
