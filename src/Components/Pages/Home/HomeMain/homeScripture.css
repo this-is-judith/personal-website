@@ -92,7 +92,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (height < 1000px) {
   .homeScipture-container {
     padding-top: 0vh;
     padding-bottom: 0vh;

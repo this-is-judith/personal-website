@@ -43,7 +43,7 @@
   --z-fixed: 100;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (height < 1000px) {
   #small-and-mediums {
     display: none;
   }
